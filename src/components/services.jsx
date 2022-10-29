@@ -3,58 +3,44 @@ import { board, board1, board2, board3, BUSINESS, line } from '../images'
 import Card from './card'
 
 const Services = () => {
-  const data = [
-    {
-      id: 1,
-      title: 'Web Design',
-      img: board2,
-      color: '#5AA6B1'
-    },
-    {
-      id: 2,
-      title: 'Marketing',
-      color: '#5AA6B1',
-      img: board3,
-    },
-    {
-      id: 3,
-      title: 'Web Design',
-      color: '#DA4B27',
-      img: board
-    },
-    {
-      id: 4,
-      title: 'Web Design',
-      color: '#5AA6B1',
-      img: board1
-    },
-  ]
   return (
-    <div>
-      <div>
-        <img src={BUSINESS} alt="" />
+    <div className='mb-20'>
+      <div className='-mt-8 absolute -z-20 left-[35em]'>
+        <img src={BUSINESS} className='' alt="" />
       </div>
       <div className='flex flex-col items-center justify-center p-5'>
         <h4>Services</h4>
-        <h3 className='text-4xl font-bold'>Our Partners in Your Success</h3>
-        <img src={line} className='w-3/4 -ml-20' alt="" />
+        <h3 className='text-4xl font-bold'>What we do Best!</h3>
+        <img src={line} className='w-1/3 -ml-12' alt="" />
       </div>
-      <div className='flex items-center space-x-3 px-4'>
+      <div className='flex flex-col space-y-5 justify-center sm:flex-row items-center sm:space-x-3 px-4 '>
         <Card 
           img={board2}
           title={'Web Design'}
+          color={'#5AA6B1'}
+          height={'232px'}
          />
         <Card 
           img={board}
           title={'Marketing'}
+          color={'#5AA6B1'}
+          height={'232px'}
+
+
          />
         <Card 
           img={board3}
           title={'Telephony'}
+          color={'#DA4B27'}
+          height={'277px'}
+
          />
         <Card 
           img={board1}
           title={'Hosting'}
+          color={'#5AA6B1'}
+          height={'232px'}
+
          />
       </div>
     </div>

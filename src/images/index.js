@@ -58,12 +58,14 @@ import mailgun from "./mailgun.png";
 import mailchimp from "./mailchimp.png";
 import email from "./email.png";
 import bing from "./bing.png";
+import icon from "./icon.png";
+import info from "./info.png";
 
 export {
   arrow,bing,
-  arrow2,
+  arrow2,info,
   asp,
-  email,
+  email,icon,
   bball,
   banner,
   bghero,
