@@ -10,7 +10,7 @@ const Hero = () => {
       </div>
       <div className='bg-white p-5 rounded-full flex items-center space-x-3'>
         <img src={arrow} alt="" />
-        <div className='flex space-x-4 items-center overflow-scroll'>
+        <div className='flex space-x-4 items-center overflow-x-scroll'>
           <img src={bing} alt="" />
           <img src={mailgun} alt="" />
           <img src={aws} alt="" />

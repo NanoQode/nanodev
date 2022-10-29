@@ -35,7 +35,7 @@ const Info = () => {
 
   ]
   return (
-    <div className='bg-[#EBF4F6] p-6 w-full h-max lg:h-[500px] flex flex-col justify-center items-center lg:flex-row lg:justify-between'>
+    <div className='bg-[#EBF4F6] p-6 w-full h-max lg:h-[500px] flex flex-col justify-center items-center lg:flex-row lg:justify-between 2xl:justify-around 2xl:px-40'>
       <div className='p-4 w-full lg:w-1/3'>
         <div className='mb-4'>
           <h3 className='text-4xl font-bold'>Website Creation</h3>

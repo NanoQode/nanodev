@@ -31,18 +31,18 @@ const Design = () => {
     <div className='bg-[#DA4B271F] p-4'>
       <div className='flex flex-col items-center justify-center p-5'>
         <h3 className='text-4xl font-bold'>The BIG Picture, in 3 Steps</h3>
-        <img src={line} className='w-3/4 -ml-20' alt="" />
+        <img src={line} className='w-1/3 -ml-12 2xl:w-60' alt="" />
       </div>
-      <section className='flex my-20 items-center justify-center flex-col lg:flex-row mx-auto'>
-        <div className=' ml-20'>
+      <section className='flex my-20 items-center justify-center flex-col lg:flex-row mx-auto '>
+        <div className=' sm:ml-20'>
 
           <img src={designimg} alt="" />
         </div>
         
 
-        <div className='flex relative w-1/2'>
+        <div className='flex relative w-full sm:w-1/2'>
 
-        <div className='-ml-32 bg-[#E9E9E9] w-[424px] h-max flex items-center flex-col space-y-4 p-6'>
+        <div className='mt-4 sm:mt-0 sm:-ml-32 bg-[#E9E9E9] w-[424px] h-max flex items-center flex-col space-y-4 p-6'>
             {data.map((item) =>
               <div key={item.id}
                 style={{
@@ -59,7 +59,7 @@ const Design = () => {
             )}
          
           </div>
-          <img src={DESIGN} className='absolute left-52 -z-10' alt="" />
+          <img src={DESIGN} className='absolute left-28 sm:left-52 -z-10' alt="" />
         </div>
       
       </section>

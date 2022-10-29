@@ -5,13 +5,13 @@ import Card from './card'
 const Services = () => {
   return (
     <div className='mb-20'>
-      <div className='-mt-8 absolute -z-20 left-[35em]'>
+      <div className='-mt-8 absolute -z-20 left-[35em] xl:left-[50em] 2xl:left-[80%]'>
         <img src={BUSINESS} className='' alt="" />
       </div>
       <div className='flex flex-col items-center justify-center p-5'>
         <h4>Services</h4>
         <h3 className='text-4xl font-bold'>What we do Best!</h3>
-        <img src={line} className='w-1/3 -ml-12' alt="" />
+        <img src={line} className='w-1/3 -ml-12 2xl:w-60' alt="" />
       </div>
       <div className='flex flex-col space-y-5 justify-center sm:flex-row items-center sm:space-x-3 px-4 '>
         <Card 

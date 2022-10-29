@@ -36,7 +36,7 @@ const Header = () => {
         <div className=''>
           <img src={logo} alt="logo" />
         </div>
-        <nav className=' items-center space-x-4 font-semibold text-sm text-[#333333] cursor-pointer hidden lg:flex'>
+        <nav className=' items-center space-x-4 font-semibold text-sm sm:text-lg text-[#333333] cursor-pointer hidden lg:flex '>
           <p >Home </p>
           <p className='items-center flex space-x-2'>Websites
             <img src={down} className='ml-1 w-full object-contain' alt="" />

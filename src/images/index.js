@@ -3,7 +3,7 @@ import arrow2 from "./arrow2.png";
 import asp from "./asp.png";
 import bball from "./b-ball.png";
 import banner from "./banner.png";
-import bghero from "./bg-hero.png";
+import bghero from "./bg.png";
 import blob from "./blob.png";
 import board from "./board.png";
 import board1 from "./board1.png";
