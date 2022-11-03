@@ -1,13 +1,25 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { down, email, facebook, home, instaw, logo, twitter, vimeo, youtube } from '../images/index'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { Link, useNavigate } from 'react-router-dom'
+import { menuOption } from '../constant'
 
 const Header = () => {
   const [menu, setMenu] = useState(false)
-
+  const [navOption, setNavOption] = useState('')
+  const navigate = useNavigate()
+  const pathname = window.location.pathname
   const toggle = () => {
     setMenu(prev => !prev)
   }
+
+  const menuNavigation = () => {
+    navigate(`/${navOption}`)
+  }
+
+  useEffect(() => {
+    menuNavigation()
+  }, [navOption])
 
   return (
     <header>
@@ -34,12 +46,23 @@ const Header = () => {
       </section>
       <section className='bg-[#E9E9E9] w-full h-[100px] flex items-center justify-around sm:justify-between pr-4 sm:px-10 relative'>
         <div className=''>
-          <img src={logo} alt="logo" />
+          <Link to='/'>
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
         <nav className=' items-center space-x-4 font-semibold text-sm sm:text-lg text-[#333333] cursor-pointer hidden lg:flex '>
-          <p >Home </p>
-          <p className='items-center flex space-x-2'>Websites
-            <img src={down} className='ml-1 w-full object-contain' alt="" />
+          <Link to='/'>
+            <p >Home </p>
+          </Link>
+
+          <p className='items-center flex space-x-2'>
+            <select style={{
+              width: pathname === '/webdesign' || pathname === '/'  ? '100px' : '240px'
+            }} className='border-none outline-none bg-transparent' onChange={(e) => setNavOption(e.target.value)} >
+              {menuOption.map((res) =>
+                <option value={res.link}>{res.title}</option>
+              )}
+            </select>
           </p>
           <p className='flex space-x-2 items-center'>Marketing
             <img src={down} className='ml-1 w-full object-contain' alt="" />
@@ -56,7 +79,7 @@ const Header = () => {
         <div className='flex lg:hidden'>
           {!menu ? <AiOutlineMenu onClick={toggle} className=' text-2xl font-bold' /> : <AiOutlineClose onClick={toggle} className='text-2xl text-red-500' />}
         </div>
-        
+
         {menu &&
           <section className='flex items-center rounded-xl font-semibold flex-col bg-white p-7 shadow-xl w-[250px] right-4 absolute h-max top-20 space-y-6 justify-center'>
             <p >Home </p>

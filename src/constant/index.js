@@ -416,3 +416,25 @@ export const langData = [
      img: PHP,
    },
  ];
+
+export const menuOption = [
+  {
+    id: 1,
+    title: "websites",
+    link: "webdesign",
+  },
+  {
+    id: 2,
+    title: "Mobile App Development",
+    link: "mobileapp",
+  },
+  {
+    id: 3,
+    title: "Software Development",
+    link: "software",
+  },
+  // {
+  //   id: 4,
+  //   title: "websites",
+  // },
+];

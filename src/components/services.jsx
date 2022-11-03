@@ -18,19 +18,19 @@ const Services = () => {
           <Card
             img={board2}
             title={'Web Design'}
-            color={'#5AA6B1'}
+            
 
           />
      </div>
         <Card 
           img={board2}
           title={'Web Design'}
-          color={'#5AA6B1'}
+          
          />
         <Card 
           img={board}
           title={'Marketing'}
-          color={'#5AA6B1'}
+          
           
 
 
@@ -38,13 +38,12 @@ const Services = () => {
         <Card 
           img={board3}
           title={'Telephony'}
-          color={'#DA4B27'}
 
          />
         <Card 
           img={board1}
           title={'Hosting'}
-          color={'#5AA6B1'}
+          
           
 
          />

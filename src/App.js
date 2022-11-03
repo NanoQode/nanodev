@@ -9,8 +9,8 @@ import Softaware from "./pages/Softaware";
 function App() {
   return (
     <div>
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/webdesign" element={<Web />} />
@@ -18,8 +18,8 @@ function App() {
           <Route path="/software" element={<Softaware />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }
