@@ -1,6 +1,8 @@
 import React from 'react'
 import { icon, info, line } from '../images'
 
+import { motion } from "framer-motion";
+
 const Info = () => {
   const data = [
     {
@@ -56,7 +58,19 @@ const Info = () => {
           </div>
         )}
       </div>
-      <img src={info} alt="" />
+      <motion.img
+        initial={{
+         x: 200,
+          opacity: 0,
+        }}
+        whileInView={{
+         x: 0,
+          opacity: 1,
+        }}
+        
+        transition={{ ease: "easeOut", duration: 1.2 }}
+        src={info}
+      />
     </div>
   )
 }

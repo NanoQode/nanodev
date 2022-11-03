@@ -1,28 +1,11 @@
 import React from 'react'
-import { bball, bghero, blob, emailb, fbblack, insta, line, location, phone, pin } from '../images'
+import { bball,blob, emailb, fbblack, insta, line, location, phone, pin } from '../images'
+import CallHero from './callHero'
 
 const Form = () => {
   return (
     <div className='mb-10'>
-      <section style={{
-        backgroundImage: `url(${bghero})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        height:'200px'
-      }} className=' sm:m-20'>
-        <div className='flex  flex-col pl-5 sm:items-center sm:flex-row sm:justify-between sm:py-5 sm:px-10 lg:py-10 lg:px-20'>
-          <aside className='w-full sm:w-3/4 lg:w-1/2 mt-10'>
-            <div className='w-[100px] h-1 bg-[#DA452C]' />
-            <h3 className='text-white mt-4 sm:text-xl'>
-              Convinced yet? Let's make something
-              great together.
-            </h3>
-          </aside>
-          <div className='w-1/4 mt-4 sm:mt-10'>
-            <button className='w-max p-3 bg-[#5AA6B1] text-sm text-white'>SCHEDULE A CALL</button>
-          </div>
-        </div>
-      </section>
+      <CallHero/>
       <section className='lg:w-[850px] lg:mx-auto mb-4 h-max bg-white mx-3 shadow-lg p-5 flex space-y-3 md:items-center flex-col md:flex-row md:justify-between'>
         <aside className='flex flex-col space-y-5 p-3 md:w-1/2 md:mx-10'>
           <div>

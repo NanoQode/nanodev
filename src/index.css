@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-family: swiper-icons;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  font-size: 22px !important;
+  color: #DA452C;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  padding: 10px 20px;
+  background: transparent;
+  font-weight: 900!important;
+}

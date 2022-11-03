@@ -1,23 +1,31 @@
 import React from 'react'
-import { Affordable, Banner, Client, Design, Footer, Form, Header, Hero, Info, Services } from '../components'
+import { Affordable, Banner, Client, Design, Form, Hero, Info, Services } from '../components'
 import Featured from '../components/featured'
+import { designData, langData } from '../constant'
+import { DESIGN, designimg } from '../images'
 
 const Home = () => {
     return (
-        <div>
-            <Header />
+        <div className='overflow-hidden'>
             <Banner />
             <Hero />
             <Services />
             <Info />
-            <Design />
+            <Design data={designData}
+                subtitle={''}
+                btn={false}
+                img={DESIGN}
+                img2={designimg}
+                title={'The BIG Picture, in 3 Steps'} />
             <Affordable />
             <Client />
             <div className=''>
-                <Featured />
+                <Featured
+                    color={'#FBE9E5'}
+                    color2={'white'}
+                    data={langData} title={'Our Partners in Your Success'} />
             </div>
             <Form />
-            <Footer/>
         </div>
     )
 }

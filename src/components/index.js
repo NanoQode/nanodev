@@ -8,13 +8,20 @@ import Info from "./info";
 import Services from "./services";
 import Affordable from "./affordable";
 import Form from "./form";
+import WebBanner from "./webBanner";
+import CallCard from "./callCard";
+import Built from "./built";
+import Creative from "./creative";
+import Portfolio from "./portfolio";
+import Focus from "./focus";
+import CallHero from "./callHero";
 
 export {
-  Header,
-  Hero,
-  Affordable,
+  Header,Built,
+  Hero,CallCard,
+  Affordable,WebBanner,Creative,
   Client,
-  Banner,
+  Banner,Portfolio,Focus,CallHero,
   Services,
   Form,
   Info,

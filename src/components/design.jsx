@@ -1,53 +1,25 @@
 import React from 'react'
-import { DESIGN, designicon, designicon2, designicon3, designimg, line } from '../images'
+import { line } from '../images'
 
-const Design = () => {
-  const data = [
-    {
-      id: 1,
-      title: 'Defining Your Customers',
-      body: 'Understanding your customers source is key, we research the cost of acquisition and the best way to convert, all while prioritizing your vision and business needs.',
-      img: designicon,
-      color: 'white'
-    },
-    {
-      id: 2,
-      title: 'Multi-Level Engagement',
-      body: 'We analyze your digital infrastructure and create multiple entry points to help your business grow organically, with almost immediate results and a long term growth strategy in place.',
-      img: designicon2,
-      color: '#BAE3E9'
+const Design = ({ data, title, subtitle, btn, img, img2 ,reverse}) => {
 
-    },
-    {
-      id: 3,
-      title: 'Driving Results Home',
-      body: 'Coupled with a well presented online platform our intent based customer targeting on search, display and social media gets you leads and conversions.',
-      img: designicon3,
-      color: 'white'
-
-    },
-  ]
   return (
     <div className='bg-[#DA4B271F] p-4'>
-      <div className='flex flex-col items-center justify-center p-5'>
-        <h3 className='text-4xl font-bold'>The BIG Picture, in 3 Steps</h3>
-        <img src={line} className='w-1/3 -ml-12 2xl:w-60' alt="" />
+
+      <div className={btn ? 'flex flex-col space-y-3 p-5' : 'flex flex-col items-center justify-center p-5'}>
+        <h4>{subtitle ?? ''}</h4>
+        <h3 className='text-4xl font-bold'>{title ?? ''}</h3>
+        <img src={title ? line : ''} className='w-1/3 -ml-12 2xl:w-60' alt="" />
       </div>
-      <section className='flex my-20 items-center justify-center flex-col lg:flex-row mx-auto '>
-        <div className=' sm:ml-20'>
-
-          <img src={designimg} alt="" />
+      <section className= 'flex my-20 items-center justify-center flex-col lg:flex-row mx-auto relative '>
+        <div className={reverse ? 'absolute left-28' :' sm:ml-20'}>
+          <img src={reverse?img:img2} alt="" />
         </div>
-        
-
-        <div className='flex relative w-full sm:w-1/2'>
-
-        <div className='mt-4 sm:mt-0 sm:-ml-32 bg-[#E9E9E9] w-[424px] h-max flex items-center flex-col space-y-4 p-6'>
+        <div className='flex relative w-full  sm:w-1/2'>
+          <div className='mt-4 sm:mt-0 sm:-ml-32 bg-[#E9E9E9] w-[424px] h-max flex items-center flex-col space-y-4 p-6 relative z-30'>
             {data.map((item) =>
               <div key={item.id}
-                style={{
-                  background: item.color
-                }} className='m-4 p-4 flex items-center space-x-5'>
+                className='m-4 bg-white p-4 flex items-center space-x-5 hover:bg-[#BAE3E9] duration-150 transition-all hover:shadow-xl hover:scale-105 ease-out rounded-md'>
                 <img src={item.img} alt="" />
                 <div className='flex flex-col space-y-2'>
                   <h2 className='font-bold '>{item.title}</h2>
@@ -55,13 +27,18 @@ const Design = () => {
                     {item.body}
                   </p>
                 </div>
+
               </div>
             )}
-         
+            {btn &&
+              <button className='my-5 bg-[#5AA6B1] text-white py-2 px-7 -ml-32'>
+                BOOK A FREE CONSULT
+              </button>}
           </div>
-          <img src={DESIGN} className='absolute left-28 sm:left-52 -z-10' alt="" />
+          <img src={reverse?img2:img} className=
+            {btn ? 'absolute left-28 sm:left-52 z-10' : 'absolute left-28 sm:left-52 -z-10'} alt="" />
         </div>
-      
+
       </section>
 
     </div>

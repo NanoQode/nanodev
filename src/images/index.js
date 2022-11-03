@@ -60,12 +60,143 @@ import email from "./email.png";
 import bing from "./bing.png";
 import icon from "./icon.png";
 import info from "./info.png";
+import bulb from "./bulb.png";
+import peeps from "./peeps.png";
+import divider from "./divider.png";
+import chart from "./chart.png";
+import eng from "./eng.png";
+import boy from "./boy.png";
+import msg from "./msg.png";
+import call from "./call.png";
+import webdev from "./webdev.png";
+import arrowc from "./arrow-c.png";
+import roller from "./roller.png";
+import file from "./file.png";
+import desk from "./desk.png";
+import cert from "./cert.png";
+import hook from "./hook.png";
+import eye from "./eye.png";
+import accl from "./accl.png";
+import APPS from "./APPS.png";
+import PROCEES from "./PROCESS.png";
+import rocket from "./rocket.png";
+import PORTFOLIO from "./PORTFOLIO.png";
+import rise from "./rise.png";
+import split from "./split.png";
+import BUILT from "./BUILT.png";
+import CREATIVE from "./CREATIVE.png";
+import app from "./app.png";
+import menu from "./menu.png";
+import recycle from "./recycle.png";
+import mark from "./mark.png";
+import webimg from "./web-img.png";
+import webimg2 from "./web-img2.png";
+import webimg3 from "./web-img3.png";
+import webimg4 from "./web-img4.png";
+import webimg5 from "./web-img5.png";
+import bulb2 from "./bulb2.png";
+import read from "./read.png";
+import mobile from "./mobile.png";
+import set from "./set.png";
+import user from "./user.png";
+import hand from "./hand.png";
+import equip from "./equip.png";
+import user2 from "./user2.png";
+import sett from "./sett.png";
+import speaker from "./speaker.png";
+import shake from "./shake.png";
+import accl2 from "./accl2.png";
+import CHOOSE from "./CHOOSE.png";
+import split22 from "./split22.png";
+import blank from "./blank.png";
+import half from "./half.png";
+import check from "./check.png";
+import sett2 from "./sett2.png";
+import speak from "./speak.png";
+import SOFTWARE from "./SOFTWARE.png";
+import DIGITAL from "./DIGITAL.png";
+import stand from "./stand.png";
+import code from "./code.png";
+import code2 from "./code2.png";
+import py from "./py.png";
+import csharp from "./csharp.png";
+import java from "./java.png";
+import lua from "./lua.png";
+import git from "./git.png";
+import k from "./k.png";
 
 export {
-  arrow,bing,
-  arrow2,info,
+  arrow,
+  blank,
+  call,
+  half,
+  check,
+  sett2,
+  speak,
+  SOFTWARE,
+  DIGITAL,
+  app,
+  CHOOSE,
+  stand,
+  k,
+  git,
+  py,
+  lua,
+  csharp,
+  java,
+  split,
+  code,
+  code2,
+  split22,
+  APPS,
+  rocket,
+  PORTFOLIO,
+  PROCEES,
+  eye,
+  hook,
+  msg,
+  bulb2,
+  read,
+  hand,
+  user,
+  set,
+  accl2,
+  speaker,
+  sett,
+  user2,
+  shake,
+  equip,
+  bing,
+  mobile,
+  boy,
+  arrowc,
+  cert,
+  roller,
+  file,
+  desk,
+  BUILT,
+  webimg,
+  webimg2,
+  webimg3,
+  webimg4,
+  webimg5,
+  mark,
+  arrow2,
+  webdev,
+  info,
+  bulb,
+  peeps,
+  CREATIVE,
+  accl,
+  rise,
+  menu,
+  recycle,
+  divider,
+  chart,
+  eng,
   asp,
-  email,icon,
+  email,
+  icon,
   bball,
   banner,
   bghero,

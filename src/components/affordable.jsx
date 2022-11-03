@@ -20,11 +20,11 @@ const Affordable = () => {
             <img src={arrow2} alt="" />
           </div>
         </div>
-        <div className=' lg:-mt-32 flex items-center space-x-1 flex-col md:grid justify-center md:grid-cols-2 lg:grid-cols-4 ml-10 2xl:mx-auto'>
-          <img src={card} className='p-1 ' alt="" />
-          <img src={card2} className='p-1 ' alt="" />
-          <img src={card3} className='p-1 ' alt="" />
-          <img src={card4} className='p-1 ' alt="" />
+        <div className=' lg:-mt-32 flex items-center space-x-1 flex-col md:grid justify-center md:grid-cols-2 lg:grid-cols-4 ml-10 2xl:mx-auto '>
+          <img src={card} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" />
+          <img src={card2} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" />
+          <img src={card3} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" />
+          <img src={card4} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" />
         </div>
    </section>
     </div>

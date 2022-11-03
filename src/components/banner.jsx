@@ -1,7 +1,42 @@
 import React from 'react'
-import { banner, loading, scrolll } from '../images'
-
+import { banner, boy, bulb, chart, divider, eng, loading, peeps, scrolll } from '../images'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/pagination';
 const Banner = () => {
+const data = [
+    {
+      id: 1,
+      img: banner,
+    },
+    {
+      id: 2,
+      img: boy,
+    },
+    {
+      id: 3,
+      img: bulb,
+    },
+    {
+      id: 4,
+      img: peeps,
+    },
+    {
+      id: 5,
+      img: divider,
+    },
+    {
+      id: 6,
+      img: chart,
+    },
+    {
+      id: 7,
+      img: eng,
+    },
+  ]
+
   return (
     <div className=' flex flex-col sm:flex-row justify-between '>
       <section className='w-full lg:w-3/4 xl:w-1/2 2xl:w-1/3 2xl:mx-auto'>
@@ -27,8 +62,27 @@ const Banner = () => {
         </div>
       </section>
       <section className='w-full lg:w-3/4 xl:w-1/2 flex items-center mb-7 justify-center flex-col lg:-mt-20 xl:-mt-3 2xl:w-1/3 2xl:mx-auto'>
-        <img src={banner} alt="" />
-        <img src={loading} alt="" />
+        <Swiper
+          className='w-full'
+          //   spaceBetween={15}
+          slidesPerView={1}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={(swiper) => console.log(swiper)}
+          modules={[Autoplay,Pagination]}
+          pagination={{ clickable: true }}
+          autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+          }}
+          loop={true}
+          speed={2000}>
+          {data.map((item) => (
+            <SwiperSlide className='flex items-center justify-center'>
+              <img src={item.img} className='' />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        {/* <img src={loading} alt="" /> */}
 
       </section>
     </div>
