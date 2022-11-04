@@ -1,0 +1,44 @@
+import React from 'react'
+import { CallCard, CallHero, Client, Design, Form, Portfolio, WebBanner } from '../components'
+import Featured from '../components/featured'
+import Packages from '../components/packages'
+import { designData33, langData2, softBannerData } from '../constant'
+import { DESIGN, eapp, ehero, line } from '../images'
+
+const Ecommerce = () => {
+  return (
+    <div className='overflow-hidden'>
+      <WebBanner
+        btn
+        title={'SuperCharge Your'}
+        title2={'Ecommerce'}
+        body={' Get Your Business Online Today! Starting at Just $35/Month'}
+        img={ehero}
+        data={null} />
+      <Portfolio />
+      <Featured color={'#FBE9E5'} color2={'white'} data={langData2} title={'Our Client Base'} />
+      <Packages/>
+      <div className='my-20'>
+        <div className='ml-20 mb-10 w-1/2'>
+          <h3 className='text-4xl font-bold'>Need An Urgent Project Delivered ASAP?
+            We’re Waiting For Your Call!</h3>
+          <img src={line} className='w-3/4 -ml-20' alt="" />
+        </div>
+        <div className='flex items-center justify-center'>
+          <CallCard />
+        </div>
+      </div>
+      <Client />
+      <CallHero />
+      <Design data={designData33}
+        subtitle={''}
+        btn={true}
+        img2={eapp}
+        img={DESIGN}
+        title={''} />
+      <Form />
+    </div>
+  )
+}
+
+export default Ecommerce

@@ -1,10 +1,13 @@
 import {
   accl,
   accl2,
+  amara,
   asp,
+  aven,
   cert,
   check,
   Codeigniter,
+  county,
   csharp,
   designicon,
   designicon2,
@@ -16,7 +19,9 @@ import {
   git,
   half,
   hand,
+  hexa,
   hook,
+  human,
   java,
   JS,
   k,
@@ -339,6 +344,20 @@ export const designData2 = [
   },
 ];
 
+export const designData33 = [
+  {
+    id: 1,
+    title: "Quick Start With Shopify",
+    body: "One of the fastest ways to get your eCommerce site up and running is with Shopify, not only do they have a complete system from product listing to easy checkout, but they also simplify the whole process making it easier to concentrate on running the business rather than managing the online store. Our team makes this whole process even easier, allowing you to get the very best foot forward when starting a shoplift store. With the design, attention to detail, SEO, and other creatives needed to get your store up and ready in a short amount of time.",
+    img: "",
+  },
+  {
+    id: 3,
+    title: "Quick Start With Shopify",
+    body: "When you need more control and functionality than the Shopify experience can give, it’s now time to look into customer eCommerce applications. Either built from the ground up or using open source solutions that can be customized to your exact specifications.",
+    img: "",
+  },
+];
 export const designData = [
   {
     id: 1,
@@ -384,6 +403,28 @@ export const softLangData = [
    {
      id: 6,
      img: k,
+   },
+ ];
+export const langData2 = [
+   {
+     id: 1,
+     img: human,
+   },
+   {
+     id: 2,
+     img: hexa,
+   },
+   {
+     id: 3,
+     img: county,
+   },
+   {
+     id: 4,
+     img: amara,
+   },
+   {
+     id: 5,
+     img: aven,
    },
  ];
 export const langData = [
@@ -433,8 +474,9 @@ export const menuOption = [
     title: "Software Development",
     link: "software",
   },
-  // {
-  //   id: 4,
-  //   title: "websites",
-  // },
+  {
+    id: 4,
+    title: "Ecommerce",
+    link: "ecommerce",
+  },
 ];

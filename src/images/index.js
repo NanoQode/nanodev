@@ -124,10 +124,22 @@ import java from "./java.png";
 import lua from "./lua.png";
 import git from "./git.png";
 import k from "./k.png";
+import ehero from "./ehero.png";
+import eapp from "./eapp.png";
+import price from "./price.png";
+import star2 from "./star2.png";
+import star from "./star.png";
+import aven from "./aven.png";
+import amara from "./amara.png";
+import county from "./county.png";
+import human from "./human.png";
+import hexa from "./hexa.png";
+import PACKAGES from "./PACKAGES.png";
 
 export {
   arrow,
-  blank,
+  blank, ehero, eapp,
+  price,star,star2,aven,amara,county,human,hexa,PACKAGES,
   call,
   half,
   check,

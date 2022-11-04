@@ -57,7 +57,7 @@ const Header = () => {
 
           <p className='items-center flex space-x-2'>
             <select style={{
-              width: pathname === '/webdesign' || pathname === '/'  ? '100px' : '240px'
+              width: pathname === '/webdesign' || pathname === '/ecommerce' || pathname === '/'  ? '120px' : '240px'
             }} className='border-none outline-none bg-transparent' onChange={(e) => setNavOption(e.target.value)} >
               {menuOption.map((res) =>
                 <option value={res.link}>{res.title}</option>

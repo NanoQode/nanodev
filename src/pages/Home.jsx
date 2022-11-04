@@ -1,5 +1,5 @@
 import React from 'react'
-import { Affordable, Banner, Client, Design, Form, Hero, Info, Services } from '../components'
+import { Affordable, Banner, CallHero, Client, Design, Form, Hero, Info, Services } from '../components'
 import Featured from '../components/featured'
 import { designData, langData } from '../constant'
 import { DESIGN, designimg } from '../images'
@@ -25,6 +25,7 @@ const Home = () => {
                     color2={'white'}
                     data={langData} title={'Our Partners in Your Success'} />
             </div>
+            <CallHero />
             <Form />
         </div>
     )

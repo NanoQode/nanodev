@@ -22,7 +22,7 @@ const Featured = ({title,data,color,color2}) => {
               }}
               className='w-full  rounded-full p-2 h-[50px] sm:h-[80px]'
               //   spaceBetween={15}
-              slidesPerView={5}
+              slidesPerView={4}
               navigation
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}

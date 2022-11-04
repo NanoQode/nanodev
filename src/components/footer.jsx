@@ -48,7 +48,7 @@ const Footer = () => {
         </section>
       </div>
       <div className='w-full h-0.5 bg-white' />
-      <p className='text-xs font-light mt-3 text-right '>&copy; 2022 Nanoqode.
+      <p className='text-xs font-light mt-3 text-right  p-4'>&copy; 2022 Nanoqode.
         All rights reserved.</p>
     </div>
   )
