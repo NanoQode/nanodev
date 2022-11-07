@@ -1,6 +1,7 @@
 import React from 'react'
 import { line } from '../images'
 
+
 const Design = ({ data, title, subtitle, btn, img, img2 ,reverse}) => {
 
   return (
@@ -12,7 +13,7 @@ const Design = ({ data, title, subtitle, btn, img, img2 ,reverse}) => {
         <img src={title ? line : ''} className='w-1/3 -ml-12 2xl:w-60' alt="" />
       </div>
       <section className= 'flex my-20 items-center justify-center flex-col lg:flex-row mx-auto relative '>
-        <div className={reverse ? 'absolute left-28' :' sm:ml-20'}>
+        <div className={reverse ? 'absolute left-20' :' sm:ml-20'}>
           <img src={reverse?img:img2} alt="" />
         </div>
         <div className='flex relative w-full  sm:w-1/2'>

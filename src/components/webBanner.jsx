@@ -8,7 +8,7 @@ const WebBanner = ({ title, title2, body, img, data, btn }) => {
         <div className=' flex flex-col sm:flex-row justify-between '>
             <section className='w-full lg:w-3/4 xl:w-1/2 2xl:w-1/3 2xl:mx-auto'>
 
-                <div className='text-[#333333] p-10'>
+                <div className='text-[#333333] p-8'>
                     <div className='mt-10 w-[200px] h-1 bg-[#DA452C] mb-4' />
                     <h2 className=' text-4xl lg:text-6xl  font-bold '>
                         <span className='text-[#DA452C]'>{title}</span>

@@ -2,13 +2,36 @@ import React, { useEffect, useState } from 'react'
 import { down, email, facebook, home, instaw, logo, twitter, vimeo, youtube } from '../images/index'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { Link, useNavigate } from 'react-router-dom'
-import { menuOption } from '../constant'
+import { menuOption, menuOption2 } from '../constant'
 
 const Header = () => {
   const [menu, setMenu] = useState(false)
   const [navOption, setNavOption] = useState('')
+  const [menuTab, setMenuTab] = useState('websites')
+  const [headerTab, setHeaderTab] = useState('Marketing')
+  const [tab2, setTab2] = useState(false)
+  const [tab, setTab] = useState(false)
   const navigate = useNavigate()
   const pathname = window.location.pathname
+
+
+  const setTabOption = (name) => {
+    setHeaderTab(name.title)
+    setNavOption(name.link)
+  }
+  const setTabOption2 = (name) => {
+    setMenuTab(name.title)
+    setNavOption(name.link)
+    // selectOption()
+  }
+
+  const selectOption2 = () => {
+    setTab2(prev => !prev)
+  }
+  const selectOption = () => {
+    setTab(prev => !prev)
+  }
+
   const toggle = () => {
     setMenu(prev => !prev)
   }
@@ -55,18 +78,24 @@ const Header = () => {
             <p >Home </p>
           </Link>
 
-          <p className='items-center flex space-x-2'>
-            <select style={{
-              width: pathname === '/webdesign' || pathname === '/ecommerce' || pathname === '/'  ? '120px' : '240px'
-            }} className='border-none outline-none bg-transparent' onChange={(e) => setNavOption(e.target.value)} >
-              {menuOption.map((res) =>
-                <option value={res.link}>{res.title}</option>
-              )}
-            </select>
+          <p onClick={selectOption2} className='flex space-x-2 items-center text-[#DA452C]'>{menuTab}
+            
+            <img src={down} className='w-4 ml-2' alt="" />
+            {tab2 ?
+              <div className='z-50 flex flex-col absolute top-20 left-[27%] p-4 text-sm rounded bg-[#DA452C] text-white'>
+                {menuOption.map((item) => <p className='hover:text-[#5AA6B1]' onClick={() => setTabOption2(item)}>{item.title}</p>)}
+              </div> : null}
           </p>
-          <p className='flex space-x-2 items-center'>Marketing
-            <img src={down} className='ml-1 w-full object-contain' alt="" />
+          {/*  */}
+          <p onClick={selectOption} className='flex space-x-2 items-center text-[#DA452C]'>{headerTab}
+
+            <img src={down} className='w-4 ml-2' alt="" />
+            {tab ?
+              <div className='z-50 flex flex-col absolute top-20 left-[27%] p-4 text-sm rounded bg-[#DA452C] text-white'>
+                {menuOption2.map((item) => <p className='hover:text-[#5AA6B1]' onClick={() => setTabOption(item)}>{item.title}</p>)}
+              </div> : null}
           </p>
+       
           <p>Telephony </p>
           <p>Hosting </p>
           <p>Blog </p>

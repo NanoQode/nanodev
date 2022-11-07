@@ -4,6 +4,7 @@ import {
   amara,
   asp,
   aven,
+  badge2,
   cert,
   check,
   Codeigniter,
@@ -26,6 +27,8 @@ import {
   JS,
   k,
   Laravel,
+  location2,
+  location3,
   lua,
   mark,
   menu,
@@ -40,6 +43,7 @@ import {
   set,
   sett,
   sett2,
+  sett4,
   speak,
   speaker,
   user,
@@ -303,6 +307,32 @@ export const mobileCreativeData = [
   },
 ];
 
+export const seoDesignData3 = [
+  {
+    id: 1,
+    title: "Why SEO",
+    body: "Vestibulum ligula porta felis",
+    img: location3,
+  },
+  {
+    id: 2,
+    title: "Our Process",
+    body: "Vivamus sagittis lacus augue",
+    img: sett4,
+  },
+  {
+    id: 3,
+    title: "Proof of Ranking",
+    body: "Duis mollis commodo luctus",
+    img: badge2,
+  },
+  {
+    id: 4,
+    title: "Real-Time Tracking",
+    body: "Etiam porta sem malesuada",
+    img: location2,
+  },
+];
 export const designData3 = [
   {
     id: 1,
@@ -458,6 +488,24 @@ export const langData = [
    },
  ];
 
+export const menuOption2 = [
+  {
+    id: 1,
+    title: "Search Engine Optimization",
+    link: "seo",
+  },
+  {
+    id: 2,
+    title: "Paid Marketing",
+    link: "marketing",
+  },
+  {
+    id: 3,
+    title: "Social Media Management",
+    link: "social",
+  },
+];
+
 export const menuOption = [
   {
     id: 1,
@@ -480,3 +528,4 @@ export const menuOption = [
     link: "ecommerce",
   },
 ];
+

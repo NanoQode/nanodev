@@ -15,10 +15,12 @@ import Creative from "./creative";
 import Portfolio from "./portfolio";
 import Focus from "./focus";
 import CallHero from "./callHero";
+import WebBanner2 from "./webBanner2";
+import SeoDesign from "./seoDesign";
 
 export {
-  Header,Built,
-  Hero,CallCard,
+  Header,Built,SeoDesign,
+  Hero,CallCard,WebBanner2,
   Affordable,WebBanner,Creative,
   Client,
   Banner,Portfolio,Focus,CallHero,

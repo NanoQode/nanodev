@@ -135,12 +135,32 @@ import county from "./county.png";
 import human from "./human.png";
 import hexa from "./hexa.png";
 import PACKAGES from "./PACKAGES.png";
+import pricepack from "./pricepack.png";
+import pricepack2 from "./pricepack2.png";
+import pricepack5 from "./pricepack5.png";
+import pricepack3 from "./pricepack3.png";
+import pricepack4 from "./pricepack4.png";
+import shadow from "./shadow.png";
+import badge from "./badge.png";
+import slide2 from "./slide2.png";
+import slide4 from "./slide4.png";
+import slide3 from "./slide3.png";
+import webbanner2 from "./webbanner2.png";
+import webbanner3 from "./webbanner3.png";
+import webbanner from "./webbanner.png";
+import SEO from "./SEO.png";
+import sett4 from "./sett4.png";
+import location2 from "./location2.png";
+import location3 from "./location3.png";
+import badge2 from "./badge2.png";
+import package2 from "./package2.png";
+// import PACKAGES from "./PACKAGES.png";
 
 export {
   arrow,
-  blank, ehero, eapp,
+  blank, ehero, eapp,SEO,badge2,location2,location3,sett4,package2,
   price,star,star2,aven,amara,county,human,hexa,PACKAGES,
-  call,
+  call,webbanner,webbanner3,webbanner2,slide2,slide3,slide4,shadow,badge,pricepack,pricepack2,pricepack3,pricepack4,pricepack5,
   half,
   check,
   sett2,

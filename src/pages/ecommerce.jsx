@@ -3,7 +3,7 @@ import { CallCard, CallHero, Client, Design, Form, Portfolio, WebBanner } from '
 import Featured from '../components/featured'
 import Packages from '../components/packages'
 import { designData33, langData2, softBannerData } from '../constant'
-import { DESIGN, eapp, ehero, line } from '../images'
+import { DESIGN, eapp, ehero, line, PACKAGES } from '../images'
 
 const Ecommerce = () => {
   return (
@@ -17,7 +17,7 @@ const Ecommerce = () => {
         data={null} />
       <Portfolio />
       <Featured color={'#FBE9E5'} color2={'white'} data={langData2} title={'Our Client Base'} />
-      <Packages/>
+      <Packages img={PACKAGES} img2={""}img3={''} color={'#EBF4F6'}/>
       <div className='my-20'>
         <div className='ml-20 mb-10 w-1/2'>
           <h3 className='text-4xl font-bold'>Need An Urgent Project Delivered ASAP?

@@ -1,7 +1,7 @@
 import React from 'react'
 import { arrow, arrow2, line, PACKAGES, price } from '../images'
 
-const Packages = () => {
+const Packages = ({img}) => {
     return (
 
         <div className='relative bg-[#EBF4F6] h-[800px]'>
