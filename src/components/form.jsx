@@ -11,7 +11,7 @@ const Form = () => {
             <div className='flex flex-col items-center justify-center'>
               <h3 className='text-4xl font-bold'>Drop Us a Line</h3>
 
-              <img src={line} className='w-1/3 -ml-12 2xl:w-60' alt="" />
+              <img src={line} className='w-1/2 -ml-12 2xl:w-60' alt="" />
               <p className='mt-5'>
                 Get talking with our team of experts and let's help you get your project up and running in no time.
               </p>

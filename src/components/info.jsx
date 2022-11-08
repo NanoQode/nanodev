@@ -41,7 +41,7 @@ const Info = () => {
       <div className='p-4 w-full lg:w-1/3'>
         <div className='mb-4'>
           <h3 className='text-4xl font-bold'>Website Creation</h3>
-          <img src={line} className='w-1/3 ' alt="" />
+          <img src={line} className='w-60 ' alt="" />
         </div>
         <p>
           Your technology partner for innovative and impactful digital solutions. We are a digital commerce agency that fits perfectly with your business. We work with you and take your stakeholders into consideration when developing custom solutions that guarantee significant value from your digital investment.
@@ -67,7 +67,7 @@ const Info = () => {
          x: 0,
           opacity: 1,
         }}
-        
+        className='mb-10'
         transition={{ ease: "easeOut", duration: 1.2 }}
         src={info}
       />

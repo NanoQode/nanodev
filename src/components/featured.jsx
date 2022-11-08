@@ -5,17 +5,15 @@ import SwiperCore, { Autoplay, Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
+import Title from './title';
 const Featured = ({title,data,color,color2,center}) => {
    
 
   return (
       <div style={{
           background:color
-      }} className={center ? ' w-full h-[362px] p-5 flex space-y-5 flex-col' :' w-full h-[362px] p-5 flex items-center justify-center space-y-5 flex-col'}>
-          <div className={center ? 'flex flex-col w-[800px] p-3 my-10' :'flex flex-col items-center justify-center p-5'}>
-              <h3 className='text-4xl font-bold'>{title}</h3>
-              <img src={line} className='w-3/4 ml-0' alt="" />
-          </div>
+      }} className={center ? ' w-full h-[200px]  sm:h-[362px] p-5 items-center justify-center flex space-y-5 flex-col' :' w-full h-[200px] sm:h-[362px] p-5 flex items-center justify-center space-y-5 flex-col'}>
+          <Title title={'Our Partners in Your Success'} center={false} />
           <Swiper
               style={{
                   background:color2
@@ -40,21 +38,6 @@ const Featured = ({title,data,color,color2,center}) => {
                   </SwiperSlide>
               ))}
           </Swiper>
-          {/* <div className='bg-white p-5 rounded-full flex items-center space-x-3'>
-              <img src={arrow} alt="" />
-              <div className='flex space-x-4 items-center overflow-x-scroll lg:overflow-hidden'>
-                  <img src={Rails} alt="" />
-                  <img src={asp} alt="" />
-                  <img src={Codeigniter} alt="" />
-                  <img src={JS} alt="" />
-                  <img src={Laravel} alt="" />
-                  <img src={Mysql} alt="" />
-                  <img src={PHP} alt="" />
-              </div>
-              <img src={arrow2} alt="" />
-
-
-          </div> */}
     </div>
   )
 }

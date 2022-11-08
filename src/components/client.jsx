@@ -17,7 +17,7 @@ const Client = () => {
           <img src={arrow2} alt="" />
         </aside>
       </div>
-      <div className='lg:ml-16 mt-20 flex items-center flex-col justify-center lg:flex-row space-x-5'>
+      <div className='lg:ml-16 mt-20 flex items-center flex-col justify-center lg:flex-row lg:space-x-5'>
         <Google
           title={'Jerome Bell'}
           desc={'Marketing Coordinator'}

@@ -6,9 +6,9 @@ const WebBanner = ({ title, title2, body, img, data, btn }) => {
 
     return (
         <div className=' flex flex-col sm:flex-row justify-between '>
-            <section className='w-full lg:w-3/4 xl:w-1/2 2xl:w-1/3 2xl:mx-auto'>
+            <section className='w-full md:w-1/2 lg:w-3/4 xl:w-1/2 2xl:w-1/3 2xl:mx-auto'>
 
-                <div className='text-[#333333] p-8'>
+                <div className='text-[#333333] p-4 sm:p-8'>
                     <div className='mt-10 w-[200px] h-1 bg-[#DA452C] mb-4' />
                     <h2 className=' text-4xl lg:text-6xl  font-bold '>
                         <span className='text-[#DA452C]'>{title}</span>
@@ -19,7 +19,7 @@ const WebBanner = ({ title, title2, body, img, data, btn }) => {
                     </h4>
                 </div>
 
-                <div className='w-1/3 flex flex-col items-center justify-center sm:ml-32 '>
+                <div className='w-1/3 flex flex-col items-center justify-center ml-28 sm:ml-32 '>
                     {data?.map((item) =>
                         <div key={item.id} className='m-3 rounded-full items-center bg-[#EBF4F6] px-4 sm:px-7 py-1 flex w-[270px] sm:w-[370px] h-[44px]'>
                             <img src={icon} className='mr-3' alt="" />
@@ -30,15 +30,14 @@ const WebBanner = ({ title, title2, body, img, data, btn }) => {
 
                 {btn ?
                     <>
-                        <div className='flex items-center space-x-4 ml-16 my-10'>
+                        <div className='flex items-center space-x-4 mx-3 sm:ml-16 my-10'>
                             <button className=' text-white w-[200px] bg-[#5AA6B1] rounded-lg p-2 lg:p-4 text-sm'>GET STARTED</button>
                             <button className=' border-2 text-[#DA452C]  w-[300px] border-[#DA452C] rounded-lg p-2 lg:p-4 text-sm'>SPEAK WITH AN EXPERT</button>
                         </div>
-                        <div className='bg-[#DA452C] flex items-center space-x-1 text-white w-max px-4 text-xl ml-14 rounded my-10'>
+                        <div className='bg-[#DA452C] flex items-center space-x-1 text-white w-max px-4 mx-6  text-xl sm:ml-14 rounded my-10'>
                             <h2>Excellent</h2>
 
-                            <aside className='flex items-center'>
-
+                            <aside className='sm:flex items-center hidden'>
                                 <img src={star} alt="" />
                                 <img src={star} alt="" />
                                 <img src={star} alt="" />
@@ -53,7 +52,7 @@ const WebBanner = ({ title, title2, body, img, data, btn }) => {
                         <button className='text-white bg-[#DA452C] rounded-lg p-2 lg:p-4 text-sm'>BOOK A FREE CONSULT</button>
                     </div>}
             </section>
-            <section className='w-full lg:w-3/4 xl:w-1/2 flex items-center mb-7 justify-center flex-col lg:-mt-20 xl:-mt-3 2xl:w-1/3 2xl:mx-auto'>
+            <section className='w-full md:w-1/2 lg:w-3/4 xl:w-1/2 flex items-center mb-7 justify-center flex-col lg:-mt-20 xl:-mt-3 2xl:w-1/3 2xl:mx-auto'>
                 <motion.img
                     initial={{
                         x: 200,

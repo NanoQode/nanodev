@@ -14,7 +14,7 @@ const Web = () => {
         body={' Stand out and generate more leads. Custom Websites Starting $999*'}
         img={webdev}
         data={webBannerData} />
-      <div className='absolute left-[30%] -mt-14 z-40'>
+      <div className='my-10 flex items-center justify-center lg:my-0 lg:absolute  lg:left-[30%] lg:-mt-14 z-40 2xl:left-[40%]'>
         <CallCard />
       </div>
       <div className='relative z-20'>

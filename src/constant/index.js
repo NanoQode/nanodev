@@ -36,6 +36,7 @@ import {
   guard,
   half,
   hand,
+  hand2,
   hexa,
   hook,
   human,
@@ -387,7 +388,7 @@ export const designData2 = [
     id: 1,
     title: "Defining Your Customers",
     body: "Understanding your customers source is key, we research the cost of acquisition and the best way to convert, all while prioritizing your vision and business needs.",
-    img: hand,
+    img: hand2,
   },
   {
     id: 2,

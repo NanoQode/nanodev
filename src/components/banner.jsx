@@ -61,7 +61,7 @@ const data = [
           <img src={scrolll} className='' alt="" />
         </div>
       </section>
-      <section className='w-full lg:w-3/4 xl:w-1/2 flex items-center mb-7 justify-center flex-col lg:-mt-20 xl:-mt-3 2xl:w-1/3 2xl:mx-auto'>
+      <section className='w-full md:w-1/2 xl:w-1/2 flex items-center mb-7 justify-center flex-col lg:-mt-20 xl:-mt-3 2xl:w-1/3 2xl:mx-auto'>
         <Swiper
           className='w-full'
           //   spaceBetween={15}

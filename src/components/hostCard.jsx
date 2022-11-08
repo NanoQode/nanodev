@@ -3,7 +3,7 @@ import React from 'react'
 const HostCard = ({data}) => {
   return (
 
-      <div className='bg-white relative w-[400px] shadow-sm h-max py-7 px-10 ml-20 hover:bg-[#DA452C] hover:!text-white my-5  hover:scale-105 duration-150 ease-out transition-all cursor-pointer'>
+      <div className='bg-white relative w-[300px] xl:w-[400px] shadow-sm xl:h-[202px] py-7 px-2 sm:px-10 hover:bg-[#DA452C] hover:!text-white my-5  hover:scale-105 duration-150 ease-out transition-all cursor-pointer'>
           <div className='bg-[#5AA6B1] w-16 h-16 rounded-full flex items-center justify-center p-2 absolute -top-7 left-0'>
               <img src={data.img} className='w-3/4' alt="" />
           </div>

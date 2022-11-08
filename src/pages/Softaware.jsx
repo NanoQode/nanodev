@@ -2,7 +2,7 @@ import React from 'react'
 import { Built, CallCard, CallHero, Client, Creative, Design, Portfolio, WebBanner } from '../components'
 import Featured from '../components/featured'
 import { designData2, designData3, softBannerData, softBuiltData, softCreativeData, softLangData } from '../constant'
-import { blank, CHOOSE, code, code2, DESIGN, DIGITAL, SOFTWARE, stand } from '../images'
+import { blank, CHOOSE, code, code3, DESIGN, DIGITAL, SOFTWARE, stand } from '../images'
 
 const Softaware = () => {
   return (
@@ -13,7 +13,7 @@ const Softaware = () => {
               body={' Get it right the first time. Build Feature-rich solutions from just $1499'}
               img={blank}
               data={softBannerData} />
-          <div className='absolute left-[30%] -mt-14 z-40'>
+          <div className='my-10 flex items-center justify-center lg:my-0 lg:absolute  lg:left-[30%] lg:-mt-14 z-40 2xl:left-[40%]'>
               <CallCard />
           </div>
           <div className='relative z-20'>
@@ -38,7 +38,7 @@ const Softaware = () => {
           <Design data={designData3}
               subtitle={''}
               btn={true}
-              img2={code2}
+              img2={code3}
               reverse
               img={CHOOSE}
               title={''} />

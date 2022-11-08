@@ -39,12 +39,12 @@ const Portfolio = () => {
           <p className='font-semibold text-center mt-10'> Portfolio</p>
           <div className='flex flex-col items-center justify-center p-5'>
               <h3 className='text-4xl font-bold'>Our Partners in Your Success</h3>
-              <img src={line} className='w-3/4 -ml-20' alt="" />
+              <img src={line} className='' alt="" />
           </div>
-          <section className='flex items-center flex-wrap p-2 mx-10 space-x-8'>
+          <section className='lg:grid flex flex-col items-center justify-center ml-20 sm:ml-32 lg:grid-cols-2 2xl:grid-cols-5 mt-10 lg:mx-20 '>
               
           {data.map((res) =>
-          <div className='shadow-xl m-3 w-[350px] bg-white h-max rounded-lg p-5' key={res.id}>
+          <div className='shadow-xl m-3 sm:w-[350px] bg-white h-max rounded-lg p-5' key={res.id}>
               <img src={res.img} className='w-80 ' alt="" />
               <h2 className='font-bold text-2xl mt-5'>
                  {res.title}
@@ -56,7 +56,7 @@ const Portfolio = () => {
             </div>
               )}
           </section>
-          <div className='absolute  left-0 top-[40rem]'>
+          <div className='absolute  left-0 top-[40rem] 2xl:top-20'>
               <img src={PORTFOLIO} alt="" />
           </div>
           <div className='flex items-center justify-center'>

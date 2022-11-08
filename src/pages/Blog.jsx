@@ -6,7 +6,7 @@ const Blog = () => {
   return (
     <div>
 
-    <div className='bg-[#EBF4F6] w-full h-[520px] p-8 relative z-50'> 
+    <div className='bg-[#EBF4F6] w-full h-max sm:p-8 relative z-40'> 
       <div className=' flex flex-col sm:flex-row justify-between '>
         <section className='w-full lg:w-3/4 xl:w-1/2 2xl:w-1/3 2xl:mx-auto'>
 
@@ -27,7 +27,7 @@ const Blog = () => {
         </section>
         <section className='w-full lg:w-3/4 xl:w-1/2 flex items-center mb-7 justify-center flex-col lg:-mt-20 xl:-mt-3 2xl:w-1/3 2xl:mx-auto'>
           <img
-            src={blogH} className='w-[90%]' alt="" />
+            src={blogH} className='w-full sm:w-[90%]' alt="" />
 
         </section>
       </div>

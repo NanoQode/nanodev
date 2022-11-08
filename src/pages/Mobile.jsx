@@ -13,7 +13,7 @@ const Mobile = () => {
         body={'Cutting-edge mobile solutions to drive your company’s growth Starting from just $699'}
         img={mobile}
         data={mobileBannerData} />
-      <div className='absolute left-[30%] -mt-14 z-40'>
+      <div className='my-10 flex items-center justify-center lg:my-0 lg:absolute  lg:left-[30%] lg:-mt-14 z-40 2xl:left-[40%]'>
         <CallCard />
       </div>
       <div className='relative z-20'>
@@ -30,19 +30,19 @@ const Mobile = () => {
         title={'WHAT MAKES US DIFFERENT'}
         body={'Mobile Apps that make a difference!.'} />
       <Portfolio />
-      <Design data={designData2}
-        subtitle={'WHY CHOOSE US?'}
-        btn={true}
-        img2={split22}
-        img={DESIGN}
-        title={'The BIG Picture, in 3 Steps'} />
-      <Design data={designData3}
-        subtitle={''}
-        btn={true}
-        img2={split}
-        reverse
-        img={CHOOSE}
-        title={''} />
+        <Design data={designData2}
+          subtitle={'WHY CHOOSE US?'}
+          btn={true}
+          img2={split22}
+          img={DESIGN}
+          title={'The BIG Picture, in 3 Steps'} />
+        <Design data={designData3}
+          subtitle={''}
+          btn={true}
+          img2={split}
+          reverse
+          img={CHOOSE}
+          title={''} />
       <Client />
       <CallHero />
     </div>

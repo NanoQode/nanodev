@@ -5,6 +5,7 @@ import SwiperCore, { Autoplay, Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
+import Title from './title';
 const Hero = () => {
   const data = [
     {
@@ -47,11 +48,7 @@ const Hero = () => {
 
   return (
     <div className='flex items-center justify-center flex-col bg-[#EBF4F6] w-full h-[362px] px-5 lg:px-10'>
-      <div className='flex flex-col items-center justify-center p-5'>
-        <h3 className='text-4xl font-bold'>Our Partners in Your Success</h3>
-        <img src={line} className='w-3/4 -ml-20' alt="" />
-      </div>
-  
+      <Title title={'Our Partners in Your Success'}/>
       <Swiper
         className='w-full bg-white rounded-full p-2 h-[50px] sm:h-[80px]'
         //   spaceBetween={15}
@@ -73,21 +70,6 @@ const Hero = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* <div className='bg-white p-5 rounded-full flex items-center space-x-3'>
-        <img src={arrow} alt="" />
-        <div className='flex space-x-4 items-center overflow-x-scroll'>
-          <img src={bing} alt="" />
-          <img src={mailgun} alt="" />
-          <img src={aws} alt="" />
-          <img src={mailchimp} alt="" />
-          <img src={zoho} alt="" />
-          <img src={meta} alt="" />
-          <img src={shopify} alt="" />
-          <img src={cfib} alt="" />
-          <img src={godaddy} alt="" />
-        </div>
-        <img src={arrow2} alt="" />
-      </div> */}
     </div>
   )
 }
