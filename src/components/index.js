@@ -17,11 +17,12 @@ import Focus from "./focus";
 import CallHero from "./callHero";
 import WebBanner2 from "./webBanner2";
 import SeoDesign from "./seoDesign";
+import HostBanner from "./hostBanner";
 
 export {
   Header,Built,SeoDesign,
   Hero,CallCard,WebBanner2,
-  Affordable,WebBanner,Creative,
+  Affordable,WebBanner,Creative,HostBanner,
   Client,
   Banner,Portfolio,Focus,CallHero,
   Services,

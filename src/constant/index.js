@@ -1,12 +1,22 @@
 import {
   accl,
   accl2,
+  accl3,
   amara,
   asp,
   aven,
   badge2,
+  bank,
+  board,
+  board1,
+  board2,
+  board3,
+  call2,
+  call3,
+  call4,
   cert,
   check,
+  clock,
   Codeigniter,
   county,
   csharp,
@@ -14,15 +24,22 @@ import {
   designicon2,
   designicon3,
   desk,
+  down,
+  download,
   equip,
+  expand,
   eye,
   file,
+  file2,
+  free,
   git,
+  guard,
   half,
   hand,
   hexa,
   hook,
   human,
+  inflow,
   java,
   JS,
   k,
@@ -30,10 +47,14 @@ import {
   location2,
   location3,
   lua,
+  mail33,
   mark,
+  mark3,
+  meet,
   menu,
   Mysql,
   PHP,
+  print,
   py,
   Rails,
   recycle,
@@ -44,10 +65,18 @@ import {
   sett,
   sett2,
   sett4,
+  sett5,
+  shop,
+  smile,
   speak,
   speaker,
+  standd,
+  support,
+  upload,
   user,
   user2,
+  woman,
+  www,
 } from "../images";
 
 export const mobileBannerData = [
@@ -529,3 +558,226 @@ export const menuOption = [
   },
 ];
 
+export const servicesData = [
+  {
+    id: 1,
+    img: board2,
+    title: "Web Design",
+    body: "",
+  },
+  {
+    id: 2,
+    img: board,
+    title: "Marketing",
+    body: "",
+  },
+  {
+    id: 3,
+    img: board3,
+    title: "Telephony",
+    body: "",
+  },
+  {
+    id: 4,
+    img: board1,
+    title: "Hosting",
+    body: "",
+  },
+];
+
+export const servicesData2 = [
+  {
+    id: 1,
+    img: file2,
+    title: "Pick A Plan",
+    body: "You can choose any plan - upgrade or downgrade at anytime, and the number comes free!",
+  },
+  {
+    id: 2,
+    img: mark3,
+    title: "Select A Number",
+    body: "We'll call you to activate your Phone, your IVR, Call forwarding and business account.",
+  },
+  {
+    id: 3,
+    img: download,
+    title: "Download the App",
+    body: "Available for Android, Apple and Desktop - Get a Unified Communications Experience!",
+  },
+  {
+    id: 4,
+    img: call2,
+    title: "Start Dialing",
+    body: "You're Ready to Start your Unlimited Inbound and Outbound Calls.",
+  },
+];
+
+
+
+export const hostDataCard = [
+  {
+    id: 1,
+    title: "Faster Websites",
+    body: "Hosting powered by Cutting Edge Technolgy Servers with NVMe SSD storage.",
+    img: accl3,
+  },
+  {
+    id: 2,
+    title: "Secured Websites",
+    body: "SSL Install Protection Enabled, Free Monitoring for hack and malware protection, and DDoS prevention.",
+    img: sett5,
+  },
+  {
+    id: 3,
+    title: "Easy To Use",
+    body: "Easily manage and grow your websites with cPanel and get access to all popular scripts",
+    img: guard,
+  },
+  {
+    id: 4,
+    title: "Free Domain",
+    body: "Get a custom Domain Selection Free with 1 year Hosting Packages.",
+    img: free,
+  },
+  {
+    id: 5,
+    title: "Host Multiple Websites",
+    body: "Easily manage multiple separate websites from a single host account.",
+    img: www,
+  },
+  {
+    id: 6,
+    title: "Professional Email",
+    body: "Create email inboxes @yourdomain and access them from any device.",
+    img: mail33,
+  },
+  {
+    id: 7,
+    title: "Resource Protection",
+    body: "Your site’s performance stays protected and unaffected.",
+    img: bank,
+  },
+  {
+    id: 8,
+    title: "Host Your Online Store",
+    body: "Get your store online quickly with our support team.",
+    img: shop,
+  },
+];
+export const servicesDataCard = [
+  {
+    id: 1,
+    title: "Unlimited Calls",
+    body: "Anywhere in Canada and US. No Cap True-Unlimited calls to and from any number in Canada and US. That’s right – No more long distance charges for US or Out-side local Call Per Minute Billing Charges!",
+    img: call3,
+  },
+  {
+    id: 2,
+    title: "Cloud-Based Phone System",
+    body: "Scalable and Reliable, best in Call quality. Phone systems with feature rich options and 99.9% uptime guarantee. No upfront costs or installation fees.",
+    img: upload,
+  },
+  {
+    id: 3,
+    title: "After-Hours Mode",
+    body: "Set up your phone system to your business operation timings. Use customized settings for each day of the week to provide a different after-hours greetings and call routing.",
+    img: clock,
+  },
+  {
+    id: 4,
+    title: "Call Forwarding",
+    body: "Forward calls from your business phone system to your mobile, landline, or VoIP. Call Hunting, Simultaneous Ring or OnCall Forwarding options available.",
+    img: call4,
+  },
+  {
+    id: 5,
+    title: "Separate Internet Fax Number",
+    body: "Stop paying extra charges for a separate fax line, fax machine, paper and toners. Receive PDF Scanned Fax and Send Fax instantly with super-clean readable quality.",
+    img: print,
+  },
+  {
+    id: 6,
+    title: "VoIP & SIP Phone Support",
+    body: "Access your phone number from anywhere in the world with an internet connection using our Mobile App or choose one of our pre-configured devices.",
+    img: support,
+  },
+  {
+    id: 7,
+    title: "Transfer",
+    body: "Quick transfer to Any US or Canadian Phone number or extension on your PBX system. Transfer calls to a mobile phone, Landlines or any other phone number.",
+    img: inflow,
+  },
+  {
+    id: 8,
+    title: "Extensions",
+    body: "Get dedicated and unlimited extensions for every department or every employee. Each user gets a personalized voice message and voicemail delivery setting.",
+    img: expand,
+  },
+];
+
+export const faqData = [
+  {
+    id: 1,
+    title: "What Is Shared Hosting",
+    body: "Shared Hosting is a popular, inexpensive, entry-level web hosting product, often attractive for small and medium businesses, portfolios, and websites with moderate amounts of traffic. With Shared Server Hosting multiple websites share a large server and resources, including storage, bandwidth, and disk space. With Shared Hosting, the web host is responsible for all server maintenance and upkeep.",
+  },
+  {
+    id: 2,
+    title: "Why should I start with Shared Hosting?",
+    body: "Shared Hosting is a popular, inexpensive, entry-level web hosting product, often attractive for small and medium businesses, portfolios, and websites with moderate amounts of traffic. With Shared Server Hosting multiple websites share a large server and resources, including storage, bandwidth, and disk space. With Shared Hosting, the web host is responsible for all server maintenance and upkeep.",
+  },
+  {
+    id: 3,
+    title: "How many websites can I host with my Shared Hosting plan?",
+    body: "Shared Hosting is a popular, inexpensive, entry-level web hosting product, often attractive for small and medium businesses, portfolios, and websites with moderate amounts of traffic. With Shared Server Hosting multiple websites share a large server and resources, including storage, bandwidth, and disk space. With Shared Hosting, the web host is responsible for all server maintenance and upkeep.",
+  },
+  {
+    id: 4,
+    title: "What email features are included with my Shared Hosting?",
+    body: "Shared Hosting is a popular, inexpensive, entry-level web hosting product, often attractive for small and medium businesses, portfolios, and websites with moderate amounts of traffic. With Shared Server Hosting multiple websites share a large server and resources, including storage, bandwidth, and disk space. With Shared Hosting, the web host is responsible for all server maintenance and upkeep.",
+  },
+  {
+    id: 5,
+    title:
+      "I already have a website with another host. Can I transfer my website?",
+    body: "Shared Hosting is a popular, inexpensive, entry-level web hosting product, often attractive for small and medium businesses, portfolios, and websites with moderate amounts of traffic. With Shared Server Hosting multiple websites share a large server and resources, including storage, bandwidth, and disk space. With Shared Hosting, the web host is responsible for all server maintenance and upkeep.",
+  },
+];
+
+export const blogPost = [
+  {
+    id: 1,
+    title: "Startup",
+    subTitle: "Design tips for designers that cover everything you need",
+    body: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    img: woman,
+  },
+  {
+    id: 2,
+    title: "BUSINESS",
+    subTitle: "How to build rapport with your web design clients",
+    body: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    img: meet,
+  },
+  {
+    id: 3,
+    title: "Startup",
+    subTitle: "Logo design trends to avoid in 2022",
+    body: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    img: smile,
+  },
+  {
+    id: 4,
+    title: "TECHNOLOGY",
+    subTitle: "Design systems you can download for free today",
+    body: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    img: standd,
+  },
+  {
+    id: 5,
+    title: "ECONOMY",
+    subTitle: "Font sizes in UI design: The complete guide to follow",
+    body: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    img: woman,
+  },
+];

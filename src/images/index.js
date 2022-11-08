@@ -154,14 +154,54 @@ import location2 from "./location2.png";
 import location3 from "./location3.png";
 import badge2 from "./badge2.png";
 import package2 from "./package2.png";
-// import PACKAGES from "./PACKAGES.png";
+import BLOGS from "./BLOGS.png";
+import ABOUT from "./ABOUT.png";
+import inflow from "./inflow.png";
+import aboutweb from "./aboutweb.png";
+import standd from "./standd.png";
+import smile from "./smile.png";
+import meet from "./meet.png";
+import woman from "./woman.png";
+import sett5 from "./sett5.png";
+import guard from "./guard.png";
+import www from "./www.png";
+import free from "./free.png";
+import accl3 from "./accl3.png";
+import bank from "./bank.png";
+import shop from "./shop.png";
+import support from "./support.png";
+import upload from "./upload.png";
+import file2 from "./file2.png";
+import mark3 from "./mark3.png";
+import expand from "./expand.png";
+import call2 from "./call2.png";
+import call3 from "./call3.png";
+import call4 from "./call4.png";
+import mail33 from "./mail33.png";
+import print from "./print.png";
+import webBanner4 from "./webBanner4.png";
+import blogH from "./blogH.png";
+import FEATURES from "./FEATURES.png";
+import download from "./download.png";
+import clock from "./clock.png";
 
 export {
-  arrow,
+  arrow,FEATURES,clock,
   blank, ehero, eapp,SEO,badge2,location2,location3,sett4,package2,
   price,star,star2,aven,amara,county,human,hexa,PACKAGES,
-  call,webbanner,webbanner3,webbanner2,slide2,slide3,slide4,shadow,badge,pricepack,pricepack2,pricepack3,pricepack4,pricepack5,
-  half,
+  call,webbanner,webbanner3,webbanner2,slide2,slide3,slide4,shadow,badge,pricepack,pricepack2,pricepack3,pricepack4,pricepack5,download,
+  half, file2, blogH, webBanner4, print, mail33,
+  call2, call3, call4, expand, mark3, upload, support, shop, bank, accl3, free,
+  www,
+  guard,
+  woman,
+  sett5,
+  meet,
+  smile,
+  standd,
+  inflow,
+  ABOUT,
+  aboutweb,BLOGS,
   check,
   sett2,
   speak,

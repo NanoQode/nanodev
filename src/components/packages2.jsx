@@ -1,10 +1,14 @@
 import React from 'react'
 import { arrow, arrow2, line, PACKAGES, pricepack, pricepack3, pricepack4, pricepack5 } from '../images'
 
-const Packages2 = ({img,img2,img3,img4,big}) => {
+const Packages2 = ({img,img2,img3,img4,big,color}) => {
   return (
     
-      <div className='relative bg-white h-[800px]'>
+      <div
+          style={{
+          background:color || 'white'
+      }}
+          className='relative h-[800px]'>
           <div className='flex flex-col items-center justify-center p-5'>
               <h3 className='text-4xl font-bold'>Pricing</h3>
               <img src={line} className='w-3/4 -ml-20' alt="" />

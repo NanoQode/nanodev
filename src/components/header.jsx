@@ -75,10 +75,10 @@ const Header = () => {
         </div>
         <nav className=' items-center space-x-4 font-semibold text-sm sm:text-lg text-[#333333] cursor-pointer hidden lg:flex '>
           <Link to='/'>
-            <p >Home </p>
+            <p className={pathname === '/' ? 'text-[#DA452C]' : ''} >Home </p>
           </Link>
 
-          <p onClick={selectOption2} className='flex space-x-2 items-center text-[#DA452C]'>{menuTab}
+          <p onClick={selectOption2} className={pathname === '/webdesign' || pathname === '/mobileapp' || pathname === '/ecommerce' || pathname === '/software' ? 'text-[#DA452C] flex items-center space-x-2' : 'flex items-center space-x-2'} >{menuTab}
             
             <img src={down} className='w-4 ml-2' alt="" />
             {tab2 ?
@@ -87,19 +87,19 @@ const Header = () => {
               </div> : null}
           </p>
           {/*  */}
-          <p onClick={selectOption} className='flex space-x-2 items-center text-[#DA452C]'>{headerTab}
+          <p onClick={selectOption} className={pathname === '/seo' || pathname === '/social' || pathname === '/marketing'  ? 'text-[#DA452C] flex items-center space-x-2' : 'flex items-center space-x-2'}>{headerTab}
 
             <img src={down} className='w-4 ml-2' alt="" />
             {tab ?
-              <div className='z-50 flex flex-col absolute top-20 left-[27%] p-4 text-sm rounded bg-[#DA452C] text-white'>
+              <div className='z-50 flex flex-col absolute top-20 left-[40%] p-4 text-sm rounded bg-[#DA452C] text-white'>
                 {menuOption2.map((item) => <p className='hover:text-[#5AA6B1]' onClick={() => setTabOption(item)}>{item.title}</p>)}
               </div> : null}
           </p>
        
-          <p>Telephony </p>
-          <p>Hosting </p>
-          <p>Blog </p>
-          <p>About </p>
+          <p className={pathname==='/telephony' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('telephony')}>Telephony </p>
+          <p className={pathname==='/hosting' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('hosting')}>Hosting </p>
+          <p className={pathname==='/blog' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('blog')}>Blog </p>
+          <p className={pathname==='/about' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('about')}>About </p>
         </nav>
         <div className='hidden lg:flex bg-[#5AA6B1] p-4 text-white w-max'>
           +1 (800) 361-2961

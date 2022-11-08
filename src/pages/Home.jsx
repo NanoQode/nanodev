@@ -1,15 +1,19 @@
 import React from 'react'
 import { Affordable, Banner, CallHero, Client, Design, Form, Hero, Info, Services } from '../components'
 import Featured from '../components/featured'
-import { designData, langData } from '../constant'
-import { DESIGN, designimg } from '../images'
+import { designData, langData, servicesData } from '../constant'
+import { BUSINESS, DESIGN, designimg } from '../images'
 
 const Home = () => {
     return (
         <div className='overflow-hidden'>
             <Banner />
             <Hero />
-            <Services />
+            <Services data={servicesData}
+                img={BUSINESS}
+                title={'first'}
+                subtitle={'What we do Best!'}
+            />
             <Info />
             <Design data={designData}
                 subtitle={''}
