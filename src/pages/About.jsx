@@ -33,7 +33,7 @@ const About = () => {
         </div>
         <div className='flex items-center lg:space-x-10 mx-5  lg:mx-auto flex-col lg:flex-row justify-center'>
           <img src={aboutimg} alt="" />
-          <article className=' mt-10 bg-[#5AA6B1] w-[252px] h-[525px] flex items-center space-y-20 justify-center flex-col'>
+          <article className=' mt-10 bg-[#5AA6B1] w-[252px] h-[525px] flex items-center space-y-20 justify-center flex-col lg:mt-0'>
             <div className='flex flex-col text-white items-center'>
               <h2 className='text-4xl font-semibold'>350+</h2>
               <p>Project Completed</p>

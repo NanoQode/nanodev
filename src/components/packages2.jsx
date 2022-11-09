@@ -26,9 +26,10 @@ const Packages2 = ({img,img2,img3,img4,big,color}) => {
                   </div>
               </div>
               <div className='mt-20 sm:ml-10 justify-center lg:ml-32 flex items-center space-x-3 flex-col md:flex-row lg:mt-0'>
-                  <img src={img2} className=' md:w-40 lg:w-52  hover:scale-105 duration-150 ease-out transition-all' alt="" />
-                  <img src={img3} className=' md:w-40 lg:w-52  hover:scale-105 duration-150 ease-out transition-all' alt="" />
-                  <img src={img4} className='md:w-40 lg:w-52  hover:scale-105 duration-150 ease-out transition-all' alt="" />
+                  <a href="https://subscriptions.zoho.com/subscribe/96495d0d2cfda4f90941a96b3aa635067906f5e6327bed22ad482bf477cf719e/SEOPREMIUM" target={'_blank'}>
+                  <img src={img2} className=' md:w-40 lg:w-52  hover:scale-105 duration-150 ease-out transition-all' alt="" /></a>
+                    <a href="https://subscriptions.zoho.com/subscribe/96495d0d2cfda4f90941a96b3aa635067906f5e6327bed22ad482bf477cf719e/SEOPREMIUM" target={'_blank'}><img src={img3} className=' md:w-40 lg:w-52  hover:scale-105 duration-150 ease-out transition-all' alt="" /></a>
+                    <a href="https://subscriptions.zoho.com/subscribe/96495d0d2cfda4f90941a96b3aa635067906f5e6327bed22ad482bf477cf719e/SEOPREMIUM" target={'_blank'}><img src={img4} className='md:w-40 lg:w-52  hover:scale-105 duration-150 ease-out transition-all' alt="" /></a>
               </div>
               {/* <div className=' lg:-mt-32 flex items-center space-x-1 flex-col md:grid justify-center md:grid-cols-2 lg:grid-cols-4 ml-10 2xl:mx-auto '>
                     <img src={price} className='w-full p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" />

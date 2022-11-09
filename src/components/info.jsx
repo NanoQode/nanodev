@@ -2,6 +2,7 @@ import React from 'react'
 import { icon, info, line } from '../images'
 
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 
 const Info = () => {
   const data = [
@@ -46,9 +47,11 @@ const Info = () => {
         <p>
           Your technology partner for innovative and impactful digital solutions. We are a digital commerce agency that fits perfectly with your business. We work with you and take your stakeholders into consideration when developing custom solutions that guarantee significant value from your digital investment.
         </p>
+        <Link to='/seo'>
         <button className='my-5 bg-[#5AA6B1] text-white py-2 px-7'>
           More Details
-        </button>
+          </button>
+        </Link>
       </div>
       <div className='w-1/3 flex flex-col items-center justify-center'>
         {data.map((item) =>

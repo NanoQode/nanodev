@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { arrow, arrow2, card, card2, card3, card4, DEVELOPMENT, line } from '../images'
 
 const Affordable = () => {
@@ -21,10 +22,11 @@ const Affordable = () => {
           </div>
         </div>
         <div className=' lg:-mt-32 flex items-center space-x-1 flex-col md:grid justify-center md:grid-cols-2 lg:grid-cols-4 ml-10 2xl:mx-auto '>
-          <img src={card} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" />
-          <img src={card2} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" />
-          <img src={card3} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" />
-          <img src={card4} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" />
+          <Link to='/webdesign'>
+          <img src={card} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" /></Link>
+            <Link to='/hosting'><img src={card2} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" /></Link>
+            <Link to='/telephony'><img src={card3} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" /></Link>
+           <Link to='/seo'> <img src={card4} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" /></Link>
         </div>
    </section>
     </div>
