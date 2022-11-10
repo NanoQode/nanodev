@@ -8,10 +8,10 @@ import Mobile from "./Mobile";
 import Notfound from "./Notfound";
 import Social from "./social";
 import Web from "./Web";
-import SEO from "./seo";
+import SEOPage from "./seo";
 import Softaware from "./Softaware";
 import Telephony from "./Telephony";
 
 export {
-    About,Blog,Ecommerce,Hosting,Home,Marketing,Mobile,Notfound,Social,Web,SEO,Softaware,Telephony
+    About,Blog,Ecommerce,Hosting,Home,Marketing,Mobile,Notfound,Social,Web,SEOPage,Softaware,Telephony
 }

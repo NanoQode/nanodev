@@ -2,7 +2,7 @@ import React from 'react'
 import { Affordable, Banner, CallHero, Client, Design, Form, Hero, Info, Services } from '../components'
 import Featured from '../components/featured'
 import { designData, langData, servicesData } from '../constant'
-import { BUSINESS, DESIGN, designimg } from '../images'
+import { BUSINESS, DESIGN, designimg, Gif1 } from '../images'
 
 const Home = () => {
     return (
@@ -19,7 +19,7 @@ const Home = () => {
                 subtitle={''}
                 btn={false}
                 img={DESIGN}
-                img2={designimg}
+                img2={Gif1}
                 title={'The BIG Picture, in 3 Steps'} />
             <Affordable />
             <Client />

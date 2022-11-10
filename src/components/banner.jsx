@@ -46,11 +46,11 @@ const data = [
        
         <div className='text-[#333333] p-10'>
           <div className='mt-10 w-[200px] h-1 bg-[#DA452C] mb-4' />
-          <h2 className='text-4xl font-bold lg:text-6xl'>
+          <h2 className='text-4xl font-bold lg:text-6xl mt-6'>
             Grow your business,
             without Limits!
           </h2>
-          <h4 className='text-lg lg:text-2xl'>
+          <h4 className='mt-10 text-lg lg:text-2xl'>
             Connect with our experts to start
             the evalution today.
           </h4>
@@ -58,7 +58,7 @@ const data = [
 
         <div className='flex items-center ml-10 space-x-2'>
           <button onClick={() => setOpenModal(true)} className='text-white bg-[#5AA6B1] text-sm rounded-lg p-2 lg:p-4 '>BOOK A FREE CONSULT</button>
-          <button className='text-[#DA452C] border-[#DA452C] border-2  rounded-lg bg-transparent p-2 lg:p-4 text-sm'><Link to='/marketing'> FREE TRAFFIC REPORT </Link></button>
+          <button className='text-[#DA452C] border-[#DA452C] border-2  rounded-lg bg-transparent p-2 lg:p-4 text-sm'><Link to='/search-engine-optimization'> FREE TRAFFIC REPORT </Link></button>
         </div>
         <div className='ml-1 -mt-20'>
           <img src={scrolll} className='' alt="" />

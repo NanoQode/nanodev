@@ -15,7 +15,7 @@ const WebBanner = ({ title, title2, body, img, data, btn }) => {
             <span className="text-[#DA452C]">{title}</span>
             {title2}
           </h2>
-          <h4 className="text-lg lg:text-2xl">{body}</h4>
+          <h4 className="text-lg lg:text-2xl mt-6">{body}</h4>
         </div>
 
         <div className="flex flex-col items-center justify-center w-1/3 ml-28 sm:ml-32 ">
@@ -43,7 +43,7 @@ const WebBanner = ({ title, title2, body, img, data, btn }) => {
             <div className="bg-[#DA452C] flex items-center space-x-1 text-white w-max px-4 mx-6  text-xl sm:ml-14 rounded my-10">
               <h2>Excellent</h2>
 
-              <aside className="items-center hidden sm:flex">
+              <aside className="items-center hidden sm:flex mt-3">
                 <img src={star} alt="" />
                 <img src={star} alt="" />
                 <img src={star} alt="" />

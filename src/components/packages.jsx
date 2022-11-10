@@ -11,7 +11,7 @@ const Packages = ({img}) => {
             </div>
             <section className='mt-10 lg:mt-40 mb-20 flex items-center justify-center sm:justify-start relative'>
                 <div className='hidden sm:flex  -top-10 lg:-top-60 z-20 absolute 2xl:-top-20'>
-                    <img src={PACKAGES} className='w-16' alt="" />
+                    <img src={img} className='-ml-7 lg:mt-32 2xl:mt-0' alt="" />
                 </div>
                 <div className='hidden md:flex items-center space-x-4 relative ml-20'>
                     <div className='w-[50px] h-[50px] rounded-full border-[#DA452C] bg-transparent flex items-center justify-center border-2'>

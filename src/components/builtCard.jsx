@@ -2,7 +2,7 @@ import React from 'react'
 
 const BuiltCard = ({ data }) => {
     return (
-        <div className='bg-white relative w-[300px] h-[302px] py-7 px-10 ml-20 hover:bg-[#DA452C] hover:!text-white  hover:scale-105 duration-150 ease-out transition-all cursor-pointer'>
+        <div className='bg-white relative h-[322px] py-7 px-10 ml-20 hover:bg-[#DA452C] hover:!text-white  hover:scale-105 duration-150 ease-out transition-all cursor-pointer'>
             <div className='bg-[#5AA6B1] w-20 h-20 rounded-full flex items-center justify-center absolute -top-7 left-0'>
                 <img src={data.img} alt="" />
             </div>

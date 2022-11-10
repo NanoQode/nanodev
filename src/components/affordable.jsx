@@ -10,7 +10,7 @@ const Affordable = () => {
         <img src={line} className='w-1/3 -ml-12 2xl:w-60' alt="" />
       </div>
       <section className='mt-10 lg:mt-40 mb-20 flex items-center justify-center sm:justify-start relative'>
-        <div className='hidden sm:flex -top-60 z-20 absolute'>
+        <div className='hidden sm:flex -top-10 lg:-top-60 z-20 absolute'>
           <img src={DEVELOPMENT} alt="" />
         </div>
         <div className='hidden md:flex items-center space-x-4 relative ml-20'>
@@ -22,11 +22,11 @@ const Affordable = () => {
           </div>
         </div>
         <div className=' lg:-mt-32 flex items-center space-x-1 flex-col md:grid justify-center md:grid-cols-2 lg:grid-cols-4 ml-10 2xl:mx-auto '>
-          <Link to='/webdesign'>
+          <Link to='/web-development'>
           <img src={card} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" /></Link>
-            <Link to='/hosting'><img src={card2} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" /></Link>
+          <Link to='/web-hosting'><img src={card2} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" /></Link>
             <Link to='/telephony'><img src={card3} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" /></Link>
-           <Link to='/seo'> <img src={card4} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" /></Link>
+          <Link to='/search-engine-optimization'> <img src={card4} className='p-1 hover:scale-105 duration-150 ease-out transition-all' alt="" /></Link>
         </div>
    </section>
     </div>

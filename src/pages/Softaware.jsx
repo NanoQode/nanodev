@@ -2,7 +2,7 @@ import React from 'react'
 import { Built, CallCard, CallHero, Client, Creative, Design, Portfolio, WebBanner } from '../components'
 import Featured from '../components/featured'
 import { designData2, designData3, softBannerData, softBuiltData, softCreativeData, softLangData } from '../constant'
-import { blank, CHOOSE, code, code3, DESIGN, DIGITAL, SOFTWARE, stand } from '../images'
+import { blank, CHOOSE, code, code3, DESIGN, DIGITAL, Gif3, SOFTWARE, stand } from '../images'
 
 const Softaware = () => {
   return (
@@ -11,7 +11,7 @@ const Softaware = () => {
               title={'User-Friendly|'}
               title2={'Software'}
               body={' Get it right the first time. Build Feature-rich solutions from just $1499'}
-              img={blank}
+              img={Gif3}
               data={softBannerData} />
           <div className='my-10 flex items-center justify-center lg:my-0 lg:absolute  lg:left-[30%] lg:-mt-14 z-40 2xl:left-[40%]'>
               <CallCard />

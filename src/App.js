@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer, Header } from "./components";
 import {
@@ -15,8 +14,8 @@ import {
   Telephony,
   Web,
   Home,
+  SEOPage,
 } from "./pages";
-
 
 function App() {
   return (
@@ -25,17 +24,17 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/webdesign" element={<Web />} />
-          <Route path="/social" element={<Social />} />
+          <Route path="/web-development" element={<Web />} />
+          <Route path="/social-media-management" element={<Social />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/telephony" element={<Telephony />} />
-          <Route path="/hosting" element={<Hosting />} />
+          <Route path="/web-hosting" element={<Hosting />} />
           <Route path="/about" element={<About />} />
-          <Route path="/mobileapp" element={<Mobile />} />
-          <Route path="/marketing" element={<Marketing />} />
-          <Route path="/seo" element={<SEO />} />
-          <Route path="/ecommerce" element={<Ecommerce />} />
-          <Route path="/software" element={<Softaware />} />
+          <Route path="/mobile-application-development" element={<Mobile />} />
+          <Route path="/paid-marketing" element={<Marketing />} />
+          <Route path="/search-engine-optimization" element={<SEOPage />} />
+          <Route path="/ecommerce-shopify-solutions" element={<Ecommerce />} />
+          <Route path="/software-development" element={<Softaware />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
         <Footer />

@@ -11,7 +11,7 @@ const Built = ({data,title,img}) => {
                 <img src={line} className='w-70' alt="" />
             </div>
             <section className='-ml-20 '>
-                <div className='grid grid-cols-1 sm:grid-cols-2 items-center gap-6 lg:grid-cols-3 xl:flex xl:justify-center xl:space-x-20  mt-32  '>
+                <div className='grid grid-cols-1 sm:grid-cols-2 items-center gap-3 lg:grid-cols-3 xl:flex xl:justify-center xl:space-x-10  mt-32  '>
                     {data.map((res) =>
                         <BuiltCard key={res.id} data={res} />
                     )}
@@ -24,7 +24,7 @@ const Built = ({data,title,img}) => {
                 </div>
             </section>
            
-            <div className='absolute right-2 -top-5'>
+            <div className='hidden sm:flex absolute right-2 -top-5'>
                 <img src={img} className='' alt="" />
             </div>
         </div>

@@ -31,9 +31,9 @@ const Client = () => {
           desc={'Web Designer'}
         />
       </div>
-      <div className='flex items-center justify-center mt-20'>
+      {/* <div className='flex items-center justify-center mt-20'>
         <button className='bg-[#5AA6B1] py-2 px-8 text-white'>More Details</button>
-      </div>
+      </div> */}
     </div>
   )
 }

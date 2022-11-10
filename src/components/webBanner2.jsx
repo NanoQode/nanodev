@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { badge, down, icon } from '../images'
 import { motion } from "framer-motion";
 
 
-const WebBanner2 = ({ title, title3, title2, body, img,show }) => {
+const WebBanner2 = ({ title, title3, title2, body, img, show, gif, vid }) => {
+    const [step, setStep] = useState(0)
+    // proceed to the next step
+    const nextStep = () => {
+        if (step > 3) {
+            // alert('done')
+        } else {
+            setStep(step + 1);
+        }
+    }
+    const nextForm = (e) => {
+        e.preventDefault();
+        nextStep();
+    }
+
     return (
         <div className=' flex flex-col sm:flex-row justify-between items-center -ml-5 sm:ml-0'>
             <section className='w-full md:w-1/2 2xl:w-1/3 2xl:mx-auto'>
@@ -20,35 +34,60 @@ const WebBanner2 = ({ title, title3, title2, body, img,show }) => {
                     </h4>
 
                     {!show ? <>
-                        <div className='flex flex-col h-max bg-transparent w-[304px] border-[#DA452C] border-[1px] mt-20 mb-10 p-5 rounded-full '>
+
+                        {step === 0 && <div className='flex flex-col h-max bg-transparent w-[304px] border-[#DA452C] border-[1px] mt-20 mb-10 p-5 rounded-full '> <div className=''>
+                
                             <div className='flex items-center justify-between'>
-                                <h4 className='text-sm font-bold'>website</h4>
+                                <input type="text" placeholder='website' className='mx-2 bg-transparent outline-none border-b-2 flex-1' />
                                 <img src={down} alt="" />
                             </div>
-                            <div className='w-full mt-2 h-0.5 bg-[#333333]/40' />
                         </div>
-                        <button className=' border-2 text-white bg-[#5AA6B1] my-5 w-[100px]  rounded-lg p-2 lg:p-4 text-sm'>NEXT</button></> :
-                        <div className='bg-[#EBF4F6] w-[300px] sm:w-[400px] h-max  p-4 sm:p-8 rounded-lg flex flex-col space-y-3'>
+                        </div>}
+                        {step === 1 && <div className='flex flex-col h-max bg-transparent w-[304px] border-[#DA452C] border-[1px] mt-20 mb-10 p-5 rounded-full '><div className=''>
+                           
+                            <div className='flex items-center justify-between'>
+                                <input type="email" placeholder='email' className='mx-2 bg-transparent outline-none border-b-2 flex-1' />
+                                <img src={down} alt="" />
+                            </div>
+                        </div>
+                        </div>}
+                        {step === 2 && <div className='flex flex-col h-max bg-transparent w-[304px] border-[#DA452C] border-[1px] mt-20 mb-10 p-5 rounded-full '><div className=''>
+                           
+                            <div className='flex items-center justify-between'>
+                                <input type='number' placeholder='phone number' className='mx-2 bg-transparent outline-none border-b-2 flex-1' />
+                                <img src={down} alt="" />
+                            </div>
+                        </div>
+                        </div>}
+                        {step === 3 && <div className='flex flex-col h-max bg-transparent w-[304px] border-[#DA452C] border-[1px] mt-20 mb-10 p-5 rounded-full '><div className=''>
+                        
+                            <div className='flex items-center justify-between'>
+                                <input placeholder='full name' type="text" className='mx-2 bg-transparent outline-none border-b-2 flex-1' />
+                                <img src={down} alt="" />
+                            </div>
+                        </div>
+                        </div>}
+                        {step >= 3 ? <button className=' border-2 text-white bg-[#5AA6B1] my-5 w-[100px]  rounded-lg p-2 lg:p-4 text-sm'>DONE</button> : <button onClick={(e) => nextForm(e)} className=' border-2 text-white bg-[#5AA6B1]/80 my-5 w-[100px]  rounded-lg p-2 lg:p-4 text-sm'>NEXT</button>}</> :
+                        <div className='bg-[#EBF4F6] w-full md:-ml-6 lg:ml-0 sm:w-[400px] h-max  p-8 rounded-lg flex flex-col space-y-3'>
                             <div className='bg-transparent w-full border-[#DA452C] border-[1px]  px-6 py-2 rounded-full flex flex-col '>
-                                <label htmlFor="email" className='font-bold text-xs'>email</label>
-                                <input type="text" className='bg-transparent outline-none border-b-2 border-[#333333]/40 ' />
+                    
+                                <input type="text" placeholder='email' className='bg-transparent outline-none border-b-2 ' />
                             </div>
                             <aside className='flex items-center space-x-4 w-full'>
                                 <div className='bg-transparent w-1/2 border-[#DA452C] border-[1px]  px-4 py-1 rounded-full flex flex-col'>
-                                    <label htmlFor="firstname" className='font-bold text-xs'>firstname</label>
-                                    <input type="text" className='bg-transparent outline-none border-b-2 border-[#333333]/40 ' />
+                                  
+                                    <input placeholder='firstname' type="text" className='bg-transparent outline-none border-b-2 ' />
                                 </div>      <div className='bg-transparent w-1/2 border-[#DA452C] border-[1px]  px-4 py-1  rounded-full flex flex-col'>
-                                    <label htmlFor="lastname" className='font-bold text-xs'>lastname</label>
-                                    <input type="text" className='bg-transparent outline-none border-b-2 border-[#333333]/40 ' />
+                                
+                                    <input placeholder='lastname' type="text" className='bg-transparent outline-none border-b-2 ' />
                                 </div>
                             </aside>
                             <aside className='flex items-center space-x-4 w-full'>
                                 <div className='bg-transparent w-1/2 border-[#DA452C] border-[1px]  px-4 py-1 rounded-full flex flex-col'>
-                                    <label htmlFor="city" className='font-bold text-xs'>city</label>
-                                    <input type="text" className='bg-transparent outline-none border-b-2 border-[#333333]/40 ' />
+                              
+                                    <input placeholder='city' type="text" className='bg-transparent outline-none border-b-2 ' />
                                 </div>      <div className='bg-transparent w-1/2 border-[#DA452C] border-[1px]  px-4 py-1 rounded-full flex flex-col'>
-                                    <label htmlFor="phone" className='font-bold text-xs'>phone</label>
-                                    <input type="text" className='bg-transparent outline-none border-b-2 border-[#333333]/40 ' />
+                                    <input type="number" placeholder='phone number' className='bg-transparent outline-none border-b-2 ' />
                                 </div>
                             </aside>
                             <button className=' border-2 text-white bg-[#5AA6B1] my-10 w-3/4 rounded-lg p-2 lg:p-4 text-sm'>Start your 7-Days Free trial</button>
@@ -58,9 +97,14 @@ const WebBanner2 = ({ title, title3, title2, body, img,show }) => {
 
             </section>
             <section className='w-full md:w-1/2 flex items-center mb-7 justify-center flex-col lg:-mt-20 xl:-mt-3 2xl:w-1/3 2xl:mx-auto'>
-                <img
-                    src={img} className='w-[90%]' alt="" />
-                <img src={badge} className='-ml-20 lg:-ml-[30rem]' alt="" />
+                {vid ?
+                    <video src={vid} className='mr-10' autoPlay loop muted />
+                    :
+                    <img src={img} className='w-[90%]' alt="" />
+                }
+                {gif || vid ? null :
+                    <img src={badge} className='-ml-20 lg:-ml-[30rem]' alt="" />
+                }
 
             </section>
         </div>

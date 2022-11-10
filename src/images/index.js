@@ -187,10 +187,15 @@ import clock from "./clock.png";
 import aboutimg from "./about-img.png";
 import code3 from "./code3.png";
 import hand2 from "./hand2.png";
+import Gif1 from "./Gif1.gif";
+import Gif2 from "./Gif2.gif";
+import Gif3 from "./Gif3.gif";
+import Gif4 from "./Gif4.gif";
+import seo from "./seo.mp4";
 
 export {
-  arrow,
-  FEATURES,hand2,
+  arrow,seo,
+  FEATURES,hand2,Gif1,Gif2,Gif3,Gif4,
   clock,
   blank,
   ehero,

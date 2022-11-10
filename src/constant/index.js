@@ -518,21 +518,22 @@ export const langData = [
    },
  ];
 
+
 export const menuOption2 = [
   {
     id: 1,
     title: "Search Engine Optimization",
-    link: "seo",
+    link: "search-engine-optimization",
   },
   {
     id: 2,
     title: "Paid Marketing",
-    link: "marketing",
+    link: "paid-marketing",
   },
   {
     id: 3,
     title: "Social Media Management",
-    link: "social",
+    link: "social-media-management",
   },
 ];
 
@@ -540,25 +541,24 @@ export const menuOption = [
   {
     id: 1,
     title: "websites",
-    link: "webdesign",
+    link: "web-development",
   },
   {
     id: 2,
     title: "Mobile App Development",
-    link: "mobileapp",
+    link: "mobile-application-development",
   },
   {
     id: 3,
     title: "Software Development",
-    link: "software",
+    link: "software-development",
   },
   {
     id: 4,
     title: "Ecommerce",
-    link: "ecommerce",
+    link: "ecommerce-shopify-solutions",
   },
 ];
-
 export const servicesData = [
   {
     id: 1,

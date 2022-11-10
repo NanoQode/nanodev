@@ -12,7 +12,7 @@ const ServicesFeatures = () => {
               <img src={FEATURES} alt="" />
           </div>
           <section className='py-10'>
-              <div className='flex items-center justify-center flex-col lg:grid lg:grid-cols-2 bg-[#E9E9E9] w-max gap-6 p-2Features sm:p-8 h-max mx-auto xl:p-10 '>
+              <div className='flex items-center justify-center flex-col lg:grid lg:grid-cols-2 bg-[#E9E9E9] w-max gap-4 p-8 h-max mx-auto xl:p-10 '>
                   {servicesDataCard.map((item) =>
                   <ServiceCard key={item.id} data={item} />
                   )}

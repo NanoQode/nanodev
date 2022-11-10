@@ -18,7 +18,9 @@ const CallHero = () => {
                   </h3>
               </aside>
               <div className='w-1/4 mt-4 sm:mt-10'>
-                  <button className='w-max p-3 bg-[#5AA6B1] text-sm text-white'>SCHEDULE A CALL</button>
+                  <a href="tel:+18003512961">
+                      <button className='w-max p-3 bg-[#5AA6B1] text-sm text-white'>SCHEDULE A CALL</button>
+                  </a>
               </div>
           </div>
       </section>

@@ -41,7 +41,7 @@ const Portfolio = () => {
               <h3 className='text-4xl font-bold'>Our Partners in Your Success</h3>
               <img src={line} className='' alt="" />
           </div>
-          <section className='lg:grid flex flex-col items-center justify-center ml-20 sm:ml-32 lg:grid-cols-2 2xl:grid-cols-5 mt-10 lg:mx-20 '>
+          <section className='flex flex-col items-center justify-center ml-20 sm:ml-32 sm:flex-row sm:justify-start sm:items-start flex-wrap mt-10 lg:mx-20 '>
               
           {data.map((res) =>
           <div className='shadow-xl m-3 sm:w-[350px] bg-white h-max rounded-lg p-5' key={res.id}>

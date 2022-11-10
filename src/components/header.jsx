@@ -57,6 +57,7 @@ const Header = () => {
   }
 
   const menuNavigation = () => {
+    setMenu(false)
     setTab(false)
     setTab2(false)
     navigate(`/${navOption}`)
@@ -97,14 +98,14 @@ const Header = () => {
         </div>
         <nav className=' items-center space-x-4 font-semibold text-sm sm:text-lg text-[#333333] cursor-pointer hidden lg:flex '>
           <Link to='/'>
-            <p className={pathname === '/' ? 'text-[#DA452C]' : ''} >Home </p>
+            <p  className={pathname === '/' ? 'text-[#DA452C]' : ''} >Home </p>
           </Link>
 
           <p onMouseOver={handleMouseOver} onMouseLeave={handleMouseOut} className={pathname === '/webdesign' || pathname === '/mobileapp' || pathname === '/ecommerce' || pathname === '/software' ? 'text-[#DA452C] flex items-center space-x-2' : 'flex items-center space-x-2'} >{menuTab}
             
             <img src={down} className='w-4 ml-2' alt="" />
             {tab2 ?
-              <div className='z-50 flex flex-col absolute top-[4.3rem] left-[30%] p-4 text-sm rounded bg-[#DA452C] text-white 2xl:left-[60rem]'>
+              <div className='z-50 flex flex-col absolute top-[4.3rem] left-[40%] xl:left-[33%] p-4 text-sm rounded bg-[#DA452C] text-white 2xl:left-[65rem]'>
                 {menuOption.map((item) => <p className='hover:text-[#5AA6B1]' onClick={() => setTabOption2(item)}>{item.title}</p>)}
               </div> : null}
           </p>
@@ -112,13 +113,13 @@ const Header = () => {
 
             <img src={down} className='w-4 ml-2' alt="" />
             {tab ?
-              <div className='z-50 flex flex-col absolute top-[4.3rem] left-[40%] p-4 text-sm rounded bg-[#DA452C] text-white 2xl:left-[75rem]'>
+              <div className='z-50 flex flex-col absolute top-[4.3rem] left-[50%] xl:left-[40%] p-4 text-sm rounded bg-[#DA452C] text-white 2xl:left-[70rem]'>
                 {menuOption2.map((item) => <p className='hover:text-[#5AA6B1]' onClick={() => setTabOption(item)}>{item.title}</p>)}
               </div> : null}
           </p>
        
           <p className={pathname==='/telephony' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('telephony')}>Telephony </p>
-          <p className={pathname==='/hosting' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('hosting')}>Hosting </p>
+          <p className={pathname === '/hosting' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('web-hosting')}>Hosting </p>
           <p className={pathname==='/blog' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('blog')}>Blog </p>
           <p className={pathname==='/about' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('about')}>About </p>
         </nav>
@@ -133,14 +134,14 @@ const Header = () => {
         {menu &&
           <section className='flex items-center rounded-xl font-semibold flex-col bg-white p-7 shadow-xl w-[350px] right-4 absolute z-50 h-max top-20 space-y-6 justify-center'>
             <Link to='/'>
-              <p className={pathname === '/' ? 'text-[#DA452C]' : ''} >Home </p>
+              <p onClick={() => setMenu(false)} className={pathname === '/' ? 'text-[#DA452C]' : ''} >Home </p>
             </Link>
 
             <p onClick={selectOption2} className={pathname === '/webdesign' || pathname === '/mobileapp' || pathname === '/ecommerce' || pathname === '/software' ? 'text-[#DA452C] flex items-center space-x-2' : 'flex items-center space-x-2'} >{menuTab}
 
               <img src={down} className='w-4 ml-2' alt="" />
               {tab2 ?
-                <div className='z-50 flex flex-col absolute top-20 right-[87%] w-[250px] p-4 text-sm rounded bg-[#DA452C] text-white'>
+                <div className='z-50 flex flex-col absolute top-28 right-[7%] w-[250px] p-4 text-sm rounded bg-[#DA452C] text-white'>
                   {menuOption.map((item) => <p className='hover:text-[#5AA6B1]' onClick={() => setTabOption2(item)}>{item.title}</p>)}
                 </div> : null}
             </p>
@@ -148,13 +149,13 @@ const Header = () => {
 
               <img src={down} className='w-4 ml-2' alt="" />
               {tab ?
-                <div className='z-50 flex flex-col absolute top-40 right-[80%]  p-4 text-sm rounded bg-[#DA452C] text-white w-[250px]'>
+                <div className='z-50 flex flex-col absolute  top-40 right-[7%]  p-4 text-sm rounded bg-[#DA452C] text-white w-[250px]'>
                   {menuOption2.map((item) => <p className='hover:text-[#5AA6B1]' onClick={() => setTabOption(item)}>{item.title}</p>)}
                 </div> : null}
             </p>
 
             <p className={pathname === '/telephony' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('telephony')}>Telephony </p>
-            <p className={pathname === '/hosting' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('hosting')}>Hosting </p>
+            <p className={pathname === '/hosting' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('web-hosting')}>Hosting </p>
             <p className={pathname === '/blog' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('blog')}>Blog </p>
             <p className={pathname === '/about' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('about')}>About </p>
           </section>}
