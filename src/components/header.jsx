@@ -7,7 +7,7 @@ import { menuOption, menuOption2 } from '../constant'
 const Header = () => {
   const [menu, setMenu] = useState(false)
   const [navOption, setNavOption] = useState('')
-  const [menuTab, setMenuTab] = useState('websites')
+  const [menuTab, setMenuTab] = useState('Websites')
   const [headerTab, setHeaderTab] = useState('Marketing')
   const [tab2, setTab2] = useState(false)
   const [tab, setTab] = useState(false)
@@ -69,21 +69,21 @@ const Header = () => {
 
   return (
     <header>
-      <section className='bg-[#DA452C] w-full flex    h-[70px]  '>
+      <section className='bg-nc-orange w-full flex    h-[70px]  '>
         <div className='container mx-auto flex justify-between'>
         <div className='flex items-center text-white space-x-1'>
           <img src={email} alt="" />
-          <h3>
+          <h3 className='font-normal font-inter'>
             infi@nanoqodee.com
           </h3>
         </div>
         <div className='hidden lg:flex items-center text-white space-x-1'>
           <img src={home} alt="" />
-          <h3>
+          <h3 className='font-normal font-inter'>
             888 Sargent Ave Winnipeg, Manitoba, R3E 0C7, Canada
           </h3>
         </div>
-        <div className='flex items-center space-x-3 cursor-pointer'>
+        <div className='flex items-center space-x-6 cursor-pointer'>
           <img src={twitter} alt="" />
           <img src={facebook} alt="" />
           <img src={instaw} alt="" />
@@ -98,35 +98,40 @@ const Header = () => {
           <Link to='/'>
             <img src={logo} alt="logo" />
           </Link>
-        </div>
-        <nav className='nc-navbar items-center   font-semibold text-sm sm:text-lg text-[#333333] cursor-pointer hidden lg:flex '>
-          <Link to='/'>
-            <p  className={pathname === '/' ? 'text-[#DA452C]' : ''} >Home </p>
-          </Link>
+        </div> 
+        <nav className='nc-navbar items-center space-x-8 font-semibold text-sm sm:text-lg text-[#333333] cursor-pointer hidden lg:flex '>
+          <Link to='/'  className="font-inter font-medium"> Home  </Link>
 
           <p onMouseOver={handleMouseOver} onMouseLeave={handleMouseOut} className={pathname === '/webdesign' || pathname === '/mobileapp' || pathname === '/ecommerce' || pathname === '/software' ? 'text-[#DA452C] flex items-center space-x-2' : 'flex items-center space-x-2'} >{menuTab}
             
             <img src={down} className='w-4 ml-2' alt="" />
             {tab2 ?
-              <div className='z-50 flex flex-col absolute top-[4.3rem] left-[40%] xl:left-[33%] p-4 text-sm rounded bg-[#DA452C] text-white 2xl:left-[65rem]'>
+              <span className='z-50 flex flex-col absolute top-[4.3rem] left-[40%] xl:left-[33%] p-4 text-sm rounded bg-[#DA452C] text-white 2xl:left-[65rem]'>
                 {menuOption.map((item) => <p className='hover:text-[#5AA6B1]' onClick={() => setTabOption2(item)}>{item.title}</p>)}
-              </div> : null}
+              </span> : null}
           </p>
           <p  onMouseOver={handleMouseOver2} onMouseLeave={handleMouseOut2} className={pathname === '/seo' || pathname === '/social' || pathname === '/marketing'  ? 'text-[#DA452C] flex items-center space-x-2' : 'flex items-center space-x-2'}>{headerTab}
 
             <img src={down} className='w-4 ml-2' alt="" />
             {tab ?
-              <div className='z-50 flex flex-col absolute top-[4.3rem] left-[50%] xl:left-[40%] p-4 text-sm rounded bg-[#DA452C] text-white 2xl:left-[70rem]'>
+              <span className='z-50 flex flex-col absolute top-[4.3rem] left-[50%] xl:left-[40%] p-4 text-sm rounded bg-[#DA452C] text-white 2xl:left-[70rem]'>
                 {menuOption2.map((item) => <p className='hover:text-[#5AA6B1]' onClick={() => setTabOption(item)}>{item.title}</p>)}
-              </div> : null}
+              </span> : null}
           </p>
-       
-          <p className={pathname==='/telephony' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('telephony')}>Telephony </p>
+          {[
+          ['Telephony', '/telephony'],
+          ['Hosting', '/hosting'],
+          ['Blog', '/blog'],
+          ['About', '/about'],
+        ].map(([title, url]) => (
+          <a href={url} className="font-inter font-medium hover:text-nc-orange">{title}</a>
+        ))}
+          {/* <p className={pathname==='/telephony' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('telephony')}>Telephony </p>
           <p className={pathname === '/hosting' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('web-hosting')}>Hosting </p>
           <p className={pathname==='/blog' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('blog')}>Blog </p>
-          <p className={pathname==='/about' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('about')}>About </p>
+          <p className={pathname==='/about' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('about')}>About </p> */}
         </nav>
-        <button className="btn btn-blue">
+        <button className="btn btn-blue  font-medium">
                 +1 (800) 361-2961
         </button> 
         </div>

@@ -11,7 +11,7 @@ const Home = () => {
             <Hero />
             <Services data={servicesData}
                 img={BUSINESS}
-                title={'first'}
+                title={'Services'}
                 subtitle={'What we do Best!'}
             />
             <Info />

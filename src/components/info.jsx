@@ -1,6 +1,6 @@
 import React from 'react'
 import { icon, info, line } from '../images'
-
+import Title from './title'
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 
@@ -38,24 +38,25 @@ const Info = () => {
 
   ]
   return (
-    <div className='bg-[#EBF4F6] p-6 w-full h-max lg:h-[500px] flex flex-col justify-center items-center lg:flex-row lg:justify-between 2xl:justify-around 2xl:px-40'>
-      <div className='w-full p-4 lg:w-1/3'>
-        <div className='mb-4'>
-          <h3 className='text-4xl font-bold'>Website Creation</h3>
+    <section className='nc-web-creation bg-[#EBF4F6] py-20 w-full'>
+      <div className='container mx-auto flex flex-col justify-center items-center lg:flex-row lg:justify-between  '>
+      <div className='w-full  w-[450px]'>
+        <div className='mb-10'>
+          <h3 className='nc-heading font-inter font-bold'>Website Creation</h3>
           <img src={line} className='w-60 ' alt="" />
         </div>
-        <p>
+        <p className='nc-info-text font-inter font-normal mb-12'>
           Your technology partner for innovative and impactful digital solutions. We are a digital commerce agency that fits perfectly with your business. We work with you and take your stakeholders into consideration when developing custom solutions that guarantee significant value from your digital investment.
         </p>
-        <Link to='/web-development'>
-        <button className='my-5 bg-[#5AA6B1] text-white py-2 px-7'>
+        <Link to='/web-development' >
+        <button className='my-5 btn btn-blue'>
           More Details
           </button>
         </Link>
       </div>
-      <div className='flex flex-col items-center justify-center w-1/3'>
+      <div className='flex flex-col items-center justify-center space-y-3.5   w-[430px]'>
         {data.map((item) =>
-          <div key={item.id} className='m-3 rounded-full items-center bg-white px-4 sm:px-7 py-1 flex w-[270px] sm:w-[370px] h-[44px]'>
+          <div key={item.id} className='nc-info-list rounded-full items-center bg-white px-4 sm:px-7 py-1 flex w-[430px]   h-[44px]'>
             <img src={icon} className='mr-3' alt="" />
             {item.title}
           </div>
@@ -74,7 +75,8 @@ const Info = () => {
         transition={{ ease: "easeOut", duration: 1.2 }}
         src={info}
       />
-    </div>
+      </div>
+    </section>
   )
 }
 

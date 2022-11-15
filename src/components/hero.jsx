@@ -47,10 +47,12 @@ const Hero = () => {
   ]
 
   return (
-    <div className='flex items-center justify-center flex-col bg-[#EBF4F6] w-full h-[362px] px-5 lg:px-10'>
+    <section className='flex items-center justify-center flex-col bg-[#EBF4F6] w-full pt-12 pb-20'>
+      <div className='container'>
       <Title title={'Our Partners in Your Success'}/>
+      <div className='logo-slider  bg-white rounded-full  mt-12'>
       <Swiper
-        className='w-full bg-white rounded-full p-2 h-[50px] sm:h-[80px]'
+        className='w-full   h-[50px] sm:h-[80px]'
         //   spaceBetween={15}
         slidesPerView={7}
         navigation
@@ -70,7 +72,9 @@ const Hero = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+      </div>
+      </div>
+    </section>
   )
 }
 

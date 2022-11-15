@@ -7,20 +7,21 @@ import Title2 from './title2'
 
 const Services = ({title,img,subtitle,data}) => {
   return (
-    <div className='mb-20 relative'>
-      <div className='-mt-2 lg:-mt-8 absolute -z-20 left-[35em] xl:left-[50em] 2xl:left-[80%]'>
-        <img src={img??''} className='' alt="" />
+    <section className='py-20 relative nc-services'>
+      <div className='container mx-auto'>
+      <div className='nc-section-text   absolute  '>
+          <h4>Buisness</h4>
       </div>
      <Title2 title={title} subtitle={subtitle} /> 
-      <div className='flex flex-col space-y-5 justify-center sm:flex-row items-center sm:space-x-3 px-4 '>
-        <div className='hidden'>
+      <div className='nc-cards-outer mx-auto flex flex-col  mt-10 justify-center sm:flex-row items-center sm:space-x-1'>
+        {/* <div className='hidden'>
           <Card
             img={board2}
             title={'Web Design'}
             body={''}
 
           />
-        </div>
+        </div> */}
         {data.map((item) =>
           <Card
             img={item.img}
@@ -30,7 +31,8 @@ const Services = ({title,img,subtitle,data}) => {
           />
         )}
       </div>
-    </div>
+      </div>
+    </section>
   )
 }
 

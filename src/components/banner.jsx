@@ -42,31 +42,31 @@ const data = [
 
   return (
    
-    <section className='banner-sec'>
+    <section className='banner-sec pt-25 pb-15'>
        <div className='container mx-auto  flex flex-col justify-between sm:flex-row'>
-      <div className='w-full lg:w-3/4 xl:w-4/6 2xl:w-1/3 2xl:mx-auto'>
+      <div className='w-full lg:w-1/2'>
        
-        <div className='text-[#333333] pt-20 banner-text'>
-          <div className='w-[200px] h-1 bg-[#DA452C] mb-4' />
-          <h2 className='text-70'>
+        <div className='text-[#333333] banner-text'>
+          <div className='w-[200px] h-1 bg-[#DA452C] mb-10' />
+          <h2 className='text-70 font-inter font-bold'>
             Grow your business,
             without Limits!
           </h2>
-          <h4 className='mt-10 text-lg lg:text-2xl'>
+          <h4 className='mt-5 mb-5 font-inter'>
             Connect with our experts to start
             the evalution today.
           </h4>
         </div>
 
-        <div className='flex items-center ml-10 space-x-2'>
-          <button onClick={() => setOpenModal(true)} className='text-white bg-[#5AA6B1] text-sm rounded-lg p-2 lg:p-4 '>BOOK A FREE CONSULT</button>
-          <button className='text-[#DA452C] border-[#DA452C] border-2  rounded-lg bg-transparent p-2 lg:p-4 text-sm'><Link to='/search-engine-optimization'> FREE TRAFFIC REPORT </Link></button>
+        <div className='flex items-center space-x-6'>
+          <button onClick={() => setOpenModal(true)} className='btn btn-blue font-normal mt-5 w-253'>BOOK A FREE CONSULT</button>
+          <button className='btn btn-outline font-normal mt-5'><Link to='/search-engine-optimization'> FREE TRAFFIC REPORT </Link></button>
         </div>
-        <div className='ml-1 -mt-20'>
+        <div className='ml-1 -mt-20 nc-scroll-down'>
           <img src={scrolll} className='' alt="" />
         </div>
       </div>
-      <div className='flex flex-col items-center justify-center w-full md:w-1/2 xl:w-2/5 mb-7 lg:-mt-20 xl:-mt-3 2xl:w-1/3 2xl:mx-auto'>
+      <div className='flex flex-col items-center justify-center w-full md:w-1/2 lg:w-1/2'>
         <Swiper
           className='w-full'
           //   spaceBetween={15}

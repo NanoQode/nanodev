@@ -7,13 +7,12 @@ import { PopupModal } from 'react-calendly'
 const Design = ({ data, title, subtitle, btn, img, img2, reverse }) => {
   const [openModal, setOpenModal] = useState(false)
   return (
-    <div className='bg-[#DA4B271F] p-4'>
-      <main className='xl:mx-24 2xl:max-w-7xl 2xl:mx-auto'>
-
-
-        <div className={btn ? 'flex flex-col space-y-3 p-5' : 'flex flex-col items-center justify-center p-5'}>
+    <div className='bg-[#DA4B271F] pt-20'>
+      <div className='container mx-auto'>
+      <main className='xl:mx-24 2xl:max-w-7xl 2xl:mx-auto'> 
+        <div className={btn ? 'flex flex-col space-y-3' : 'flex flex-col  '}>
           <h4>{subtitle ?? ''}</h4>
-          <h3 className='text-4xl font-bold'>{title ?? ''}</h3>
+          <h3  className='nc-heading font-inter font-bold'>{title ?? ''}</h3>
           <img src={title ? line : ''} className='w-1/3 2xl:w-60' alt="" />
         </div>
         <section className='flex my-20 items-center justify-center flex-col lg:flex-row mx-auto relative'>
@@ -73,6 +72,7 @@ const Design = ({ data, title, subtitle, btn, img, img2, reverse }) => {
         open={openModal}
         rootElement={document.getElementById('root')}
       />
+      </div>
     </div>
   )
 }
