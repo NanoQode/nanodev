@@ -1444,3 +1444,39 @@
   transform-origin: 0 0;
   transform: rotate(-90deg) scale(1, 1);
 }
+/* new css */
+ 
+/* button style*/
+.btn {
+  @apply font-medium py-3 px-5 rounded; 
+  font-size: 18px;
+  line-height: 30px;
+}
+.btn-blue {
+  @apply bg-nc-blue text-white;
+}
+.btn-blue:hover {
+  @apply bg-nc-orange;
+}
+/*  */
+/* header css */
+.site-logo {
+  margin-left: -21px;
+}
+.nc-navbar p{
+  margin-left: 35px;
+}
+.text-70{
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 700;
+  color: #333333;
+  font-family: 'Inter' , sans-serif;
+  letter-spacing: -0.015em;
+}
+
+@media(min-width:1390px){
+  .container{
+    max-width: 1380px !important;
+  }
+}

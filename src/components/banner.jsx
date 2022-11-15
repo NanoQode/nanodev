@@ -41,12 +41,14 @@ const data = [
   ]
 
   return (
-    <div className='flex flex-col justify-between sm:flex-row'>
-      <section className='w-full lg:w-3/4 xl:w-1/2 2xl:w-1/3 2xl:mx-auto'>
+   
+    <section className='banner-sec'>
+       <div className='container mx-auto  flex flex-col justify-between sm:flex-row'>
+      <div className='w-full lg:w-3/4 xl:w-4/6 2xl:w-1/3 2xl:mx-auto'>
        
-        <div className='text-[#333333] p-10'>
-          <div className='mt-10 w-[200px] h-1 bg-[#DA452C] mb-4' />
-          <h2 className='text-4xl font-bold lg:text-6xl mt-6'>
+        <div className='text-[#333333] pt-20 banner-text'>
+          <div className='w-[200px] h-1 bg-[#DA452C] mb-4' />
+          <h2 className='text-70'>
             Grow your business,
             without Limits!
           </h2>
@@ -63,8 +65,8 @@ const data = [
         <div className='ml-1 -mt-20'>
           <img src={scrolll} className='' alt="" />
         </div>
-      </section>
-      <section className='flex flex-col items-center justify-center w-full md:w-1/2 xl:w-1/2 mb-7 lg:-mt-20 xl:-mt-3 2xl:w-1/3 2xl:mx-auto'>
+      </div>
+      <div className='flex flex-col items-center justify-center w-full md:w-1/2 xl:w-2/5 mb-7 lg:-mt-20 xl:-mt-3 2xl:w-1/3 2xl:mx-auto'>
         <Swiper
           className='w-full'
           //   spaceBetween={15}
@@ -86,8 +88,8 @@ const data = [
           ))}
         </Swiper>
         {/* <img src={loading} alt="" /> */}
-
-      </section>
+        </div>
+      </div>
       <PopupModal
           url="https://calendly.com/nanoqode/schedule-a-call"
           // pageSettings={this.props.pageSettings}
@@ -101,7 +103,7 @@ const data = [
            */
           rootElement={document.getElementById("root")}
         />
-    </div>
+    </section> 
   )
 }
 

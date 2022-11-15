@@ -69,7 +69,8 @@ const Header = () => {
 
   return (
     <header>
-      <section className='bg-[#DA452C] w-full  justify-between sm:px-10 h-[70px] p-3 flex'>
+      <section className='bg-[#DA452C] w-full flex    h-[70px]  '>
+        <div className='container mx-auto flex justify-between'>
         <div className='flex items-center text-white space-x-1'>
           <img src={email} alt="" />
           <h3>
@@ -89,14 +90,16 @@ const Header = () => {
           <img src={vimeo} alt="" />
           <img src={youtube} alt="" />
         </div>
+        </div>
       </section>
-      <section className='bg-[#E9E9E9] w-full h-[100px] flex items-center justify-around sm:justify-between pr-4 relative'>
-        <div className=''>
+      <section className='bg-[#E9E9E9] w-full h-[100px] '>
+      <div className='container mx-auto flex items-center justify-around sm:justify-between relative'>
+        <div className='site-logo'>
           <Link to='/'>
             <img src={logo} alt="logo" />
           </Link>
         </div>
-        <nav className=' items-center space-x-4 font-semibold text-sm sm:text-lg text-[#333333] cursor-pointer hidden lg:flex '>
+        <nav className='nc-navbar items-center   font-semibold text-sm sm:text-lg text-[#333333] cursor-pointer hidden lg:flex '>
           <Link to='/'>
             <p  className={pathname === '/' ? 'text-[#DA452C]' : ''} >Home </p>
           </Link>
@@ -123,8 +126,9 @@ const Header = () => {
           <p className={pathname==='/blog' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('blog')}>Blog </p>
           <p className={pathname==='/about' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('about')}>About </p>
         </nav>
-        <div className='hidden xl:flex bg-[#5AA6B1] p-4 text-white w-max'>
-          +1 (800) 361-2961
+        <button className="btn btn-blue">
+                +1 (800) 361-2961
+        </button> 
         </div>
         {/* mobile */}
         <div className='flex lg:hidden'>
@@ -158,6 +162,7 @@ const Header = () => {
             <p className={pathname === '/hosting' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('web-hosting')}>Hosting </p>
             <p className={pathname === '/blog' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('blog')}>Blog </p>
             <p className={pathname === '/about' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('about')}>About </p>
+            
           </section>}
       </section>
     </header>
