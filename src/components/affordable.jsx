@@ -1,8 +1,6 @@
-import { border } from '@mui/system'
-import React, { useRef } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useRef } from 'react' 
 import { priceData } from '../constant'
-import { arrow, arrow2, card, card2, card3, card4, check11, DEVELOPMENT, line, red } from '../images'
+import { arrow, arrow2,  check11, DEVELOPMENT, line } from '../images'
 
 const Affordable = () => {
   const newRef = useRef()
@@ -17,12 +15,13 @@ const Affordable = () => {
   }
 
   return (
-    <div className='relative'>
-      <div className='flex flex-col items-center justify-center p-5 mt-3'>
-        <h3 className='text-4xl font-bold'>Affordable Services</h3>
+    <section className='relative affordable-services py-20'>
+      <div className='container mx-auto'>
+      <div className='flex flex-col items-center justify-center'>
+        <h3 className='font-bold text-hd font-inter'>Affordable Services</h3>
         <img src={line} className='w-1/3 -ml-12 2xl:w-60' alt="" />
       </div>
-      <section className='mt-10 lg:mt-40 mb-20 flex items-center justify-center sm:justify-start relative'>
+      <div className='mt-10 lg:mt-40 mb-20 flex items-center justify-center sm:justify-start relative'>
         <div className='hidden sm:flex -top-10 lg:-top-32 z-20 absolute'>
           <img src={DEVELOPMENT} alt="" />
         </div>
@@ -34,7 +33,7 @@ const Affordable = () => {
             <img className='cursor-pointer' src={arrow2} alt="" />
           </div>
         </div>
-        <section id='slider' className='overflow-x-scroll w-full scrollbar-hide  overflow-y-hidden scroll whitespace-nowrap scroll-smooth flex items-center flex-col justify-center md:grid grid-cols-2 lg:flex-row  lg:space-x-4 mb-20 ml-6'>
+        <div id='slider' className='overflow-x-scroll w-full scrollbar-hide  overflow-y-hidden scroll whitespace-nowrap scroll-smooth flex items-center flex-col justify-center md:grid grid-cols-2 lg:flex-row  lg:space-x-4 mb-20 ml-6'>
           {priceData.map((item) =>
             <div key={item.id} className=' z-20 relative'>
               <img src={item.img} className='w-60' alt="" />
@@ -61,11 +60,12 @@ const Affordable = () => {
               </div>
             </div>
           )}
-        </section>
-      </section>
+        </div>
+        </div>
+      </div>
     
     
-    </div>
+    </section>
   )
 }
 

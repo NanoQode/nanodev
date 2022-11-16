@@ -10,17 +10,19 @@ const Featured = ({title,data,color,color2,center}) => {
    
 
   return (
-      <div style={{
+      <section style={{
           background:color
-      }} className={center ? ' w-full h-[200px]  sm:h-[362px] p-5 items-center justify-center flex space-y-5 flex-col' :' w-full h-[200px] sm:h-[362px] p-5 flex items-center justify-center space-y-5 flex-col'}>
-          <Title title={'Our Partners in Your Success'} center={false} />
+      }} className={center ? ' w-full h-[200px]  sm:h-[362px] flex items-center justify-center flex-col' :' w-full h-[200px] sm:h-[362px]   flex items-center justify-center flex-col'}>
+           <div className='container mx-auto'>
+          <Title title={'Featured Clients'} center={false} />
+      <div className='logo-slider  bg-white rounded-full  mt-12'>
           <Swiper
               style={{
                   background:color2
               }}
               className='w-full  rounded-full p-2 h-[50px] sm:h-[80px]'
               //   spaceBetween={15}
-              slidesPerView={4}
+              slidesPerView={7}
               navigation
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}
@@ -34,11 +36,13 @@ const Featured = ({title,data,color,color2,center}) => {
               speed={2000}>
               {data.map((item) => (
                   <SwiperSlide className='flex items-center justify-center'>
-                      <img src={item.img} className='w-16' />
+                      <img src={item.img}   />
                   </SwiperSlide>
               ))}
           </Swiper>
+          </div>
     </div>
+    </section>
   )
 }
 

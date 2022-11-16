@@ -3,17 +3,17 @@ import { google, Stars } from '../images'
 
 const Google = ({title, desc}) => {
   return (
-      <div className='w-[300px] p-5 sm:w-[416px] h-max shadow-sm rounded bg-white sm:p-7 m-2'>
+      <div className='w-full p-8 pb-2  h-max shadow-sm rounded bg-white  '>
           <img src={Stars} alt="" />
-          <p className='my-3'>
+          <p className='my-6 text-fs14 font-inter font-normal'>
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."
           </p>
-          <section className='flex items-center justify-between'>
+          <section className='flex items-start justify-between'>
               <div>
-                  <h2 className='font-bold text-lg'>{title}</h2>
-                  <p className='text-sm'>{desc}</p>
+                  <h2 className='font-bold text-fs16 font-inter'>{title}</h2>
+                  <p className='text-fs16 font-inter font-normal'>{desc}</p>
               </div>
-              <img src={google} className='w-16' alt="" />
+              <img src={google} className='w-16 -mr-6' alt="" />
           </section>
     </div>
   )
