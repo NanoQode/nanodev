@@ -22,9 +22,9 @@ const Footer = () => {
         <section className='grid grid-cols-1 my-4 sm:grid-cols-2 p-3 sm:my-0 gap-x-8 w-full lg:w-1/3'>
           <div className='flex flex-col space-y-7'>
             <h2 className='font-semibold text-lg'>Get in Touch</h2>
-            <p className='text-xs font-light'>888 Sargent AveWinnipeg, Manitoba, R3E 0C7 Canada</p>
+            <p className='text-xs font-light'>6 Indell Lane, Brampton ON L6T 3Y3 Canada</p>
             <p className='text-xs font-light'></p>info@nanoqode.com
-            <p className='text-xs font-light'>+1 (800) 361-2961</p>
+            <p className='text-xs font-light'>+1 (647)812-9492</p>
           </div>
           <div className='flex flex-col space-y-3'>
             <h2 className='font-semibold text-lg'>Learn More</h2>
