@@ -18,22 +18,22 @@ const Footer = () => {
             <img src={instaw} alt="" />
             <img src={vimeo} alt="" />
             <img src={youtube} alt="" />
-          </div>
+          </div> 
         </div>
         <div className='grid grid-cols-1 my-4 sm:grid-cols-2 p-3 sm:my-0 gap-x-8 w-full lg:w-1/3'>
           <div className='flex flex-col'>
             <h2 className='text-fs20 font-bold font-inter mb-10'>Get in Touch</h2>
             <ul className='space-y-5'>
               <li>
-                  <p className='text-fs-18 font-normal font-inter'>888 Sargent AveWinnipeg, Manitoba, R3E 0C7 Canada</p>
+                  <p className='text-fs-18 font-normal font-inter'>6 Indell Lane, Brampton ON L6T 3Y3 Canada</p>
               </li>
               <li>
                 <a href='mailto:info@nanoqode.com' className='text-fs-18 font-normal font-inter hover:text-nc-orange'>info@nanoqode.com</a>
               </li>
               <li>
-                <a href='tel:+1 (800) 361-2961' className='text-fs-18 font-normal font-inter hover:text-nc-orange'>+1 (800) 361-2961</a>
+                <a href='tel:+1 (647)812-9492' className='text-fs-18 font-normal font-inter hover:text-nc-orange'>+1 (647)812-9492</a>
               </li>
-            </ul> 
+            </ul>  
           </div>
           <div className='flex flex-col'>
             <h2 className='text-fs20 font-bold font-inter mb-10'>Learn More</h2>  
