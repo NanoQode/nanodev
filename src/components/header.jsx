@@ -74,13 +74,13 @@ const Header = () => {
         <div className='flex items-center text-white space-x-1'>
           <img src={email} alt="" />
           <h3 className='font-normal font-inter'>
-            infi@nanoqodee.com
+            info@nanoqode.com
           </h3>
         </div>
         <div className='hidden lg:flex items-center text-white space-x-1'>
           <img src={home} alt="" />
           <h3 className='font-normal font-inter'>
-            888 Sargent Ave Winnipeg, Manitoba, R3E 0C7, Canada
+            6 Indell Lane, Brampton ON L6T 3Y3, Canada
           </h3>
         </div>
         <div className='flex items-center space-x-6 cursor-pointer'>
@@ -132,7 +132,7 @@ const Header = () => {
           <p className={pathname==='/about' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('about')}>About </p> */}
         </nav>
         <button className="btn btn-blue  font-medium">
-                +1 (800) 361-2961
+                +1 (647)812-9492
         </button> 
         </div>
         {/* mobile */}
