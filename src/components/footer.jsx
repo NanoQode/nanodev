@@ -35,7 +35,6 @@ const Footer = () => {
               </li>
             </ul>  
           </div>
- 
           <div className='flex flex-col'>
             <h2 className='text-fs20 font-bold font-inter mb-10'>Learn More</h2>  
             <ul className='space-y-5 mt-0'>
@@ -55,18 +54,8 @@ const Footer = () => {
                   <a href='javascript:void(0);' className='text-fs-18 font-normal font-inter hover:text-nc-orange'>Contact Us </a>
               </li> 
             </ul>  
- 
-        
-        <section className='grid grid-cols-1 my-4 sm:grid-cols-2 p-3 sm:my-0 gap-x-8 w-full lg:w-1/3'>
-          <div className='flex flex-col space-y-7'>
-            <h2 className='font-semibold text-lg'>Get in Touch</h2>
-            <p className='text-xs font-light'>6 Indell Lane, Brampton ON L6T 3Y3 Canada</p>
-            <p className='text-xs font-light'></p>info@nanoqode.com
-            <p className='text-xs font-light'>+1 (647)812-9492</p>
- 
           </div>
-        
-        </section>
+        </div>
         <section className='flex flex-col  w-full lg:w-1/4 content-start'>
           <h2 className='text-fs20 font-bold font-inter mb-10'>
             Our Newsletter
@@ -84,8 +73,7 @@ const Footer = () => {
       <p className=' text-right font-inter font-normal text-fs18 text-white'>&copy; 2022 Nanoqode.
         All rights reserved.</p>
         </div>
-        </div>
-        </div>
+        
     </footer>
   )
 }
