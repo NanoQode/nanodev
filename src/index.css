@@ -1471,6 +1471,20 @@
 .btn.w-253{
   min-width: 253px;
 }
+.btn-orange{
+  background-color: #DA4B27; 
+    display: inline-block;
+    width: auto;
+    align-self: flex-start;
+    padding-left: 57px;
+    padding-right: 57px;
+    border: 1px solid #DA4B27;
+    transition: 0.3s ease-in-out;
+}
+.btn-orange:hover{
+  background-color: #fff;
+  color: #DA4B27;
+}
 /*  */
 /* header css */
 .site-logo {
@@ -1517,6 +1531,9 @@ span.swiper-pagination-bullet{
 .nc-heading+img{
   /* width: 530px; */
   max-width: 100%;
+}
+nav p{
+  position: relative;
 }
 /* hero */
 .logo-slider{
@@ -1632,6 +1649,85 @@ border-radius: 4px;
 .client-slides>div{
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 border-radius: 8px;
+}
+/* subscribe-field */
+.subscribe-field{
+  padding: 12px 24px;
+  @apply text-fs18 font-inter font-normal;
+  color: #999999;
+  border-radius: 4px;
+}
+.cs-slide-width  .swiper-wrapper{
+  align-items: center;
+}
+.cs-slide-width .swiper-slide.swiper-slide-active ,
+.cs-slide-width .swiper-slide.swiper-slide-active+div+div+div{
+  width: 168px !important;
+}
+.cs-slide-width .swiper-slide.swiper-slide-active+div {
+  width: 229px !important;
+}
+.cs-slide-width .swiper-slide.swiper-slide-active+div+div {
+  width: 194px !important;
+}
+.cs-slide-width  h1{
+  padding: 22px 10px 55px;
+    font-size: 30px;
+    @apply font-inter text-white font-bold;
+}
+.cs-slide-width .swiper-slide.swiper-slide-active+div h1{
+  padding: 18px 10px 73px;
+    font-size: 50px; 
+}
+.cs-slide-width .swiper-slide.swiper-slide-active+div+div h1 {
+  padding: 20px 10px 62px;
+  font-size: 40px;
+}
+.cs-slide-width  span.cs-dollar {
+  font-size: 14px;
+  font-weight: 300;
+  top: -12px;
+  position: relative;
+}
+.cs-slide-width{
+  padding: 20px 0;
+}
+.cs-slide-width  h1 small.text-small {
+  font-size: 12px;
+  font-weight: 300;
+}
+.cs-slide-outer-layer{
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.cs-slide-outer-layer .rounded-badge{
+  border-radius: 0 6px 6px 0;
+}
+.cs-slide-outer-layer .rounded-badge h3{
+  text-transform: capitalize;
+  @apply font-semibold font-inter;
+}
+.cs-slide-outer-layer .starting-text{
+  font-size: 12px;
+  @apply font-inter;
+}
+.cs-info-text p{
+  font-size: 12px;
+  @apply font-inter;
+  margin-bottom: -6px;
+}
+.cs-slide-width .swiper-slide.swiper-slide-active+div .cs-info-text p{ 
+  margin-bottom: 2px;
+}
+.cs-slide-width .swiper-slide.swiper-slide-active+div+div .cs-info-text p {
+  margin-bottom: 0px;
+}
+.cs-learn-more-btn{
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
 }
 @media(min-width:1390px){
   .container{

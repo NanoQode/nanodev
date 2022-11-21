@@ -106,7 +106,7 @@ const Header = () => {
             
             <img src={down} className='w-4 ml-2' alt="" />
             {tab2 ?
-              <span className='z-50 flex flex-col absolute top-[4.3rem] left-[40%] xl:left-[33%] p-4 text-sm rounded bg-[#DA452C] text-white 2xl:left-[65rem]'>
+              <span className='z-50 flex flex-col absolute top-[2rem] left-[0%] xl:left-[0%] p-4 text-sm rounded bg-[#DA452C] text-white 2xl:left-[0rem]'>
                 {menuOption.map((item) => <p className='hover:text-[#5AA6B1]' onClick={() => setTabOption2(item)}>{item.title}</p>)}
               </span> : null}
           </p>
@@ -114,7 +114,7 @@ const Header = () => {
 
             <img src={down} className='w-4 ml-2' alt="" />
             {tab ?
-              <span className='z-50 flex flex-col absolute top-[4.3rem] left-[50%] xl:left-[40%] p-4 text-sm rounded bg-[#DA452C] text-white 2xl:left-[70rem]'>
+              <span className='z-50 flex flex-col absolute top-[4.3rem] left-[50%] xl:left-[0%] p-4 text-sm rounded bg-[#DA452C] text-white 2xl:left-[70rem]'>
                 {menuOption2.map((item) => <p className='hover:text-[#5AA6B1]' onClick={() => setTabOption(item)}>{item.title}</p>)}
               </span> : null}
           </p>

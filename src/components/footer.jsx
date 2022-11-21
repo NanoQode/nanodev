@@ -3,12 +3,13 @@ import { facebook, instaw, logo2, twitter, vimeo, youtube } from '../images'
 
 const Footer = () => {
   return (
-    <div className='bg-[#5AA6B1] w-full text-white
+    <footer className='bg-[#5AA6B1] w-full text-white
     '>
-      <div className='flex  flex-col lg:flex-row  lg:justify-between p-8'>
-        <section className='flex flex-col space-y-4  w-full lg:w-1/4'>
-          <img src={logo2} className='w-40' alt="" />
-          <p className=''>
+      <div className='container mx-auto'>
+      <div className='flex  flex-col lg:flex-row  lg:justify-between pt-12 pb-12'>
+        <div className='flex flex-col   w-full lg:w-1/4'>
+          <img src={logo2} className='w-[181px]' alt=""/>
+          <p className='mt-8 mb-12 text-fs18 font-inter font-normal max-w-[329px]'>
             Nanoqode services are designed to meet modern digital business needs. From getting your company up-to-specs on security, deploying custom solutions, managing you marketing strategy and many more.
           </p>
           <div className='flex items-center space-x-4'>
@@ -18,39 +19,62 @@ const Footer = () => {
             <img src={vimeo} alt="" />
             <img src={youtube} alt="" />
           </div>
-        </section>
-        <section className='grid grid-cols-1 my-4 sm:grid-cols-2 p-3 sm:my-0 gap-x-8 w-full lg:w-1/3'>
-          <div className='flex flex-col space-y-7'>
-            <h2 className='font-semibold text-lg'>Get in Touch</h2>
-            <p className='text-xs font-light'>888 Sargent AveWinnipeg, Manitoba, R3E 0C7 Canada</p>
-            <p className='text-xs font-light'></p>info@nanoqode.com
-            <p className='text-xs font-light'>+1 (800) 361-2961</p>
+        </div>
+        <div className='grid grid-cols-1 my-4 sm:grid-cols-2 p-3 sm:my-0 gap-x-8 w-full lg:w-1/3'>
+          <div className='flex flex-col'>
+            <h2 className='text-fs20 font-bold font-inter mb-10'>Get in Touch</h2>
+            <ul className='space-y-5'>
+              <li>
+                  <p className='text-fs-18 font-normal font-inter'>888 Sargent AveWinnipeg, Manitoba, R3E 0C7 Canada</p>
+              </li>
+              <li>
+                <a href='mailto:info@nanoqode.com' className='text-fs-18 font-normal font-inter hover:text-nc-orange'>info@nanoqode.com</a>
+              </li>
+              <li>
+                <a href='tel:+1 (800) 361-2961' className='text-fs-18 font-normal font-inter hover:text-nc-orange'>+1 (800) 361-2961</a>
+              </li>
+            </ul> 
           </div>
-          <div className='flex flex-col space-y-3'>
-            <h2 className='font-semibold text-lg'>Learn More</h2>
-            <p className='text-xs font-light'>About Us</p>
-            <p className='text-xs font-light'>Projects</p>
-            <p className='text-xs font-light'>Terms of Use</p>
-            <p className='text-xs font-light'>Privacy Policy</p>
-            <p className='text-xs font-light'>Contact Us</p>
+          <div className='flex flex-col'>
+            <h2 className='text-fs20 font-bold font-inter mb-10'>Learn More</h2>  
+            <ul className='space-y-5 mt-0'>
+              <li>
+                  <a href='javascript:void(0);' className='text-fs-18 font-normal font-inter hover:text-nc-orange'>About Us </a>
+              </li>
+              <li>
+                  <a href='javascript:void(0);' className='text-fs-18 font-normal font-inter hover:text-nc-orange'> Projects</a>
+              </li>
+              <li>
+                  <a href='javascript:void(0);' className='text-fs-18 font-normal font-inter hover:text-nc-orange'>Terms of Use </a>
+              </li>
+              <li>
+                  <a href='javascript:void(0);' className='text-fs-18 font-normal font-inter hover:text-nc-orange'>Privacy Policy </a>
+              </li>
+              <li>
+                  <a href='javascript:void(0);' className='text-fs-18 font-normal font-inter hover:text-nc-orange'>Contact Us </a>
+              </li> 
+            </ul>  
           </div>
-        </section>
-        <section className='flex flex-col space-y-5 w-full lg:w-1/4'>
-          <h2 className='font-semibold text-lg'>
+        </div>
+        <section className='flex flex-col  w-full lg:w-1/4 content-start'>
+          <h2 className='text-fs20 font-bold font-inter mb-10'>
             Our Newsletter
           </h2>
-          <p className='text-xs font-light'>
+          <p className='text-fs-18 font-normal font-inter mb-8'>
             Subscribe to our newsletter to get our news delivered to your inbox!
           </p>
-          <input type="email" placeholder='Enter your email' className='text-[#333333] p-2 outline-none border-none' />
-
-          <button className='bg-[#DA4B27] py-2 px-8 text-white'>Subscribe</button>
+          <input type="email" placeholder='Enter your email' className='text-[#333333] subscribe-field outline-none border-none' /> 
+          <button className='bg-[#DA4B27] btn btn-orange mt-6'>Subscribe</button>
         </section>
       </div>
+      </div>
       <div className='w-full h-0.5 bg-white' />
-      <p className='text-xs font-light mt-3 text-right  p-4'>&copy; 2022 Nanoqode.
+      <div className='container mx-auto py-6'>
+      <p className=' text-right font-inter font-normal text-fs18 text-white'>&copy; 2022 Nanoqode.
         All rights reserved.</p>
-    </div>
+        </div>
+        
+    </footer>
   )
 }
 

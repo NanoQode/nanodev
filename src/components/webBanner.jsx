@@ -7,22 +7,25 @@ const WebBanner = ({ title, title2, body, img, data, btn ,vid}) => {
   const [openModal, setOpenModal] = useState(false)
 
   return (
-    <div className="flex flex-col justify-between sm:flex-row">
-      <section className="w-full md:w-1/2 lg:w-3/4 xl:w-1/2 2xl:w-1/3 2xl:mx-auto">
-        <div className="text-[#333333] p-4 sm:p-8">
+    <section className="flex flex-col justify-between sm:flex-row pt-20 pb-20">
+      <div className='container mx-auto'>
+        <div className='row flex'>
+      <div className="w-full md:w-1/2 ">
+        <div className="text-[#333333]">
           <div className="mt-10 w-[200px] h-1 bg-[#DA452C] mb-4" />
-          <h2 className="text-4xl font-bold lg:text-6xl">
+          <h2 className="text-fs60 font-bold font-inter">
             <span className="text-[#DA452C]">{title}</span>
             {title2}
           </h2>
-          <h4 className="text-lg lg:text-2xl mt-6">{body}</h4>
+          <h4 className="text-fs30 font-inter font-normal mt-3 mb-4">{body}</h4>
         </div>
 
-        <div className="flex flex-col items-center justify-center w-1/3 ml-28 sm:ml-32 ">
+        <div className="flex flex-col items-start justify-start w-full space-y-3">
           {data?.map((item) => (
             <div
               key={item.id}
-              className="m-3 rounded-full items-center bg-[#EBF4F6] px-4 sm:px-7 py-1 flex w-[270px] sm:w-[370px] h-[44px]"
+              className="  rounded-full items-center bg-[#EBF4F6] px-4 sm:px-7 py-1 flex w-[348px]  h-[44px] 
+              text-fs18 font-inter font-normal"
             >
               <img src={icon} className="mr-3" alt="" />
               {item.title}
@@ -32,7 +35,7 @@ const WebBanner = ({ title, title2, body, img, data, btn ,vid}) => {
 
         {btn ? (
           <>
-            <div className="flex items-center mx-3 my-10 space-x-4 sm:ml-16">
+            <div className="flex items-start mt-15 space-x-4 ">
               <button className=" text-white w-[200px] bg-[#5AA6B1] rounded-lg p-2 lg:p-4 text-sm">
                 GET STARTED
               </button>
@@ -55,17 +58,17 @@ const WebBanner = ({ title, title2, body, img, data, btn ,vid}) => {
             </div>
           </>
         ) : (
-          <div className="flex items-center my-10 ml-16 space-x-2">
+          <div className="flex items-center mt-20 space-x-2">
             <button
               onClick={() => setOpenModal(true)}
-              className="text-white bg-[#DA452C] rounded-lg p-2 lg:p-4 text-sm"
+              className="text-white bg-[#DA452C] rounded-lg btn btn-orange"
             >
               BOOK A FREE CONSULT
             </button>
           </div>
         )}
-      </section>
-      <section className="flex flex-col items-center justify-center w-full md:w-1/2 lg:w-3/4 xl:w-1/2 mb-7 lg:-mt-20 xl:-mt-3 2xl:w-1/3 2xl:mx-auto">
+      </div>
+      <div className="flex flex-col items-center justify-center w-full md:w-1/2 ">
         {vid ?
           <motion.video initial={{
             x: 200,
@@ -87,14 +90,14 @@ const WebBanner = ({ title, title2, body, img, data, btn ,vid}) => {
             }}
             transition={{ ease: 'easeOut', duration: 1.2 }} src={img} className='w-[90%]' alt="" />
         }
-      </section>
+      </div>
       <PopupModal
         url="https://calendly.com/nanoqode/schedule-a-call"
         onModalClose={() => setOpenModal(false)}
         open={openModal}
         rootElement={document.getElementById('root')}
-      />
-    </div>
+      /></div></div>
+    </section>
   )
 }
 

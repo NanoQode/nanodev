@@ -30,6 +30,7 @@ const Client = () => {
               className='w-full   '
                 spaceBetween={15}
               slidesPerView={3}
+              centeredSlides={false}
               navigation
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}
