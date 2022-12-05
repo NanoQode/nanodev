@@ -10,17 +10,18 @@ const Softaware = () => {
           <WebBanner
               title={'User-Friendly|'}
               title2={'Software'}
-              body={' Get it right the first time. Build Feature-rich solutions from just $1499'}
+              body={' Get it right the first time. '}
+              title3={'Build Feature-rich solutions from just $1499'}
               img={Gif3}
               data={softBannerData} />
-          <div className='my-10 flex items-center justify-center lg:my-0 lg:absolute  lg:left-[30%] lg:-mt-14 z-40 2xl:left-[40%]'>
+              <div className='my-10 flex items-center justify-center lg:my-0 lg:absolute  lg:left-[50%] lg:-mt-14 z-40   -translate-x-[50%]'>
               <CallCard />
           </div>
           <div className='relative z-20'>
               <Built data={softBuiltData}
                   img={SOFTWARE} title={'Software Creation Process'} />
           </div>
-          <video src={vid2} className='w-full object-cover h-[400px]' autoPlay loop muted />
+          <video src={vid2} className='w-full object-cover h-[800px]' autoPlay loop muted />
           <Creative
               img={DIGITAL}
               img2={stand}
@@ -43,7 +44,7 @@ const Softaware = () => {
               reverse
               img={CHOOSE}
               title={''} />
-          <Featured color={'white'} color2={'#FBE9E5'} data={softLangData} title={'Development Languages'} />
+          <Featured color={'white'} color2={'#fbe9e5'} data={softLangData} title={'Development Languages'} />
           <Client />
           <CallHero />
       </div>

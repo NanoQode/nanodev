@@ -15,7 +15,7 @@ const Web = () => {
         img={webdev}
         vid={vid1}
         data={webBannerData} />
-      <div className='my-10 flex items-center justify-center lg:my-0 lg:absolute  lg:left-[30%] lg:-mt-14 z-40 2xl:left-[40%]'>
+      <div className='my-10 flex items-center justify-center lg:my-0 lg:absolute  lg:left-[50%] lg:-mt-14 z-40   -translate-x-[50%]'>
         <CallCard />
       </div>
       <div className='relative z-20'>

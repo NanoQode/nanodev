@@ -35,35 +35,37 @@ const Portfolio = () => {
         },
     ]
   return (
-      <div className='p-3 bg-[#EBF4F6] w-full relative'>
-          <p className='font-semibold text-center mt-10'> Portfolio</p>
-          <div className='flex flex-col items-center justify-center p-5'>
-              <h3 className='text-4xl font-bold'>Our Partners in Your Success</h3>
+      <section className='bg-[#EBF4F6] w-full relative py-24'>
+        <div className='container mx-auto'>
+          <p className='font-semibold font-inter text-fs20 mb-4 text-center'> Portfolio</p>
+          <div className='flex flex-col items-center justify-center '>
+              <h3 className='text-fs48 font-bold font-inter'>Our Award-Winning Website Portfolio</h3>
               <img src={line} className='' alt="" />
           </div>
-          <section className='flex flex-col items-center justify-center ml-20 sm:ml-32 sm:flex-row sm:justify-start sm:items-start flex-wrap mt-10 lg:mx-20 '>
+          <div className='flex flex-col items-center justify-center   sm:flex-row sm:justify-start sm:items-start flex-wrap mt-10 '>
               
           {data.map((res) =>
-          <div className='shadow-xl m-3 sm:w-[350px] bg-white h-max rounded-lg p-5' key={res.id}>
-              <img src={res.img} className='w-80 ' alt="" />
-              <h2 className='font-bold text-2xl mt-5'>
+          <div className='shadow-xl porfolio-outer m-3 sm:w-[416px] bg-white h-max rounded-lg p-5' key={res.id}>
+              <img src={res.img} className='w-100 ' alt="" />
+              <h2 className='font-bold font-inter mt-5 text-fs31'>
                  {res.title}
               </h2>
-              <p className='my-4'>
+              <p className='font-inter font-semiBold text-fs14'>
                  {res.body}
               </p>
            <img src={read} alt="" />
             </div>
               )}
-          </section>
-          <div className='absolute  left-0 top-[40rem] 2xl:top-20'>
+          </div>
+          <div className='absolute  left-0 bottom-[4rem]  '>
               <img src={PORTFOLIO} alt="" />
           </div>
           <div className='flex items-center justify-center'>
-              <button className='bg-[#5AA6B1] py-2 px-8 text-white my-10'>See All Portfolio </button>
+              <button className='btn green-btn py-2 px-8 text-white my-10'>See All Portfolio </button>
+          </div>
           </div>
          
-    </div>
+    </section>
   )
 }
 

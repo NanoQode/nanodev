@@ -14,12 +14,12 @@ const Featured = ({title,data,color,color2,center}) => {
           background:color
       }} className={center ? ' w-full h-[200px]  sm:h-[362px] flex items-center justify-center flex-col' :' w-full h-[200px] sm:h-[362px]   flex items-center justify-center flex-col'}>
            <div className='container mx-auto'>
-          <Title title={'Featured Clients'} center={false} />
-      <div className='logo-slider  bg-white rounded-full  mt-12'>
-          <Swiper
-              style={{
+          <Title title={title} center={false} />
+      <div className='logo-slider  bg-white rounded-full  mt-12' style={{
                   background:color2
-              }}
+              }}>
+          <Swiper
+              
               className='w-full  rounded-full p-2 h-[50px] sm:h-[80px]'
               //   spaceBetween={15}
               slidesPerView={7}

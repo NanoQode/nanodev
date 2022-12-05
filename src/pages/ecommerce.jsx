@@ -10,17 +10,17 @@ const Ecommerce = () => {
     <div className='overflow-hidden'>
       <WebBanner
         btn
-        title={'SuperCharge Your'}
-        title2={'Ecommerce'}
-        body={' Get Your Business Online Today! Starting at Just $35/Month'}
+        title={'SuperCharge Your '}
+        title2={'Ecommerce'} 
+        title3={' Get Your Business Online Today! Starting at Just $35/Month'}
         img={ehero}
         data={null} />
       <Portfolio />
       <Featured color={'#FBE9E5'} color2={'white'} data={langData2} title={'Our Client Base'} />
-      <Packages img={PACKAGES} img2={""}img3={''} color={'#EBF4F6'}/>
+      {/* <Packages img={PACKAGES} img2={""}img3={''} color={'#EBF4F6'}/> */}
       <div className='my-20'>
         <div className='mx-4 sm:ml-20 mb-10 w-full sm:w-1/2 2xl:w-full'>
-          <h3 className='text-2xl sm:text-4xl font-bold'>Need An Urgent Project Delivered ASAP?
+          <h3 className='nc-heading font-bold font-inter'>Need An Urgent Project Delivered ASAP?<br></br>
             We’re Waiting For Your Call!</h3>
           <img src={line} className='' alt="" />
         </div>

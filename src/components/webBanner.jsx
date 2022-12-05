@@ -3,7 +3,7 @@ import { icon, star, star2, webdev } from '../images'
 import { motion } from 'framer-motion'
 import { PopupModal } from 'react-calendly'
 
-const WebBanner = ({ title, title2, body, img, data, btn ,vid}) => {
+const WebBanner = ({ title, title2, body, title3, img, data, btn ,vid}) => {
   const [openModal, setOpenModal] = useState(false)
 
   return (
@@ -17,14 +17,15 @@ const WebBanner = ({ title, title2, body, img, data, btn ,vid}) => {
             <span className="text-[#DA452C]">{title}</span>
             {title2}
           </h2>
-          <h4 className="text-fs30 font-inter font-normal mt-3 mb-4">{body}</h4>
+          <h4 className="text-fs30 font-inter font-normal mt-3 mb-4">{body} 
+          <span className='sub-title text-[#5AA6B1] block font-medium'>{title3}</span></h4>
         </div>
 
         <div className="flex flex-col items-start justify-start w-full space-y-3">
           {data?.map((item) => (
             <div
               key={item.id}
-              className="  rounded-full items-center bg-[#EBF4F6] px-4 sm:px-7 py-1 flex w-[348px]  h-[44px] 
+              className="  rounded-full items-center bg-[#EBF4F6] px-4 sm:px-7 py-1 flex w-[411px]  h-[44px] 
               text-fs18 font-inter font-normal"
             >
               <img src={icon} className="mr-3" alt="" />
@@ -36,10 +37,10 @@ const WebBanner = ({ title, title2, body, img, data, btn ,vid}) => {
         {btn ? (
           <>
             <div className="flex items-start mt-15 space-x-4 ">
-              <button className=" text-white w-[200px] bg-[#5AA6B1] rounded-lg p-2 lg:p-4 text-sm">
+              <button className="btn btn-blue font-normal mt-5 w-253">
                 GET STARTED
               </button>
-              <button className=" border-2 text-[#DA452C]  w-[300px] border-[#DA452C] rounded-lg p-2 lg:p-4 text-sm">
+              <button className="btn btn-outline font-normal mt-5">
                 SPEAK WITH AN EXPERT
               </button>
             </div>

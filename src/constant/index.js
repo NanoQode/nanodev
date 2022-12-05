@@ -323,21 +323,27 @@ export const softCreativeData = [
 export const mobileCreativeData = [
   {
     id: 1,
-    title: "Inclusivity",
-    body: "Create and maintain inclusive and high-quality content, protecting your brand reputation and reducing the risk of compliance lawsuits and fines.",
+    title: "Cutting-edge technologies",
+    body: "ORegardless of industry and application, Nanoqode helps to build innovative mobile apps that address real-world needs.",
     img: set,
   },
   {
     id: 2,
-    title: "Content Experience",
-    body: "Identify, prioritize, and implement the most impactful content optimizations so you can craft truly impactful, and engaging, customer experiences.",
+    title: "User-centric design",
+    body: "By applying design thinking and iterative approaches, we create apps with intuitive user experience.",
     img: user,
   },
   {
     id: 3,
-    title: "Marketing Performance",
-    body: "Provide an intuitive and consolidated approach to search marketing, giving you deep, actionable, insights into how visitors interact with your content.",
+    title: "Features & Results",
+    body: "Marketing enabled platform to help you create customer databases and stay connected via email & text.",
     img: menu,
+  },
+  {
+    id: 4,
+    title: "A recommended provider",
+    body: "48% of our new projects come by referral from our customers, demonstrating high satisfaction with our services..",
+    img: hand,
   },
 ];
 
