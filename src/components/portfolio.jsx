@@ -1,5 +1,5 @@
 import React from 'react'
-import { line, PORTFOLIO, read, webimg, webimg2, webimg3, webimg4, webimg5 } from '../images'
+import { porfolioLine, PORTFOLIO, read, webimg, webimg2, webimg3, webimg4, webimg5 } from '../images'
 
 const Portfolio = () => {
     const data =[
@@ -40,7 +40,7 @@ const Portfolio = () => {
           <p className='font-semibold font-inter text-fs20 mb-4 text-center'> Portfolio</p>
           <div className='flex flex-col items-center justify-center '>
               <h3 className='text-fs48 font-bold font-inter'>Our Award-Winning Website Portfolio</h3>
-              <img src={line} className='' alt="" />
+              <img src={porfolioLine} className='portfolio-line' alt="" />
           </div>
           <div className='flex flex-col items-center justify-center   sm:flex-row sm:justify-start sm:items-start flex-wrap mt-10 '>
               
@@ -61,7 +61,7 @@ const Portfolio = () => {
               <img src={PORTFOLIO} alt="" />
           </div>
           <div className='flex items-center justify-center'>
-              <button className='btn green-btn py-2 px-8 text-white my-10'>See All Portfolio </button>
+              <button className='btn2 green-btn py-2 px-16 text-white mt-10 hover:bg-nc-orange'>See All Portfolio </button>
           </div>
           </div>
          

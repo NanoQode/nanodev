@@ -9,11 +9,13 @@ const Design = ({ data, title, subtitle, btn, img, img2, reverse }) => {
     <section className={reverse ? 'bg-[#DA4B271F] pt-0 py-20' : 'bg-[#DA4B271F] pt-20'}>
       <div className='container mx-auto'>
         <div className='w-full'>
+        {title ?
           <div className={btn ? 'flex flex-col space-y-3' : 'flex flex-col  '}>
             <h4 className='font-semibold font-inter text-fs20 mb-4'>{subtitle ?? ''}</h4>
             <h3 className='text-fs48 font-bold font-inter'>{title ?? ''}</h3>
             <img src={title ? line : ''} className='w-1/3 2xl:w-60' alt="" />
           </div>
+: <div className='-mt-14'></div>}
           <div className={reverse ? 'flex ml-0 mt-14 items-start w-full relative flex-row-reverse' : 'flex ml-0 mt-14 items-start  flex-col lg:flex-row w-full relative'}>
             <div className={reverse ? 'hidden sm:flex sm:ml-0 w-[625px] mt-16 ' : 'hidden sm:flex sm:ml-0 w-[625px] mt-16'}>
               <motion.img

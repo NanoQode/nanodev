@@ -12,7 +12,7 @@ const CallHero = () => {
           minHeight: '260px'
       }} >
               <aside className='w-full sm:w-3/4 lg:w-1/2  '>
-                  <div className='w-[100px] h-1 bg-[#DA452C]' />
+                  <div className='w-[200px] h-1 bg-[#DA452C]' />
                   <h3 className='text-white text-fs32 font-inter font-bold mt-5 sm:text-xl'>
                       Convinced yet? Let's make something
                       great together.

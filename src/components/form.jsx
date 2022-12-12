@@ -4,7 +4,7 @@ import CallHero from './callHero'
 
 const Form = () => {
   return (
-    <section className='mb-20'>
+    <section className='my-20'>
       <div className='container mx-auto'>
       <div className='drop-message lg:w-[1065px] lg:mx-auto mb-4 h-max bg-white mx-3 shadow-lg p-5 flex space-y-3 md:items-center flex-col md:flex-row md:justify-between'>
         <aside className='flex flex-col space-y-5 p-3 md:w-1/2 md:mx-10'>

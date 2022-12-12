@@ -19,23 +19,24 @@ const WebBanner2 = ({ title, title3, title2, body, img, show, gif, vid }) => {
     }
 
     return (
-        <div className=' flex flex-col sm:flex-row justify-between items-center -ml-5 sm:ml-0'>
-            <section className='w-full md:w-1/2 2xl:w-1/3 2xl:mx-auto'>
+        <section className=' flex flex-col sm:flex-row justify-between items-center cs-inner-banner  py-25'>
+            <div className='container mx-auto flex items-center'>
+            <div className='w-full  w-1/2 '>
 
-                <div className='text-[#333333] p-8'>
+                <div className='text-[#333333]'>
                     <div className='mt-10 w-[200px] h-1 bg-[#DA452C] mb-4' />
-                    <h2 className='text-xl lg:text-4xl  font-bold'>
+                    <h2 className='text-fs60 font-bold font-inter mb-10'>
                         {title3}
-                        <span className='mx-2 text-[#DA452C]'>{title}</span>
+                        <span className='text-[#DA452C]'>{title}</span>
                         {title2}
                     </h2>
-                    <h4 className='text-[#5AA6B1] my-5 text-lg lg:text-2xl'>
+                    <h4 className='text-fs25 font-inter  mb-0 sub-title text-[#5AA6B1] block font-medium'>
                         {body}
                     </h4>
 
                     {!show ? <>
 
-                        {step === 0 && <div className='flex flex-col h-max bg-transparent w-[304px] border-[#DA452C] border-[1px] mt-20 mb-10 p-5 rounded-full '> <div className=''>
+                        {step === 0 && <div className='flex flex-col h-max bg-transparent w-[304px] border-[#DA452C] border-[1px] mt-16 mb-7 p-5 rounded-full '> <div className=''>
                 
                             <div className='flex items-center justify-between'>
                                 <input type="text" placeholder='website' className='mx-2 bg-transparent outline-none border-b-2 flex-1' />
@@ -67,7 +68,7 @@ const WebBanner2 = ({ title, title3, title2, body, img, show, gif, vid }) => {
                             </div>
                         </div>
                         </div>}
-                        {step >= 3 ? <button className=' border-2 text-white bg-[#5AA6B1] my-5 w-[100px]  rounded-lg p-2 lg:p-4 text-sm'>DONE</button> : <button onClick={(e) => nextForm(e)} className=' border-2 text-white bg-[#5AA6B1]/80 my-5 w-[100px]  rounded-lg p-2 lg:p-4 text-sm'>NEXT</button>}</> :
+                        {step >= 3 ? <button className='btn2 green-btn py-2 px-16 text-white  hover:bg-nc-orange'>DONE</button> : <button onClick={(e) => nextForm(e)} className='btn2 green-btn py-2 px-16 text-white  hover:bg-nc-orange'>NEXT</button>}</> :
                         <div className='bg-[#EBF4F6] w-full md:-ml-6 lg:ml-0 sm:w-[400px] h-max  p-8 rounded-lg flex flex-col space-y-3'>
                             <div className='bg-transparent w-full border-[#DA452C] border-[1px]  px-6 py-2 rounded-full flex flex-col '>
                     
@@ -95,8 +96,8 @@ const WebBanner2 = ({ title, title3, title2, body, img, show, gif, vid }) => {
                 </div>
 
 
-            </section>
-            <section className='w-full md:w-1/2 flex items-center mb-7 justify-center flex-col lg:-mt-20 xl:-mt-3 2xl:w-1/3 2xl:mx-auto'>
+            </div>
+            <div className='w-1/2 '>
                 {vid ?
                     <video src={vid} className='mr-10' autoPlay loop muted />
                     :
@@ -106,8 +107,9 @@ const WebBanner2 = ({ title, title3, title2, body, img, show, gif, vid }) => {
                     <img src={badge} className='-ml-20 lg:-ml-[30rem]' alt="" />
                 }
 
-            </section>
-        </div>
+            </div>
+            </div>
+        </section>
     )
 }
 

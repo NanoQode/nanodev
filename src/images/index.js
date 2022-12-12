@@ -45,6 +45,7 @@ import location from "./location.png";
 import loading from "./loading.png";
 import line from "./line.png";
 import line2 from "./line2.png";
+import porfolioLine from'./porfolio-underline.png';
 import Laravel from "./Laravel.png";
 import insta from "./insta.png";
 import instaw from "./insta-w.png";
@@ -199,6 +200,11 @@ import purple from "./purple.png";
 import check11 from "./check11.png";
 import vid1 from "./vid1.mp4";
 import vid2 from "./vid2.mp4";
+import backgroundLayer from "./background-layer.png";
+
+import backgroundLayer1 from './Pricing-table-3-of-1.png';
+import backgroundLayer2 from './Pricing-table-3-of-2.png';
+import backgroundLayer3 from './Pricing-table-3-of-3.png';
 
 export {
   arrow,seo,
@@ -389,4 +395,9 @@ export {
   meta,
   mailgun,
   mailchimp,
+  porfolioLine,
+  backgroundLayer,
+  backgroundLayer1,
+  backgroundLayer2,
+  backgroundLayer3
 };

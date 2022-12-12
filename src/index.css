@@ -1453,6 +1453,12 @@
   line-height: 30px;
   text-align: center;
 }
+.btn2 {
+  @apply  py-3 px-8 rounded font-inter; 
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
 .btn-blue {
   @apply bg-nc-blue text-white;
   min-width: 200px;
@@ -1771,6 +1777,208 @@ border-radius: 8px;
 .mt-cs-44{
   margin-top: 44px !important;
 }
+/* heading lines */
+.portfolio-line{
+  width: 739px;
+  max-width: 100%;
+  margin-top: 10px;
+}
+/*  */
+.logo-slider .swiper-button-next,.logo-slider  .swiper-button-prev{
+  background-color: #fff !important;
+}
+/* packages slider */
+.packages-slider .cs-packages{
+  border-radius: 22px;
+  padding-bottom: 20px;
+}
+.packages-slider .upperlayer {
+  position: relative;
+  height: 200px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.packages-slider img.package-name-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.packages-slider .package-name {
+  color: #43adc4;
+  text-transform: uppercase;
+  max-width: 140px;
+  text-align: center;
+  border-bottom: 3px dashed #000;
+}
+.packages-slider .upperlayer p{
+  margin: 5px 0 0 0;
+}
+.packages-slider .upperlayer p span{
+  color: #43adc4;
+}
+.package-list {
+  padding: 20px;
+} 
+.package-list li+li {
+  margin-top: 6px;
+}
+.package-list li {
+  font-size: 11px;
+  color: #fff;
+  padding: 5px 21px 5px 20px;
+  background-color: rgb(0 0 0 /17%);
+  position: relative;
+}
+.package-list li::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 11px;
+  background-color: #333;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: 9;
+  width: 4px;
+  height: 4px;
+}
+.package-list li::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: 9px;
+  display: inline-block;
+  z-index: 9;
+  width: 9px;
+  height: 5px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+}
+.packages-slider{
+  width: 700px;
+  margin: 0 auto;
+}
+.packages-slider button {
+  width: 100%;
+  margin: 0 auto ;
+  max-width: calc(100% - 40px);
+  background-color: #fff;
+  border-radius: 20px;
+  line-height: 40px; 
+  display: block;
+}
+.packages-slider .swiper-slide{
+  opacity: 0; 
+}
+.packages-slider .swiper-slide-active,
+.packages-slider .swiper-slide-next+div{
+  opacity: 1;
+}
+.packages-slider .swiper-slide-active>div{ 
+  transform: scale(0.9) translateX(20px);
+  transform-origin: right;
+}
+.packages-slider .swiper-slide-next{
+  z-index: 99;
+  opacity: 1;
+}
+.packages-slider .swiper-slide-next+div>div{ 
+  transform: scale(0.9) translateX(-20px);
+  transform-origin: left;
+}
+/*  */
+/* inner banner */
+.cs-inner-banner{
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.cs-inner-banner::after{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 492px;
+  height: 421px;
+  border-radius: 770px 0px 0px 0px;
+  background-color: #DA452C;
+  opacity: 0.6;
+  bottom: 0;
+  right: 0;
+}
+/*  */
+/* seo text */
+.seo-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 148px;
+  line-height: 138%;
+  color: #FFFFFF;
+  text-shadow: 0px 22px 45px rgb(0 0 0 / 11%);
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -75px;
+  top: 120px;
+}
+.seo-design-swiper{
+  opacity: 0.8;
+}
+.seo-packages{
+  width: 100%;
+}
+.seo-packages .swiper-slide-active>div { 
+  background-color: transparent !important;
+}
+.seo-packages.packages-slider .upperlayer {
+  min-height: auto;
+  height: auto;
+  padding: 40px 0 8px 0;
+}
+.seo-packages .package-list{
+  padding: 20px 26px;
+  padding-bottom: 55px; 
+}
+.seo-packages.packages-slider .package-name{
+  color: #333;
+  border: none;
+}
+.seo-packages .package-list li {
+  font-size: 13px;
+  background-color: transparent;
+}
+.seo-packages.packages-slider .upperlayer p {
+  background-color: transparent;
+  padding: 7px 50px;
+  border-radius: 30px;
+  font-size: 19px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.seo-packages.packages-slider button{
+  text-transform: uppercase; 
+}
+.seo-packages .bg-img{
+  position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: contain;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+}
+/*  */
 @media(min-width:1390px){
   .container{
     max-width: 1380px !important;

@@ -44,8 +44,8 @@ const WebBanner = ({ title, title2, body, title3, img, data, btn ,vid}) => {
                 SPEAK WITH AN EXPERT
               </button>
             </div>
-            <div className="bg-[#DA452C] flex items-center space-x-1 text-white w-max px-4 mx-6  text-xl sm:ml-14 rounded my-10">
-              <h2>Excellent</h2>
+            <div className="bg-[#DA452C] flex items-center space-x-1 text-white w-max px-10 mx-auto  text-xl sm:ml-auto rounded my-10">
+              <h2 className='font-inter font-semiBold text-fs20'>Excellent</h2>
 
               <aside className="items-center hidden sm:flex mt-3">
                 <img src={star} alt="" />
@@ -53,9 +53,9 @@ const WebBanner = ({ title, title2, body, title3, img, data, btn ,vid}) => {
                 <img src={star} alt="" />
                 <img src={star} alt="" />
               </aside>
-              <p>5 star reviews on</p>
+              <p className='font-inter font-semiBold text-fs20'>5 star reviews on</p>
               <img src={star2} alt="" />
-              <p>Trustpilot</p>
+              <p className='font-inter font-semiBold text-fs20'>Trustpilot</p>
             </div>
           </>
         ) : (

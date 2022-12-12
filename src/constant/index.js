@@ -82,6 +82,9 @@ import {
   woman,
   www,
   yellow,
+  backgroundLayer1,
+  backgroundLayer2,
+  backgroundLayer3,
 } from "../images";
 
 export const mobileBannerData = [
@@ -827,4 +830,124 @@ export const priceData = [
     color: '#e69b00',
     img:yellow
   },
+];
+
+
+export const packageOffer = [
+  {
+    id: 1,
+    title: "Basic",
+    price: "499",
+    content: ['Customized design',
+     'Full Shopping Cart', 
+     'Payment Module Intergration',
+      'Easy roduct Search',
+      'Product Reviews',
+      'Team of expert Designers & Developers',
+      'Unlimited Revisions',
+      '100% Unique Design Guranteed',
+      '100% Money Back Guaranteed ',
+      'Up to 20 Products'
+    ],
+    color: '#43adc4', 
+  },
+  {
+    id: 2,
+    title: "PRO eStore",
+    price: "75",
+    content: ['Customized design',
+     'Full Shopping Cart', 
+     'Payment Module Intergration',
+      'Easy roduct Search',
+      'Product Reviews',
+      'Team of expert Designers & Developers',
+      'Unlimited Revisions',
+      '100% Unique Design Guranteed',
+      '100% Money Back Guaranteed ',
+      'Up to 20 Products'
+    ],
+    color: '#bcd23e', 
+  },
+  {
+    id: 3,
+    title: "Elite eStore",
+    price: "99",
+    content: ['Customized design',
+     'Full Shopping Cart', 
+     'Payment Module Intergration',
+      'Easy roduct Search',
+      'Product Reviews',
+      'Team of expert Designers & Developers',
+      'Unlimited Revisions',
+      '100% Unique Design Guranteed',
+      '100% Money Back Guaranteed ',
+      'Up to 20 Products'
+    ],
+    color: '#fbcf48', 
+  },
+  {
+    id: 4,
+    title: "Starter eStore",
+    price: "35",
+    content: ['Customized design',
+     'Full Shopping Cart', 
+     'Payment Module Intergration',
+      'Easy roduct Search',
+      'Product Reviews',
+      'Team of expert Designers & Developers',
+      'Unlimited Revisions',
+      '100% Unique Design Guranteed',
+      '100% Money Back Guaranteed ',
+      'Up to 20 Products'
+    ],
+    color: '#ff6242', 
+  },
+];
+
+
+
+export const seoPackage = [
+  {
+    id: 1,
+    title: "Basic",
+    price: "499",
+    content: ['150 keywords optimized', 
+    '30 pages optimized',
+    '6 Content, Outreach, UX or CRO Assets per quatrer',
+    '8 Custom Dashoards',
+    'Phone Call and revenue tracking dashboards',
+    '1/24 Support'
+    ],
+    color: '#cc8281', 
+    img : backgroundLayer1,
+  },
+  {
+    id: 2,
+    title: "Premium",
+    price: "499",
+    content: ['150 keywords optimized', 
+    '30 pages optimized',
+    '6 Content, Outreach, UX or CRO Assets per quatrer',
+    '8 Custom Dashoards',
+    'Phone Call and revenue tracking dashboards',
+    '1/24 Support'
+    ],
+    color: '#709bd1', 
+    img : backgroundLayer2,
+  },
+  {
+    id: 3,
+    title: "Pro",
+    price: "499",
+    content: ['150 keywords optimized', 
+    '30 pages optimized',
+    '6 Content, Outreach, UX or CRO Assets per quatrer',
+    '8 Custom Dashoards',
+    'Phone Call and revenue tracking dashboards',
+    '1/24 Support'
+    ],
+    color: '#bd83dc', 
+    img : backgroundLayer3,
+  },
+
 ];
