@@ -1,15 +1,17 @@
 import React from 'react'
-import { CallHero, HostBanner, WebBanner2 } from '../components'
+import { CallHero, HostBanner } from '../components'
 import FAQ from '../components/FAQ'
 import Featured from '../components/featured'
 import HostFeatures from '../components/hostFeatures'
+import ServicesFeatures from '../components/services.Features';
 import Packages2 from '../components/packages2'
-import { langData2 } from '../constant'
+import { langData2 ,hostDataCard } from '../constant' 
+import {  } from '../constant'
 import { PACKAGES, pricepack3, pricepack4, pricepack5, webBanner4 } from '../images'
 
 const Hosting = () => {
   return (
-    <div>
+    <div> 
       <HostBanner
         title={'Super Fats Servers'}
         title3={'Power Your Website On Our'}
@@ -21,7 +23,9 @@ const Hosting = () => {
         img3={pricepack4}
         img4={pricepack5}
       />
-      <HostFeatures />
+      {/* <HostFeatures />  */}
+
+      <ServicesFeatures color={'#5AA6B1'} data={hostDataCard} bgColor={'#EBF4F6'} />
       <Featured center color={'#FBE9E5'} color2={'white'} data={langData2} title={'Trusted by thousands of agencies, in-house marketers, media companies, freelancers'} />
       <CallHero />
       <FAQ/>

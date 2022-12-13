@@ -18,6 +18,7 @@ import CallHero from "./callHero";
 import WebBanner2 from "./webBanner2";
 import SeoDesign from "./seoDesign";
 import HostBanner from "./hostBanner";
+import Services2 from "./services2";
 
 export {
   Header,Built,SeoDesign,
@@ -25,7 +26,7 @@ export {
   Affordable,WebBanner,Creative,HostBanner,
   Client,
   Banner,Portfolio,Focus,CallHero,
-  Services,
+  Services, Services2,
   Form,
   Info,
   Footer,

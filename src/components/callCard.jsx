@@ -15,7 +15,7 @@ const CallCard = () => {
                     <small className='text-fs1944 font-normal font-inter'>
                         Toll Free Number
                     </small>
-                    <h2 className='text-fs3044 font-semiBold font-inter '>
+                    <h2 className='text-fs3044 font-semibold font-inter '>
                         800-361-2961
                     </h2>
                 </aside>
@@ -27,7 +27,7 @@ const CallCard = () => {
                     <small className='text-fs1944 font-normal font-inter'>
                         Get a Quote
                     </small>
-                    <h2 className='text-fs3044 font-semiBold font-inter mt-0'>
+                    <h2 className='text-fs3044 font-semibold font-inter mt-0'>
                         Live Chat With Us
                     </h2>
                 </aside>

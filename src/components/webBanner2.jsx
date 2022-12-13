@@ -19,7 +19,7 @@ const WebBanner2 = ({ title, title3, title2, body, img, show, gif, vid }) => {
     }
 
     return (
-        <section className=' flex flex-col sm:flex-row justify-between items-center cs-inner-banner  py-25'>
+        <section className=' flex flex-col sm:flex-row justify-between items-center cs-inner-banner  pt-25'>
             <div className='container mx-auto flex items-center'>
             <div className='w-full  w-1/2 '>
 
@@ -27,7 +27,7 @@ const WebBanner2 = ({ title, title3, title2, body, img, show, gif, vid }) => {
                     <div className='mt-10 w-[200px] h-1 bg-[#DA452C] mb-4' />
                     <h2 className='text-fs60 font-bold font-inter mb-10'>
                         {title3}
-                        <span className='text-[#DA452C]'>{title}</span>
+                        <span className='text-[#DA452C]'> {title}</span>
                         {title2}
                     </h2>
                     <h4 className='text-fs25 font-inter  mb-0 sub-title text-[#5AA6B1] block font-medium'>
@@ -69,29 +69,29 @@ const WebBanner2 = ({ title, title3, title2, body, img, show, gif, vid }) => {
                         </div>
                         </div>}
                         {step >= 3 ? <button className='btn2 green-btn py-2 px-16 text-white  hover:bg-nc-orange'>DONE</button> : <button onClick={(e) => nextForm(e)} className='btn2 green-btn py-2 px-16 text-white  hover:bg-nc-orange'>NEXT</button>}</> :
-                        <div className='bg-[#EBF4F6] w-full md:-ml-6 lg:ml-0 sm:w-[400px] h-max  p-8 rounded-lg flex flex-col space-y-3'>
+                        <div className='bg-[#EBF4F6] w-full md:-ml-6 mt-10 lg:ml-0 sm:w-[400px] h-max  p-8 rounded-lg flex flex-col space-y-8 telephony-form'>
                             <div className='bg-transparent w-full border-[#DA452C] border-[1px]  px-6 py-2 rounded-full flex flex-col '>
                     
-                                <input type="text" placeholder='email' className='bg-transparent outline-none border-b-2 ' />
+                                <input type="text" placeholder='Email' className='bg-transparent outline-none border-b-2 ' />
                             </div>
                             <aside className='flex items-center space-x-4 w-full'>
-                                <div className='bg-transparent w-1/2 border-[#DA452C] border-[1px]  px-4 py-1 rounded-full flex flex-col'>
+                                <div className='bg-transparent w-[160px] border-[#DA452C] border-[1px]  px-4 py-1 rounded-full flex flex-col'>
                                   
-                                    <input placeholder='firstname' type="text" className='bg-transparent outline-none border-b-2 ' />
-                                </div>      <div className='bg-transparent w-1/2 border-[#DA452C] border-[1px]  px-4 py-1  rounded-full flex flex-col'>
+                                    <input placeholder='Firstname' type="text" className='bg-transparent outline-none border-b-2 ' />
+                                </div>      <div className='bg-transparent w-[160px]  border-[#DA452C] border-[1px]  px-4 py-1  rounded-full flex flex-col'>
                                 
-                                    <input placeholder='lastname' type="text" className='bg-transparent outline-none border-b-2 ' />
+                                    <input placeholder='Lastname' type="text" className='bg-transparent outline-none border-b-2 ' />
                                 </div>
                             </aside>
                             <aside className='flex items-center space-x-4 w-full'>
-                                <div className='bg-transparent w-1/2 border-[#DA452C] border-[1px]  px-4 py-1 rounded-full flex flex-col'>
+                                <div className='bg-transparent w-[160px]  border-[#DA452C] border-[1px]  px-4 py-1 rounded-full flex flex-col'>
                               
-                                    <input placeholder='city' type="text" className='bg-transparent outline-none border-b-2 ' />
-                                </div>      <div className='bg-transparent w-1/2 border-[#DA452C] border-[1px]  px-4 py-1 rounded-full flex flex-col'>
-                                    <input type="number" placeholder='phone number' className='bg-transparent outline-none border-b-2 ' />
+                                    <input placeholder='City' type="text" className='bg-transparent outline-none border-b-2 ' />
+                                </div>      <div className='bg-transparent w-[160px] border-[#DA452C] border-[1px]  px-4 py-1 rounded-full flex flex-col'>
+                                    <input type="number" placeholder='Phone number' className='bg-transparent outline-none border-b-2 ' />
                                 </div>
                             </aside>
-                            <button className=' border-2 text-white bg-[#5AA6B1] my-10 w-3/4 rounded-lg p-2 lg:p-4 text-sm'>Start your 7-Days Free trial</button>
+                            <button className=' border-2 text-white bg-[#5AA6B1] my-10 w-3/4 rounded-lg p-2 lg:p-4 text-sm mt-10 mb-8'>Start your 7-Days Free trial</button>
                         </div>}
                 </div>
 

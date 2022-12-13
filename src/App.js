@@ -28,7 +28,7 @@ function App() {
           <Route path="/social-media-management" element={<Social />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/telephony" element={<Telephony />} />
-          <Route path="/web-hosting" element={<Hosting />} />
+          <Route path="/hosting" element={<Hosting />} />
           <Route path="/about" element={<About />} />
           <Route path="/mobile-application-development" element={<Mobile />} />
           <Route path="/paid-marketing" element={<Marketing />} />

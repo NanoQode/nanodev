@@ -206,6 +206,10 @@ import backgroundLayer1 from './Pricing-table-3-of-1.png';
 import backgroundLayer2 from './Pricing-table-3-of-2.png';
 import backgroundLayer3 from './Pricing-table-3-of-3.png';
 
+
+import socialBg1 from './social-bg-1.png';
+import socialBg2 from './social-bg-2.png';
+
 export {
   arrow,seo,
   FEATURES,hand2,Gif1,Gif2,Gif3,Gif4,
@@ -399,5 +403,8 @@ export {
   backgroundLayer,
   backgroundLayer1,
   backgroundLayer2,
-  backgroundLayer3
+  backgroundLayer3,
+
+  socialBg1,
+  socialBg2
 };

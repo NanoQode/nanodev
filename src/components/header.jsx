@@ -124,7 +124,7 @@ const Header = () => {
           ['Blog', '/blog'],
           ['About', '/about'],
         ].map(([title, url]) => (
-          <a href={url} className="font-inter font-medium hover:text-nc-orange">{title}</a>
+          <Link to={url} className="font-inter font-medium hover:text-nc-orange">{title}</Link>
         ))} 
         </nav>
         <button className="btn btn-blue  font-medium">

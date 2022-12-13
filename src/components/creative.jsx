@@ -10,7 +10,7 @@ const Creative = ({data,img,title,body,subtext,img2,call}) => {
     const [openModal, setOpenModal] = useState(false)
   return (
       <section className='overflow-hidden'>
-          <div className='bg-[#DA4B271F] relative w-full   py-20'>
+          <div className='bg-[#DA4B271F] relative w-full   py-16'>
         <div className='container mx-auto'>
               <div className='absolute -right-4 -top-6 sm:-top-5'>
                   <img src={img} className='w-3/4' alt="" />

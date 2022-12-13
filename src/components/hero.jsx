@@ -1,7 +1,7 @@
 import React from 'react'
-import { arrow, arrow2, aws, bing, cfib, godaddy, line, mailchimp, mailgun, meta, shopify, zoho } from '../images'
+import {  aws, bing, cfib, godaddy,  mailchimp, mailgun, meta, shopify, zoho } from '../images'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay, Navigation } from 'swiper';
+import SwiperCore, { Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
@@ -47,32 +47,26 @@ const Hero = () => {
   ]
 
   return (
-    <section className='flex items-center justify-center flex-col bg-[#EBF4F6] w-full pt-12 pb-20'>
+    <section className='flex items-center justify-center flex-col bg-[#EBF4F6] w-full py-16'>
       <div className='container'>
-      <Title title={'Our Partners in Your Success'}/>
-      <div className='logo-slider  bg-white rounded-full  mt-12'>
-      <Swiper
-        className='w-full   h-[50px] sm:h-[80px]'
-        //   spaceBetween={15}
-        slidesPerView={7}
-        navigation
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
-        // modules={[Autoplay]}
-        modules={[Navigation]}
-        // autoplay={{
-        //     delay: 3000,
-        //     disableOnInteraction: false,
-        // }}
-        // loop={true}
-        speed={2000}>
-        {data.map((item) => (
-          <SwiperSlide className='flex items-center justify-center'>
-                <img src={item.img} className='' />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      </div>
+        <Title title={'Our Partners in Your Success'}/>
+        <div className='logo-slider  bg-white rounded-full  mt-12'>
+          <Swiper
+            className='w-full   h-[50px] sm:h-[80px]'
+            
+            slidesPerView={7}
+            navigation
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)} 
+            modules={[Navigation]} 
+            speed={2000}>
+            {data.map((item) => (
+              <SwiperSlide className='flex items-center justify-center'>
+                    <img src={item.img} className='' />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </section>
   )

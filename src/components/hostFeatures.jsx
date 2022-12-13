@@ -7,7 +7,7 @@ import Title from './title'
 const HostFeatures = () => {
   return (
       <div className='bg-[#E9E9E9] w-full h-max relative'>
-          <Title title={'Features'} center={false} />
+          <Title title={'Features'} center={false} />ssss
           <div className='hidden sm:flex absolute  left-0 top-[10rem]'>
               <img src={FEATURES} alt="" />
           </div>

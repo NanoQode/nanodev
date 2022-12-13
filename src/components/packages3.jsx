@@ -1,16 +1,16 @@
 import React from 'react'
 import { arrow, arrow2, line} from '../images'
-import { seoPackage } from '../constant' 
+import { socialPackages } from '../constant' 
 import { Swiper, SwiperSlide } from 'swiper/react';
-const Packages2 = ({img,img2,img3,img4,big,color}) => {
+const Packages3 = ({img,img2,img3,img4,big,color}) => {
   return (
     
         <section
           style={{
           background:color || 'white'
         }}
-          className='pricing-sec relative h-max  py-16'>
-            <div className='flex flex-col items-center justify-center p-5 mb-10'>
+          className='pricing-sec relative h-max  py-18'>
+            <div className='flex flex-col items-center justify-center p-5 my-10'>
                 <h3 className='font-bold font-inter text-hd'>Pricing</h3>
                 <img src={line} className='w-60' alt="" />
             </div>
@@ -27,35 +27,34 @@ const Packages2 = ({img,img2,img3,img4,big,color}) => {
                             <img src={arrow2} alt="" />
                         </div>
                     </div>
-                    <div className='sm:mt-20 w-[1000px] justify-center ml-auto flex items-center space-x-3 flex-col md:flex-row lg:mt-0'>
+                    <div className='sm:mt-20 w-[1000px] justify-center  flex items-center space-x-3 flex-col md:flex-row lg:mt-0'>
                         <Swiper 
-                            className='packages-slider seo-packages'
+                            className='social-packages-wrap'
                             spaceBetween={40}
-                            slidesPerView={3}  
+                            slidesPerView={2}  
                             speed={0}>
             
-                            {seoPackage.map((item) =>
+                            {socialPackages.map((item) =>
                             <SwiperSlide className=''> 
-                                <div key={item.id}  className=' z-20 relative cs-packages '> 
+                                <div key={item.id}  className=' z-20 relative social-packages '> 
                                     <img src={item.img} className="bg-img"/>
                                     <div className='upperlayer'  > 
-                                        <h3 className='package-name text-fs32 font-medium font-inter' >
+                                        <h3 className='package-name text-fs25 font-medium font-inter' style={{ color: item.color}}>
                                             {item.title} 
                                         </h3>
-                                        <p className='font-inter font-light'>$<span style={{
-                                            color: item.color
-                                            }} >{item.price}</span>/mo</p>
+                                        
                                     </div> 
-                                    <div className='package-list'>
+                                    <div className='social-package-list'>
                                         <ul>
                                         {item.content.map((res) => 
-                                            <li  className='font-inter font-regular'>{res}</li>
+                                            <li  className='font-inter font-regular'><span  style={{ borderColor: item.color}}><span style={{ borderColor: item.color}}></span></span> {res}</li>
                                         )}
                                         </ul>
                                     </div>
-                                    <button  className='font-inter font-bold' style={{
-                                            backgroundColor: item.color
-                                            }} >Subscribe</button>
+                                    <p className='font-inter font-light social-price'><small style={{ color: item.color}}>$</small><span style={{
+                                            color: item.color
+                                            }} >{item.price}</span>/mo</p>
+                                    <button  className='font-inter font-bold'  >Subscribe</button>
                                 </div> 
                             </SwiperSlide> 
                             )} 
@@ -68,4 +67,4 @@ const Packages2 = ({img,img2,img3,img4,big,color}) => {
   )
 }
 
-export default Packages2
+export default Packages3

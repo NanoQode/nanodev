@@ -38,7 +38,7 @@ const Info = () => {
 
   ]
   return (
-    <section className='nc-web-creation bg-[#EBF4F6] py-20 w-full'>
+    <section className='nc-web-creation bg-[#EBF4F6] py-16 w-full'>
       <div className='container mx-auto flex flex-col justify-center items-center lg:flex-row lg:justify-between  '>
       <div className='w-full  w-[450px]'>
         <div className='mb-10'>
@@ -49,7 +49,7 @@ const Info = () => {
           Your technology partner for innovative and impactful digital solutions. We are a digital commerce agency that fits perfectly with your business. We work with you and take your stakeholders into consideration when developing custom solutions that guarantee significant value from your digital investment.
         </p>
         <Link to='/web-development' >
-        <button className='my-5 btn btn-blue'>
+        <button className='mt-5 btn btn-blue'>
           More Details
           </button>
         </Link>

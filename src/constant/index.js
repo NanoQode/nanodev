@@ -85,6 +85,8 @@ import {
   backgroundLayer1,
   backgroundLayer2,
   backgroundLayer3,
+  socialBg1,
+  socialBg2
 } from "../images";
 
 export const mobileBannerData = [
@@ -949,5 +951,32 @@ export const seoPackage = [
     color: '#bd83dc', 
     img : backgroundLayer3,
   },
+];
 
+
+export const socialPackages = [
+  {
+    id: 1,
+    title: "Starter Pack",
+    price: "150",
+    content: ['Monthly meeting to discuss content', 
+    'Content creation, graphics creation, traffic tracking, posting on three platforms of your choice',
+    '5 relevant posts per week',
+    'One video creation per month',
+    ],
+    color: '#59b2e8', 
+    img : socialBg1,
+  },
+  {
+    id: 2,
+    title: "Pro Pack",
+    price: "300",
+    content: ['Monthly meeting to discuss content', 
+    'Content creation, graphics creation, traffic tracking, posting on three platforms of your choice',
+    '5 relevant posts per week',
+    'One video creation per month',
+    ],
+    color: '#5e166b', 
+    img : socialBg2,
+  },
 ];

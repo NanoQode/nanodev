@@ -2,7 +2,7 @@ import React from 'react'
 import { Affordable, Banner, CallHero, Client, Design, Form, Hero, Info, Services } from '../components'
 import Featured from '../components/featured'
 import { designData, langData, servicesData } from '../constant'
-import { BUSINESS, DESIGN, designimg, Gif1 } from '../images'
+import { BUSINESS, DESIGN, Gif1 } from '../images'
 
 const Home = () => {
     return (

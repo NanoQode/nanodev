@@ -48,7 +48,7 @@ const Mobile = () => {
           btn={true}
           img2={split22}
           img={DESIGN}
-          title={'The BIG Picture, in 3 Steps'} />
+          title={'Here are a few reasons why our customers choose Nanoqode.'} />
         <Design data={designData3}
           subtitle={''}
           btn={true}

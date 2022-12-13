@@ -17,7 +17,7 @@ const Affordable = () => {
   }
 
   return (
-    <section className='relative affordable-services py-20'>  
+    <section className='relative affordable-services py-16'>  
     <div className='hidden sm:flex top-1 lg:top-1 z-20 absolute'>
     <img src={DEVELOPMENT} alt="" />
   </div>
@@ -46,7 +46,7 @@ const Affordable = () => {
               speed={2000}>
             
             {priceData.map((item) =>
-            <SwiperSlide className=''>
+            <SwiperSlide className='mb-5'>
             <div key={item.id} className=' z-20 relative'>
               <img src={item.img} className='w-60' alt="" />
               <div className='absolute  cs-slide-outer-layer'>

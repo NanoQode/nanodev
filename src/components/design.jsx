@@ -6,7 +6,7 @@ import { PopupModal } from 'react-calendly';
 const Design = ({ data, title, subtitle, btn, img, img2, reverse }) => {
   const [openModal, setOpenModal] = useState(false)
   return (
-    <section className={reverse ? 'bg-[#DA4B271F] pt-0 py-20' : 'bg-[#DA4B271F] pt-20'}>
+    <section className={reverse ? 'bg-[#DA4B271F] pt-0 py-20' : 'bg-[#DA4B271F] pt-16'}>
       <div className='container mx-auto'>
         <div className='w-full'>
         {title ?
@@ -66,7 +66,7 @@ const Design = ({ data, title, subtitle, btn, img, img2, reverse }) => {
                 }}
                 transition={{ ease: "easeOut", duration: 1.2 }}
                 src={reverse ? img : img} className=
-                {reverse ? 'absolute hidden sm:flex left-28 sm:left-12 z-10' : 'absolute right-14 -z-10'} alt="" />
+                {reverse ? 'absolute hidden sm:flex left-28 sm:left-12 z-10' : 'absolute right-14 '} alt="" />
             </div> 
           </div>
         </div>

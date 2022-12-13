@@ -1,10 +1,10 @@
 import React from 'react'
-import {CallHero, Client, Services, WebBanner2 } from '../components'
-import Featured from '../components/featured'
-import Packages2 from '../components/packages2'
-import ServicesFeatures from '../components/services.Features'
-import { langData2, servicesData2 } from '../constant'
-import { Gif4, PACKAGES, pricepack3, pricepack4, pricepack5, webbanner3 } from '../images'
+import {CallHero, Client, Services, Services2, WebBanner2 } from '../components' ;
+import Featured from '../components/featured';
+import Packages2 from '../components/packages2';
+import ServicesFeatures from '../components/services.Features';
+import { langData2, servicesData2,servicesDataCard } from '../constant';
+import { Gif4, PACKAGES, pricepack3, pricepack4, pricepack5 } from '../images';
 
 const Telephony = () => {
   return (
@@ -25,12 +25,13 @@ const Telephony = () => {
         img4={pricepack5}
         color={'#FBE9E5'}
       />
-      <CallHero />
-      <Services data={servicesData2} 
+      <CallHero /> 
+        <Services2 data={servicesData2} 
         img={''}
         title={''}
         subtitle={'How It Works'}/>
-      <ServicesFeatures/>
+        {/*  */}
+      <ServicesFeatures color={'#DA452C'}  data={servicesDataCard} bgColor={'#EBF4F6'}/>
     </div>
   )
 }
