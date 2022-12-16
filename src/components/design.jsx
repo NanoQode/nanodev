@@ -12,7 +12,7 @@ const Design = ({ data, title, subtitle, btn, img, img2, reverse }) => {
         {title ?
           <div className={btn ? 'flex flex-col space-y-3' : 'flex flex-col  '}>
             <h4 className='font-semibold font-inter text-fs20 mb-4'>{subtitle ?? ''}</h4>
-            <h3 className='text-fs48 font-bold font-inter'>{title ?? ''}</h3>
+            <h3 className='text-fs48 font-bold font-inter max-w-[746px]'>{title ?? ''}</h3>
             <img src={title ? line : ''} className='w-1/3 2xl:w-60' alt="" />
           </div>
 : <div className='-mt-14'></div>}

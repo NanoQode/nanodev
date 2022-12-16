@@ -11,9 +11,11 @@ module.exports = {
       },
     },
     fontSize: {
-      fs60  : ['60px', '70px'], 
+      fs60  : ['60px', '70px'],  
+      fs52  : ['52px', '83px'],
       hd    : ['48px', '66px'], 
       fs48  : ['48px', '66px'], 
+      fs36  : ['36px', '48px'],
       fs32  : ['32px', '42px'],  
       fs31  : ['31px', '42px'],
       fs30  : ['30px', '48px'], 

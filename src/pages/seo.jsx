@@ -1,9 +1,9 @@
 import React from 'react'
-import {CallHero, Client,Form, SeoDesign, WebBanner2 } from '../components'
+import { CallHero, Client, Form, SeoDesign, WebBanner2 } from '../components'
 import Featured from '../components/featured'
 import Packages2 from '../components/packages2'
-import {  langData2, seoDesignData3 } from '../constant'
-import { PACKAGES, pricepack3, pricepack4, pricepack5, SEO, seo,  webbanner3 } from '../images'
+import { langData2, seoDesignData3 } from '../constant'
+import { PACKAGES, pricepack3, pricepack4, pricepack5, SEO, seo, webbanner3 } from '../images'
 
 const SEOPage = () => {
   return (
@@ -25,8 +25,8 @@ const SEOPage = () => {
       <SeoDesign data={seoDesignData3}
         img={SEO}
         title={'What You Need To Know'} />
-      <CallHero/>
-      <Form/>
+      <CallHero />
+      <Form />
     </div>
   )
 }

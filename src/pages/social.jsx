@@ -5,7 +5,7 @@ import Packages from '../components/packages'
 import Packages3 from '../components/packages3'
 
 import { langData2, seoDesignData3 } from '../constant'
-import { package2, pricepack, pricepack2, SEO as seo, webbanner, webbanner2 } from '../images'
+import { package2, pricepack, pricepack2, SEO as seo, webbanner } from '../images'
 
 const Social = () => {
     return (

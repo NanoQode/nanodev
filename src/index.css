@@ -2115,6 +2115,16 @@ border-radius: 8px;
   right: 0;
   bottom: 0;
 }
+/*  */
+.letter-3{
+  letter-spacing: 3px;
+}
+.blog-img{
+  width: 490px;
+}
+.blog-listing-des{
+  width: calc(100% - 490px);
+}
 @media(min-width:1390px){
   .container{
     max-width: 1380px !important;

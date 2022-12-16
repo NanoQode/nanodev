@@ -24,8 +24,8 @@ const Featured = ({title,data,color,color2,center}) => {
               //   spaceBetween={15}
               slidesPerView={5}
               navigation
-              onSlideChange={() => console.log('slide change')}
-              onSwiper={(swiper) => console.log(swiper)}
+            //   onSlideChange={() => console.log('slide change')}
+            //   onSwiper={(swiper) => console.log(swiper)}
               // modules={[Autoplay]}
               modules={[Navigation]}
               // autoplay={{

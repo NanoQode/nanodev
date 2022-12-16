@@ -1,9 +1,8 @@
-import React from 'react'
-import { CallHero, Client, Form, SeoDesign, WebBanner2 } from '../components'
-import Featured from '../components/featured'
-
-import { langData2, seoDesignData3 } from '../constant'
-import { SEO as seo, webbanner2 } from '../images'
+import React from 'react';
+import { CallHero, Client, Form, SeoDesign, WebBanner2 } from '../components';
+import Featured from '../components/featured';
+import { langData2, seoDesignData3 } from '../constant';
+import { SEO as seo, webbanner2 } from '../images';
 
 const Marketing = () => {
     return (

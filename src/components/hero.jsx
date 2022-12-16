@@ -56,8 +56,8 @@ const Hero = () => {
             
             slidesPerView={7}
             navigation
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)} 
+            // onSlideChange={() => console.log('slide change')}
+            // onSwiper={(swiper) => console.log(swiper)} 
             modules={[Navigation]} 
             speed={2000}>
             {data.map((item) => (

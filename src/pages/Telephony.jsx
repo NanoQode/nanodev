@@ -1,5 +1,5 @@
-import React from 'react'
-import {CallHero, Client, Services, Services2, WebBanner2 } from '../components' ;
+import React from 'react';
+import {CallHero, Client, Services2, WebBanner2 } from '../components' ;
 import Featured from '../components/featured';
 import Packages2 from '../components/packages2';
 import ServicesFeatures from '../components/services.Features';

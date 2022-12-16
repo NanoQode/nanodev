@@ -5,36 +5,30 @@ import { blogH } from '../images'
 const Blog = () => {
   return (
     <div>
-
-    <div className='bg-[#EBF4F6] w-full h-max sm:p-8 relative z-40'> 
-      <div className=' flex flex-col sm:flex-row justify-between '>
-        <section className='w-full lg:w-3/4 xl:w-1/2 2xl:w-1/3 2xl:mx-auto'>
-
-          <div className='text-[#333333] p-8'>
-            <h3 className='font-bold'>Featured Post</h3>
-            <h2 className=' text-2xl lg:text-4xl  font-bold '>
-              Step-by-step guide to choosing great font pairs
-            </h2>
-            <p className='my-10'>By John Doe   l   May 23, 2022 </p>
-            <h4 className=' my-5 text-lg lg:text-2xl'>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </h4>
-
-            <button className=' border-2 text-white bg-[#5AA6B1] my-5 w-max  rounded-lg p-2 lg:py-4 lg:px-6 text-sm'>Read More  </button>
+      <section className='bg-[#EBF4F6] w-full h-max  relative z-40 py-16'>
+        <div className='container mx-auto'>
+          <div className=' flex flex-col sm:flex-row justify-between items-center'>
+            <div className='w-3/5'>
+              <div className='max-w-[663px]'>
+                <h3 className='text-fs16 font-inter uppercase text-[#232536] font-medium letter-3 mb-5'>Featured Post</h3>
+                <h2 className='text-fs36 font-inter text-[#232536] font-bold mb-0'>
+                  Step-by-step guide to choosing great font pairs
+                </h2>
+                <p className='my-4'>By John Doe   l   May 23, 2022 </p>
+                <h4 className='mb-8  text-fs1628 text-[#6D6E76] font-inter font-regular'>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                </h4>
+                <button className='btn btn-blue font-normal mt-5 w-253'>Read More  </button>
+              </div>
+            </div>
+            <div className='w-2/5 flex items-center justify-center flex-col'>
+              <img src={blogH} className='w-full' alt="" />
+            </div>
           </div>
-
-
-        </section>
-        <section className='w-full lg:w-3/4 xl:w-1/2 flex items-center mb-7 justify-center flex-col lg:-mt-20 xl:-mt-3 2xl:w-1/3 2xl:mx-auto'>
-          <img
-            src={blogH} className='w-full sm:w-[90%]' alt="" />
-
-        </section>
-      </div>
-      </div>
-      <BlogPost/>
+        </div>
+      </section>
+      <BlogPost />
     </div>
-
   )
 }
 

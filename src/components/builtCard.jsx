@@ -2,7 +2,7 @@ import React from 'react'
 
 const BuiltCard = ({ data }) => {
     return (
-        <div className='bg-white relative flex h-[302px] rounded py-7 pr-4 w-[25%]  px-7 ml-20 hover:bg-[#DA452C] hover:!text-white  hover:scale-105 duration-150 ease-out transition-all cursor-pointer'>
+        <div className='bg-white relative flex flex-col h-[302px] rounded py-7 pr-4 w-[25%]  px-7 ml-20 hover:bg-[#DA452C] hover:!text-white  hover:scale-105 duration-150 ease-out transition-all cursor-pointer'>
             <div className='bg-[#5AA6B1] w-[92px] h-[92px] rounded-full flex items-center justify-center absolute -top-16 left-0'>
                 <img src={data.img} alt="" />
             </div>
@@ -19,8 +19,7 @@ const BuiltCard = ({ data }) => {
                         <div className='w-2 h-2 bg-[#DA4B27] rounded-full hover:bg-white' />
                         <p className='text-fs1628 font-inter font-normal'>{res}</p>
                     </div>
-                )}
-
+                )} 
             </div>
         </div>
     )

@@ -43,7 +43,7 @@ const Header = () => {
   const handleMouseOut = () => {
     setTab2(false)
   };
-  
+
   const handleMouseOver2 = () => {
     setTab(true)
   };
@@ -71,65 +71,65 @@ const Header = () => {
     <header>
       <section className='bg-nc-orange w-full flex    h-[70px]  '>
         <div className='container mx-auto flex justify-between'>
-        <div className='flex items-center text-white space-x-1'>
-          <img src={email} alt="" />
-          <h3 className='font-normal font-inter'>
-            info@nanoqode.com
-          </h3>
-        </div>
-        <div className='hidden lg:flex items-center text-white space-x-1'>
-          <img src={home} alt="" />
-          <h3 className='font-normal font-inter'>
-            6 Indell Lane, Brampton ON L6T 3Y3, Canada
-          </h3>
-        </div>
-        <div className='flex items-center space-x-6 cursor-pointer'>
-          <img src={twitter} alt="" />
-          <img src={facebook} alt="" />
-          <img src={instaw} alt="" />
-          <img src={vimeo} alt="" />
-          <img src={youtube} alt="" />
-        </div>
+          <div className='flex items-center text-white space-x-1'>
+            <img src={email} alt="" />
+            <h3 className='font-normal font-inter'>
+              info@nanoqode.com
+            </h3>
+          </div>
+          <div className='hidden lg:flex items-center text-white space-x-1'>
+            <img src={home} alt="" />
+            <h3 className='font-normal font-inter'>
+              6 Indell Lane, Brampton ON L6T 3Y3, Canada
+            </h3>
+          </div>
+          <div className='flex items-center space-x-6 cursor-pointer'>
+            <img src={twitter} alt="" />
+            <img src={facebook} alt="" />
+            <img src={instaw} alt="" />
+            <img src={vimeo} alt="" />
+            <img src={youtube} alt="" />
+          </div>
         </div>
       </section>
       <section className='bg-[#E9E9E9] w-full h-[100px] '>
-      <div className='container mx-auto flex items-center justify-around sm:justify-between relative'>
-        <div className='site-logo'>
-          <Link to='/'>
-            <img src={logo} alt="logo" />
-          </Link>
-        </div> 
-        <nav className='nc-navbar items-center space-x-8 font-semibold text-sm sm:text-lg text-[#333333] cursor-pointer hidden lg:flex '>
-          <Link to='/'  className="font-inter font-medium"> Home  </Link>
-
-          <div onMouseOver={handleMouseOver} onMouseLeave={handleMouseOut} className={pathname === '/webdesign' || pathname === '/mobileapp' || pathname === '/ecommerce' || pathname === '/software' ? 'text-[#DA452C] flex items-center space-x-2' : 'flex items-center space-x-2'} >{menuTab}
-            
-            <img src={down} className='w-4 ml-2' alt="" />
-            {tab2 ?
-              <span className='z-50 flex flex-col absolute top-[98%] left-[0%] xl:left-[0%] p-2 text-sm rounded bg-[#DA452C] text-white 2xl:left-[0rem]'>
-                {menuOption.map((item) => <a className='hover:text-[#5AA6B1]' onClick={() => setTabOption2(item)}>{item.title}</a>)}
-              </span> : null}
+        <div className='container mx-auto flex items-center justify-around sm:justify-between relative'>
+          <div className='site-logo'>
+            <Link to='/'>
+              <img src={logo} alt="logo" />
+            </Link>
           </div>
-          <div  onMouseOver={handleMouseOver2} onMouseLeave={handleMouseOut2} className={pathname === '/seo' || pathname === '/social' || pathname === '/marketing'  ? 'text-[#DA452C] flex items-center space-x-2' : 'flex items-center space-x-2'}>{headerTab}
+          <nav className='nc-navbar items-center space-x-8 font-semibold text-sm sm:text-lg text-[#333333] cursor-pointer hidden lg:flex '>
+            <Link to='/' className="font-inter font-medium"> Home  </Link>
 
-            <img src={down} className='w-4 ml-2' alt="" />
-            {tab ?
-              <span className='z-50 flex flex-col absolute top-[98%] left-[0%] xl:left-[0%] p-2 text-sm rounded bg-[#DA452C] text-white 2xl:left-[0rem]'>
-                {menuOption2.map((item) => <a className='hover:text-[#5AA6B1]' onClick={() => setTabOption(item)}>{item.title}</a>)}
-              </span> : null}
-          </div>
-          {[
-          ['Telephony', '/telephony'],
-          ['Hosting', '/hosting'],
-          ['Blog', '/blog'],
-          ['About', '/about'],
-        ].map(([title, url]) => (
-          <Link to={url} className="font-inter font-medium hover:text-nc-orange">{title}</Link>
-        ))} 
-        </nav>
-        <button className="btn btn-blue  font-medium">
-                +1 (647)812-9492
-        </button> 
+            <div onMouseOver={handleMouseOver} onMouseLeave={handleMouseOut} className={pathname === '/webdesign' || pathname === '/mobileapp' || pathname === '/ecommerce' || pathname === '/software' ? 'text-[#DA452C] flex items-center space-x-2' : 'flex items-center space-x-2'} >{menuTab}
+
+              <img src={down} className='w-4 ml-2' alt="" />
+              {tab2 ?
+                <span className='z-50 flex flex-col absolute top-[98%] left-[0%] xl:left-[0%] p-2 text-sm rounded bg-[#DA452C] text-white 2xl:left-[0rem]'>
+                  {menuOption.map((item) => <a className='hover:text-[#5AA6B1]' onClick={() => setTabOption2(item)}>{item.title}</a>)}
+                </span> : null}
+            </div>
+            <div onMouseOver={handleMouseOver2} onMouseLeave={handleMouseOut2} className={pathname === '/seo' || pathname === '/social' || pathname === '/marketing' ? 'text-[#DA452C] flex items-center space-x-2' : 'flex items-center space-x-2'}>{headerTab}
+
+              <img src={down} className='w-4 ml-2' alt="" />
+              {tab ?
+                <span className='z-50 flex flex-col absolute top-[98%] left-[0%] xl:left-[0%] p-2 text-sm rounded bg-[#DA452C] text-white 2xl:left-[0rem]'>
+                  {menuOption2.map((item) => <a className='hover:text-[#5AA6B1]' onClick={() => setTabOption(item)}>{item.title}</a>)}
+                </span> : null}
+            </div>
+            {[
+              ['Telephony', '/telephony'],
+              ['Hosting', '/hosting'],
+              ['Blog', '/blog'],
+              ['About', '/about'],
+            ].map(([title, url]) => (
+              <Link to={url} className="font-inter font-medium hover:text-nc-orange">{title}</Link>
+            ))}
+          </nav>
+          <button className="btn btn-blue  font-medium">
+            +1 (647)812-9492
+          </button>
         </div>
         {/* mobile menu */}
         <div className='flex lg:hidden'>
@@ -150,7 +150,7 @@ const Header = () => {
                   {menuOption.map((item) => <p className='hover:text-[#5AA6B1]' onClick={() => setTabOption2(item)}>{item.title}</p>)}
                 </div> : null}
             </p>
-            <p  onClick={selectOption} className={pathname === '/seo' || pathname === '/social' || pathname === '/marketing' ? 'text-[#DA452C] flex items-center space-x-2' : 'flex items-center space-x-2'}>{headerTab}
+            <p onClick={selectOption} className={pathname === '/seo' || pathname === '/social' || pathname === '/marketing' ? 'text-[#DA452C] flex items-center space-x-2' : 'flex items-center space-x-2'}>{headerTab}
 
               <img src={down} className='w-4 ml-2' alt="" />
               {tab ?
@@ -163,7 +163,7 @@ const Header = () => {
             <p className={pathname === '/hosting' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('web-hosting')}>Hosting </p>
             <p className={pathname === '/blog' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('blog')}>Blog </p>
             <p className={pathname === '/about' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('about')}>About </p>
-            
+
           </section>}
       </section>
     </header>
