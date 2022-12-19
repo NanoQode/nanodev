@@ -12,12 +12,12 @@ const Design = ({ data, title, subtitle, btn, img, img2, reverse }) => {
         {title ?
           <div className={btn ? 'flex flex-col space-y-3' : 'flex flex-col  '}>
             <h4 className='font-semibold font-inter text-fs20 mb-4'>{subtitle ?? ''}</h4>
-            <h3 className='text-fs48 font-bold font-inter max-w-[746px]'>{title ?? ''}</h3>
+            <h3 className='text-fs48 font-bold font-inter max-w-[746px]  mlg:text-fs36'>{title ?? ''}</h3>
             <img src={title ? line : ''} className='w-1/3 2xl:w-60' alt="" />
           </div>
 : <div className='-mt-14'></div>}
-          <div className={reverse ? 'flex ml-0 mt-14 items-start w-full relative flex-row-reverse' : 'flex ml-0 mt-14 items-start  flex-col lg:flex-row w-full relative'}>
-            <div className={reverse ? 'hidden sm:flex sm:ml-0 w-[625px] mt-16 ' : 'hidden sm:flex sm:ml-0 w-[625px] mt-16'}>
+          <div className={reverse ? 'flex ml-0 mt-14 items-start w-full relative flex-row-reverse' : 'flex ml-0 mt-14 items-start flex-wrap lg:flex-row w-full relative'}>
+            <div className={reverse ? 'hidden sm:flex sm:ml-0 w-[625px] mxl:w-[570px] mt-16 mlg:w-1/2 mmd:w-full msm:hidden' : 'mmd:w-full hidden msm:hidden sm:flex sm:ml-0 w-[625px] mxl:w-[570px] mt-16 mlg:w-1/2'}>
               <motion.img
 
                 initial={{
@@ -30,11 +30,11 @@ const Design = ({ data, title, subtitle, btn, img, img2, reverse }) => {
                 }}
                 transition={{ ease: "easeOut", duration: 1.2 }} src={reverse ? img2 : img2} alt="" />
             </div>
-            <div className='flex relative w-full  sm:w-1/2'>
-              <div className='design-text w-full absolute rotate-90 -right-25 top-72'>
-                <h3 className='text-white font-bold font-inter uppercase '>Design</h3>
+            <div className='flex relative w-full  sm:w-1/2  mlg:w-1/2 mmd:w-full'>
+              <div className='design-text w-full absolute rotate-90 -right-25 top-72 step-bg-text msm:hidden'>
+                <h3 className='text-white font-bold font-inter uppercase mlg:hidden'>Design</h3>
               </div>
-              <div className={reverse ? 'mt-4 pb-10 mb-7 sm:mt-0 ml-auto  bg-[#E9E9E9] w-[524px] h-max flex items-start flex-col space-y-4 p-6 relative z-30' :  'mt-4 pb-10 mb-7 sm:mt-0   bg-[#E9E9E9] w-[524px] h-max flex items-start flex-col space-y-4 p-6 relative z-30'} >
+              <div className={reverse ? 'mt-4 pb-10 mb-7 sm:mt-0 ml-auto  bg-[#E9E9E9] w-[524px] h-max flex items-start flex-col space-y-4 p-6 relative z-30 mxss:p-3' :  'mxss:py-3 mxss:px-0 mt-4 pb-10 mb-7 sm:mt-0   bg-[#E9E9E9] w-[524px] h-max flex items-start flex-col space-y-4 p-6 relative z-30'} >
 
                 {data.map((item) =>
                   <div key={item.id}

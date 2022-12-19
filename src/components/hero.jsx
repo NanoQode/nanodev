@@ -53,13 +53,26 @@ const Hero = () => {
         <div className='logo-slider  bg-white rounded-full  mt-12'>
           <Swiper
             className='w-full   h-[50px] sm:h-[80px]'
-            
-            slidesPerView={7}
+            breakpoints={{
+              0: { 
+                slidesPerView: 2,
+              },
+              768: { 
+                slidesPerView: 4,
+              },
+              992: { 
+                slidesPerView: 5,
+              },
+              1200: { 
+                slidesPerView: 7
+              },
+            }}
             navigation
             // onSlideChange={() => console.log('slide change')}
             // onSwiper={(swiper) => console.log(swiper)} 
             modules={[Navigation]} 
-            speed={2000}>
+            speed={2000}
+            >
             {data.map((item) => (
               <SwiperSlide className='flex items-center justify-center'>
                     <img src={item.img} className='' />

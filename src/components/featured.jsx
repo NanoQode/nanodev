@@ -12,7 +12,7 @@ const Featured = ({title,data,color,color2,center}) => {
   return (
       <section style={{
           background:color
-      }} className={center ? ' w-full min-h-[200px]  sm:min-h-[362px] flex items-center justify-center flex-col py-16' :' w-full h-[200px] sm:h-[362px]   flex items-center justify-center flex-col'}>
+      }} className={center ? ' w-full min-h-[200px]  sm:min-h-[362px] flex items-center justify-center flex-col py-16' :'py-16 w-full min-h-[200px] sm:h-[362px]   flex items-center justify-center flex-col'}>
            <div className='container mx-auto'>
           <Title title={title} center={false} />
       <div className='logo-slider  bg-white rounded-full  mt-12' style={{
@@ -20,9 +20,19 @@ const Featured = ({title,data,color,color2,center}) => {
               }}>
           <Swiper
               
-              className='w-full  rounded-full p-2 h-[50px] sm:h-[80px]'
+              className='w-full  rounded-full p-2 min-h-[50px] sm:min-h-[80px]'
               //   spaceBetween={15}
-              slidesPerView={5}
+                breakpoints={{
+                    0: { 
+                        slidesPerView: 2,
+                    },
+                    768: { 
+                        slidesPerView: 4,
+                    },
+                    992: { 
+                        slidesPerView: 5,
+                    }, 
+                }}
               navigation
             //   onSlideChange={() => console.log('slide change')}
             //   onSwiper={(swiper) => console.log(swiper)}

@@ -5,13 +5,13 @@ const Form = () => {
   return (
     <section className='py-16'>
       <div className='container mx-auto'>
-        <div className='drop-message lg:w-[1065px] lg:mx-auto mb-4 h-max bg-white mx-3 shadow-lg p-5 flex space-y-3 md:items-center flex-col md:flex-row md:justify-between'>
-          <aside className='flex flex-col space-y-5 p-3 md:w-1/2 md:mx-10'>
+        <div className='drop-message lg:w-[1065px] max-w-full lg:mx-auto mb-4 h-max bg-white mx-3 shadow-lg p-5 flex space-y-3 md:items-center flex-col md:flex-row md:justify-between msm:mx-0'>
+          <aside className='flex flex-col space-y-5 p-3 lg:w-1/2 xl:mx-10 mmd:w-1/2 msm:w-full'>
             <div>
               <div className='flex flex-col'>
                 <h3 className='font-bold text-fs32 font-inter'>Drop Us a Line</h3>
                 <img src={line} className='w-1/2  2xl:w-60' alt="" />
-                <p className='mt-3 font-inter text-fs-15 font-normal mb-7 w-[405px]'>
+                <p className='mt-3 font-inter text-fs-15 font-normal mb-7 w-[405px] max-w-full'>
                   Get talking with our team of experts and let's help you get your project up and running in no time.
                 </p>
               </div>
@@ -25,7 +25,7 @@ const Form = () => {
                 <img src={emailb} className='mr-2' alt="" />
                 info@nanoqode.com
               </p>
-              <p className='flex items-center w-[320px] mt-5 mb-16 font-inter text-fs-16 font-normal'>
+              <p className='flex items-center w-[320px] mt-5 mb-16 font-inter text-fs-16 font-normal msm:w-full'>
                 <img src={location} className='mr-2' alt="" />
                 888 Sargent Ave
                 Winnipeg, Manitoba, R3E 0C7, Canada
@@ -38,7 +38,7 @@ const Form = () => {
               <img src={insta} alt="" />
             </div>
           </aside>
-          <aside className='w-full flex-1'>
+          <aside className='w-full flex-1 mmd:w-1/2 msm:w-full'>
             <form className='relative bottom-form'>
               <div className='flex flex-col w-3/4 mb-8'>
                 <label htmlFor="name" className='font-semibold font-inter text-fs20'>Full Name</label>

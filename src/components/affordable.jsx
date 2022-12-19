@@ -2,8 +2,11 @@ import React, { useRef } from 'react'
 import { priceData } from '../constant'
 import { arrow, arrow2, check11, DEVELOPMENT, line } from '../images'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/navigation';
+import SwiperCore, { Navigation } from 'swiper';
 
-import SwiperCore, { Autoplay, Navigation } from 'swiper';
 const Affordable = () => {
   const newRef = useRef()
 
@@ -23,7 +26,7 @@ const Affordable = () => {
       </div>
       <div className='container mx-auto'>
         <div className='flex flex-col items-center justify-center'>
-          <h3 className='font-bold text-hd font-inter'>Affordable Services</h3>
+          <h3 className='font-bold text-hd font-inter mlg:text-fs36'>Affordable Services</h3>
           <img src={line} className='w-1/3 -ml-12 2xl:w-60' alt="" />
         </div>
         <div className='mt-10 lg:mt-25 mb-0 flex items-center justify-center sm:justify-start relative'>
@@ -35,11 +38,24 @@ const Affordable = () => {
               <img className='cursor-pointer' src={arrow2} alt="" />
             </div>
           </div>
-          <div className='mt-0  w-[795px] mx-auto'>
+          <div className='mt-0  w-[795px] mlg:w-[600px] mx-auto '>
             <Swiper
               className='w-full cs-slide-width'
               spaceBetween={13}
-              slidesPerView={4}
+              breakpoints={{
+                0: { 
+                  slidesPerView: 1,
+                },
+                768: { 
+                  slidesPerView: 2,
+                },
+                992: { 
+                  slidesPerView: 3,
+                },
+                1200: { 
+                  slidesPerView:4
+                },
+              }} 
               navigation={false}
               speed={2000}> 
               {priceData.map((item) =>

@@ -12,14 +12,24 @@ const Client = () => {
     <section className='bg-[#EBF4F6] w-full h-max py-16'>
       <div className='container mx-auto'>
         <div className='flex items-center justify-center  flex-col'>
-          <h3 className='font-bold font-inter text-hd'>Why Our Clients <span className='inline-block'><img src={love} alt="" /></span> us</h3> 
-          <img src={line} alt="" />
+          <h3 className='font-bold font-inter text-hd mlg:text-fs36'>Why Our Clients <span className='inline-block'><img src={love} alt="" /></span> us</h3> 
+          <img src={line} alt="" className='msm:w-[50%]'/>
         </div> 
-        <div className='mt-20 flex items-center flex-col justify-center lg:flex-row lg:space-x-5'>
+        <div className='mt-20 mmd:mt-16 msm:mt-12 flex items-center flex-col justify-center lg:flex-row lg:space-x-5'>
           <Swiper 
               className='w-full   '
-              spaceBetween={15}
-              slidesPerView={3}
+              spaceBetween={15} 
+              breakpoints={{
+                0: { 
+                    slidesPerView: 1,
+                },
+                768: { 
+                    slidesPerView: 2,
+                },
+                992: { 
+                    slidesPerView: 3,
+                }, 
+                }}
               centeredSlides={false}
               navigation
               // onSlideChange={() => console.log('slide change')}

@@ -70,8 +70,8 @@ const Header = () => {
   return (
     <header>
       <section className='bg-nc-orange w-full flex    h-[70px]  '>
-        <div className='container mx-auto flex justify-between'>
-          <div className='flex items-center text-white space-x-1'>
+        <div className='container mx-auto flex justify-center items-center xs:justify-between flex-col xs:flex-row'>
+          <div className='flex items-center text-white space-x-1 pb-2 xs:pb-0'>
             <img src={email} alt="" />
             <h3 className='font-normal font-inter'>
               info@nanoqode.com
@@ -83,7 +83,7 @@ const Header = () => {
               6 Indell Lane, Brampton ON L6T 3Y3, Canada
             </h3>
           </div>
-          <div className='flex items-center space-x-6 cursor-pointer'>
+          <div className='flex items-center space-x-3 sm:space-x-6 cursor-pointer pl-4 sm:pl-0'>
             <img src={twitter} alt="" />
             <img src={facebook} alt="" />
             <img src={instaw} alt="" />
@@ -92,14 +92,14 @@ const Header = () => {
           </div>
         </div>
       </section>
-      <section className='bg-[#E9E9E9] w-full h-[100px] '>
+      <section className='bg-[#E9E9E9] w-full py-2'>
         <div className='container mx-auto flex items-center justify-around sm:justify-between relative'>
           <div className='site-logo'>
             <Link to='/'>
-              <img src={logo} alt="logo" />
+              <img src={logo} alt="logo" className='mlg:w-[200px]'/>
             </Link>
           </div>
-          <nav className='nc-navbar items-center space-x-8 font-semibold text-sm sm:text-lg text-[#333333] cursor-pointer hidden lg:flex '>
+          <nav className='nc-navbar items-center xl:space-x-8 lg:space-x-4 font-semibold text-sm sm:text-lg text-[#333333] cursor-pointer hidden lg:flex '>
             <Link to='/' className="font-inter font-medium"> Home  </Link>
 
             <div onMouseOver={handleMouseOver} onMouseLeave={handleMouseOut} className={pathname === '/webdesign' || pathname === '/mobileapp' || pathname === '/ecommerce' || pathname === '/software' ? 'text-[#DA452C] flex items-center space-x-2' : 'flex items-center space-x-2'} >{menuTab}
@@ -127,10 +127,9 @@ const Header = () => {
               <Link to={url} className="font-inter font-medium hover:text-nc-orange">{title}</Link>
             ))}
           </nav>
-          <button className="btn btn-blue  font-medium">
+          <button className="btn btn-blue  font-medium ml-auto lg:ml-0 mr-4 lg:mr-0">
             +1 (647)812-9492
           </button>
-        </div>
         {/* mobile menu */}
         <div className='flex lg:hidden'>
           {!menu ? <AiOutlineMenu onClick={toggle} className=' text-2xl font-bold' /> : <AiOutlineClose onClick={toggle} className='text-2xl text-red-500' />}
@@ -165,6 +164,7 @@ const Header = () => {
             <p className={pathname === '/about' ? 'text-[#DA452C]' : ''} onClick={() => setNavOption('about')}>About </p>
 
           </section>}
+        </div>
       </section>
     </header>
   )

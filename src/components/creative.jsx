@@ -17,8 +17,8 @@ const Creative = ({ data, img, title, body, subtext, img2, call }) => {
                     </div>
                     <div className='flex flex-col items-start sm:pl-10'>
                         <p className='font-semibold font-inter text-fs20 mb-4'>{title ?? ''}</p>
-                        <div className='flex flex-col items-center justify-center sm:w-[806px]'>
-                            <h3 className='text-fs48 font-bold font-inter'>
+                        <div className='flex flex-col items-center justify-center sm:w-[806px] max-w-full'>
+                            <h3 className='text-fs48 font-inter font-bold mlg:text-fs36 '>
                                 {body}
                             </h3>
                             <img src={line} className='-ml-32 w-60 md:w-3/4 lg:-ml-20' alt="" />
@@ -27,9 +27,9 @@ const Creative = ({ data, img, title, body, subtext, img2, call }) => {
                     </div>
                 </div>
             </div>
-            <div className='relative flex flex-col items-center justify-center py-12  md:justify-start md:flex-row md:space-x-4 '>
-                <div className='container mx-auto flex'>
-                    <div className='flex flex-col w-full  space-y-7 lg:w-1/2'>
+            <div className='relative flex  items-center justify-center py-12 pb-16  md:justify-start md:flex-row md:space-x-4 mmd:py-16 '>
+                <div className='container mx-auto flex flex-wrap'>
+                    <div className='flex flex-col w-full  space-y-7 lg:w-1/2 mmd:w-full'>
                         {data.map((res) =>
                             <div className='flex items-center space-x-11' key={res.id}>
                                 <div className='w-[92px] h-[92px] min-w-[92px] rounded-full flex items-center justify-center bg-[#5AA6B1] '>
@@ -47,8 +47,8 @@ const Creative = ({ data, img, title, body, subtext, img2, call }) => {
                             </button>}
                     </div>
 
-                    <div className='w-full ml-16 lg:w-1/2'>
-                        <img src={img2 ?? ''} className='w-[556px] ml-auto -mt-48 cs-outer-border' alt="" />
+                    <div className='w-full  lg:w-1/2 mmd:w-full mx-auto'>
+                        <img src={img2 ?? ''} className='w-[556px] ml-auto -mt-48 mlg:-mt-24 mmd:mt-20 cs-outer-border mmd:mx-auto' alt="" />
                     </div>
                 </div>
                 <PopupModal

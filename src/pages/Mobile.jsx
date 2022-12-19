@@ -26,7 +26,7 @@ const Mobile = () => {
         img={mobile}
         data={mobileBannerData} />
       {/* Call card */}
-      <div className='my-10 flex items-center justify-center lg:my-0 lg:absolute  lg:left-[50%] lg:-mt-14 z-40   -translate-x-[50%]'>
+      <div className='my-10 flex items-center justify-center lg:my-0 lg:absolute  lg:left-[50%] lg:-mt-14 z-40   -translate-x-[50%] mmd:translate-x-[0%] mmd:mt-0'>
         <CallCard />
       </div>
       {/* build process */}

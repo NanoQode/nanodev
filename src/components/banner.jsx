@@ -43,30 +43,29 @@ const data = [
   return (
    
     <section className='banner-sec pt-25 pb-15'>
-       <div className='container mx-auto  flex flex-col justify-between sm:flex-row'>
+       <div className='container mx-auto flex-wrap flex flex-col justify-between sm:flex-row'>
       <div className='w-full lg:w-1/2'>
        
         <div className='text-[#333333] banner-text'>
           <div className='w-[200px] h-1 bg-[#DA452C] mb-10' />
-          <h2 className='text-70 font-inter font-bold'>
+          <h2 className='text-70 font-inter font-bold  mxl:text-fs60  mlg:text-fs5265 mmd:text- hd msm:text-fs36'>
             Grow your business,
             without Limits!
           </h2>
-          <h4 className='mt-5 mb-5 font-inter'>
+          <h4 className='mt-5 mb-5 font-inter text-fs30 mlg:text-fs2535 msm:text-fs20'>
             Connect with our experts to start
             the evalution today.
           </h4>
-        </div>
-
-        <div className='flex items-center space-x-6'>
+        </div> 
+        <div className='flex items-center flex-wrap space-x-6 mlg:space-x-0 mmd:space-x-3'>
           <button onClick={() => setOpenModal(true)} className='btn btn-blue font-normal mt-5 w-253'>BOOK A FREE CONSULT</button>
           <button className='btn btn-outline font-normal mt-5'><Link to='/search-engine-optimization'> FREE TRAFFIC REPORT </Link></button>
         </div>
-        <div className='ml-1 -mt-20 nc-scroll-down'>
+        <div className='ml-1 -mt-30 md:-mt-56 mmd:-mb-10 nc-scroll-down msm:mb-0 mmd:hidden'>
           <img src={scrolll} className='' alt="" />
         </div>
       </div>
-      <div className='flex flex-col items-center justify-center w-full md:w-1/2 lg:w-1/2'>
+      <div className='flex flex-col items-center justify-center w-full md:w-1/2 mx-auto lg:mx-0 lg:w-1/2'>
         <Swiper
           className='w-full'
           //   spaceBetween={15}
