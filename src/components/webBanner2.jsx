@@ -19,13 +19,13 @@ const WebBanner2 = ({ title, title3, title2, body, img, show, gif, vid }) => {
     }
 
     return (
-        <section className=' flex flex-col sm:flex-row justify-between items-center cs-inner-banner  pt-25'>
-            <div className='container mx-auto flex items-center'>
-                <div className='w-full  w-1/2 '>
+        <section className=' flex flex-col sm:flex-row justify-between items-center cs-inner-banner   pt-25'>
+            <div className='container mx-auto flex items-center flex-wrap'>
+                <div className='w-full  w-1/2 mmd:w-full'>
 
                     <div className='text-[#333333]'>
                         <div className='mt-10 w-[200px] h-1 bg-[#DA452C] mb-4' />
-                        <h2 className='text-fs60 font-bold font-inter mb-10'>
+                        <h2 className='text-fs60 font-bold font-inter mlg:text-fs5265 msm:text-fs36 mb-10'>
                             {title3}
                             <span className='text-[#DA452C]'> {title}</span>
                             {title2}
@@ -68,7 +68,7 @@ const WebBanner2 = ({ title, title3, title2, body, img, show, gif, vid }) => {
                                 </div>
                             </div>
                             </div>}
-                            {step >= 3 ? <button className='btn2 green-btn py-2 px-16 text-white  hover:bg-nc-orange'>DONE</button> : <button onClick={(e) => nextForm(e)} className='btn2 green-btn py-2 px-16 text-white  hover:bg-nc-orange'>NEXT</button>}</> :
+                            {step >= 3 ? <button className='btn2 green-btn py-2 px-16 text-white  hover:bg-nc-orange mb-24'>DONE</button> : <button onClick={(e) => nextForm(e)} className='btn2 green-btn py-2 px-16 text-white  hover:bg-nc-orange mb-24'>NEXT</button>}</> :
                             <div className='bg-[#EBF4F6] w-full md:-ml-6 mt-10 lg:ml-0 sm:w-[400px] h-max  p-8 rounded-lg flex flex-col space-y-8 telephony-form'>
                                 <div className='bg-transparent w-full border-[#DA452C] border-[1px]  px-6 py-2 rounded-full flex flex-col '>
 
@@ -97,14 +97,14 @@ const WebBanner2 = ({ title, title3, title2, body, img, show, gif, vid }) => {
 
 
                 </div>
-                <div className='w-1/2 '>
+                <div className='w-1/2  mmd:w-full mmd:mb-20 '>
                     {vid ?
                         <video src={vid} className='mr-10' autoPlay loop muted />
                         :
-                        <img src={img} className='w-[90%]' alt="" />
+                        <img src={img} className='w-[90%] ml-auto' alt="" />
                     }
                     {gif || vid ? null :
-                        <img src={badge} className='-ml-20 lg:-ml-[30rem]' alt="" />
+                        <img src={badge} className='lg:ml-0' alt="" />
                     }
 
                 </div>

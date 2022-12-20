@@ -42,10 +42,10 @@ const Portfolio = () => {
                     <h3 className='text-fs48 font-bold font-inter mlg:text-fs36'>Our Award-Winning Website Portfolio</h3>
                     <img src={porfolioLine} className='portfolio-line' alt="" />
                 </div>
-                <div className='flex flex-col items-center justify-center   sm:flex-row sm:justify-start sm:items-start flex-wrap mt-10 '>
+                <div className='flex flex-col items-center justify-center sm:flex-row sm:justify-start sm:items-start flex-wrap mt-10 '>
 
                     {data.map((res) =>
-                        <div className='shadow-xl porfolio-outer m-3 w-[416px] mxl:w-[356px] mlg:w[296px] mmd:w-[46%] msm:w-full msm:mx-0 bg-white h-max rounded-lg p-5' key={res.id}>
+                        <div className='shadow-xl porfolio-outer m-3 w-[416px] mxl:w-[356px] mlg:w-[296px] mmd:w-[46%] msm:w-full msm:mx-0 bg-white h-max rounded-lg p-5' key={res.id}>
                             <img src={res.img} className='w-100 w-full' alt="" />
                             <h2 className='font-bold font-inter mt-5 text-fs31 mlg:text-fs2535'>
                                 {res.title}
@@ -57,7 +57,7 @@ const Portfolio = () => {
                         </div>
                     )}
                 </div>
-                <div className='absolute  left-0 bottom-[4rem]  '>
+                <div className='absolute  left-0 bottom-[4rem] msm:hidden '>
                     <img src={PORTFOLIO} alt="" />
                 </div>
                 <div className='flex items-center justify-center'>

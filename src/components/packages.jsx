@@ -7,10 +7,10 @@ const Packages = ({ img }) => {
 
         <div className='relative bg-[#EBF4F6] h-max p-8'>
             <div className='flex flex-col items-center justify-center p-5'>
-                <h3 className='nc-heading font-bold font-inter'>Packages We Offer</h3>
+                <h3 className='nc-heading font-bold font-inter mlg:text-fs36'>Packages We Offer</h3>
                 <img src={line} className='w-40 lg:w-80' alt="" />
             </div>
-            <section className='mt-10 lg:mt-40 mb-20 flex items-center justify-center sm:justify-start relative'>
+            <section className='mt-10 lg:mt-40 mb-20 flex items-center justify-center sm:justify-start relative mxl:mt-10 mxl:mb-10'>
                 <div className='hidden sm:flex  -top-10 lg:-top-60 z-20 absolute 2xl:-top-20'>
                     <img src={img} className='-ml-7 lg:mt-32 2xl:mt-0' alt="" />
                 </div>
@@ -26,7 +26,17 @@ const Packages = ({ img }) => {
                     <Swiper 
                         className='packages-slider'
                         spaceBetween={0}
-                        slidesPerView={3}
+                        breakpoints={{
+                            0: { 
+                                slidesPerView: 1,
+                            },
+                            768: { 
+                                slidesPerView: 1,
+                            },
+                            992: { 
+                                slidesPerView: 3,
+                            }, 
+                            }} 
                         speed={0}> 
                         {packageOffer.map((item) =>
                             <SwiperSlide className=''> 

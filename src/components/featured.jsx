@@ -12,7 +12,7 @@ const Featured = ({title,data,color,color2,center}) => {
   return (
       <section style={{
           background:color
-      }} className={center ? ' w-full min-h-[200px]  sm:min-h-[362px] flex items-center justify-center flex-col py-16' :'py-16 w-full min-h-[200px] sm:h-[362px]   flex items-center justify-center flex-col'}>
+      }} className={center ? ' w-full min-h-[200px]  sm:min-h-[362px] flex items-center justify-center flex-col py-16' :'py-16 w-full min-h-[200px] sm:min-h-[362px]   flex items-center justify-center flex-col'}>
            <div className='container mx-auto'>
           <Title title={title} center={false} />
       <div className='logo-slider  bg-white rounded-full  mt-12' style={{

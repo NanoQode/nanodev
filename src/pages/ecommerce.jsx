@@ -19,13 +19,15 @@ const Ecommerce = () => {
       <Featured color={'#FBE9E5'} color2={'white'} data={langData2} title={'Our Client Base'} />
       <Packages img={PACKAGES} img2={""} img3={''} color={'#EBF4F6'} />
       <div className='my-20'>
-        <div className='mx-4 sm:ml-20 mb-10 w-full sm:w-1/2 2xl:w-full'>
-          <h3 className='nc-heading font-bold font-inter'>Need An Urgent Project Delivered ASAP?<br></br>
+        <div className='container mx-auto'>
+        <div className='mx-4  mb-10 w-full  '>
+          <h3 className='nc-heading font-bold font-inter   text-hd mlg:text-fs36'>Need An Urgent Project Delivered ASAP?<br></br>
             We’re Waiting For Your Call!</h3>
           <img src={line} className='' alt="" />
         </div>
         <div className='flex items-center justify-center'>
           <CallCard />
+        </div>
         </div>
       </div>
       <Client />

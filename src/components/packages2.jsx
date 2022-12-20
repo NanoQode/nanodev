@@ -11,7 +11,7 @@ const Packages2 = ({ img, img2, img3, img4, big, color }) => {
             }}
             className='pricing-sec relative h-max  py-16'>
             <div className='flex flex-col items-center justify-center p-5 mb-10'>
-                <h3 className='font-bold font-inter text-hd'>Pricing</h3>
+                <h3 className='font-bold font-inter text-hd mlg:text-fs36'>Pricing</h3>
                 <img src={line} className='w-60' alt="" />
             </div>
             <div className='mt-10 lg:mt-16 mb-20 flex items-center justify-center sm:justify-start relative'>
@@ -27,11 +27,21 @@ const Packages2 = ({ img, img2, img3, img4, big, color }) => {
                             <img src={arrow2} alt="" />
                         </div>
                     </div>
-                    <div className='sm:mt-20 w-[1000px] justify-center ml-auto flex items-center space-x-3 flex-col md:flex-row lg:mt-0'>
+                    <div className='sm:mt-20 w-[1000px] max-w-full justify-center ml-auto flex items-center space-x-3 flex-col md:flex-row lg:mt-0'>
                         <Swiper
                             className='packages-slider seo-packages'
-                            spaceBetween={40}
-                            slidesPerView={3}
+                            spaceBetween={40} 
+                            breakpoints={{
+                                0: { 
+                                    slidesPerView: 1,
+                                },
+                                768: { 
+                                    slidesPerView: 2,
+                                },
+                                1199: { 
+                                    slidesPerView: 3,
+                                }, 
+                                }} 
                             speed={0}>
 
                             {seoPackage.map((item) =>

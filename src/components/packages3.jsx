@@ -11,7 +11,7 @@ const Packages3 = ({ img, img2, img3, img4, big, color }) => {
             }}
             className='pricing-sec relative h-max  py-18'>
             <div className='flex flex-col items-center justify-center p-5 my-10'>
-                <h3 className='font-bold font-inter text-hd'>Pricing</h3>
+                <h3 className='font-bold font-inter text-hd mlg:text-fs36'>Pricing</h3>
                 <img src={line} className='w-60' alt="" />
             </div>
             <div className='mt-10 lg:mt-16 mb-20 flex items-center justify-center sm:justify-start relative'>
@@ -19,7 +19,7 @@ const Packages3 = ({ img, img2, img3, img4, big, color }) => {
                     <img src={img} alt="" className='w-[90%]' />
                 </div>
                 <div className='container mx-auto flex items-center'>
-                    <div className='hidden md:flex items-center space-x-2 relative ml-16'>
+                    <div className='hidden md:flex items-center space-x-2 relative ml-16 mmd:absolute'>
                         <div className='w-[50px] h-[50px] rounded-full border-[#DA452C] bg-transparent flex items-center justify-center border-2'>
                             <img src={arrow} alt="" />
                         </div>
@@ -27,11 +27,21 @@ const Packages3 = ({ img, img2, img3, img4, big, color }) => {
                             <img src={arrow2} alt="" />
                         </div>
                     </div>
-                    <div className='sm:mt-20 w-[1000px] justify-center  flex items-center space-x-3 flex-col md:flex-row lg:mt-0'>
+                    <div className='sm:mt-20 w-[1000px] mmd:w-[610px] msm:w-[400px] justify-center  flex items-center space-x-3 flex-col md:flex-row lg:mt-0'>
                         <Swiper
                             className='social-packages-wrap'
-                            spaceBetween={40}
-                            slidesPerView={2}
+                            spaceBetween={40} 
+                            breakpoints={{
+                                0: { 
+                                    slidesPerView: 1,
+                                },
+                                768: { 
+                                    slidesPerView: 1,
+                                },
+                                991: { 
+                                    slidesPerView: 2,
+                                }, 
+                                }}
                             speed={0}>
 
                             {socialPackages.map((item) =>

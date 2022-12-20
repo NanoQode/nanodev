@@ -2123,6 +2123,12 @@ border-radius: 8px;
 .blog-listing-des{
   width: calc(100% - 490px);
 }
+div:empty {
+  display: none;
+}
+div#root>div{
+  overflow: hidden;
+}
 @media(min-width:1390px){
   .container{
     max-width: 1380px !important;
@@ -2169,6 +2175,13 @@ border-radius: 8px;
     font-size: 16px;
     line-height: 30px; 
 }
+.seo-packages .swiper-slide>div,
+.packages-slider .swiper-slide-active>div { 
+  max-width: 302px !important; 
+}
+.social-packages{
+  margin-left: 0 !important;
+}
 }
 @media(max-width:1023px){
   .banner-text h4 {
@@ -2189,6 +2202,11 @@ border-radius: 8px;
     width: 200px;
     bottom: -37px;
     right: -20px;
+  }
+  .packages-slider .swiper-slide-active>div{
+    transform:unset;
+    max-width: 230px;
+    margin: 0 auto;
   }
 }
 @media(max-width:767px){

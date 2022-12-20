@@ -7,7 +7,7 @@ const Built = ({ data, title, img }) => {
     return (
         <section className='bg-[#EBF4F6] w-full h-max pt-10  pb-16 relative'>
             <div className='container mx-auto w-[1280px]'>
-                <div className='flex flex-col items-center justify-center p-5 mt-20 -ml-10 sm:ml-0 mmd:ml-0'>
+                <div className='flex flex-col items-center justify-center p-5 mt-20 mmd:mt-6 -ml-10 sm:ml-0 mmd:ml-0'>
                     <h3 className='text-fs48 font-inter font-bold mlg:text-fs36 '>{title}</h3>
                     <img src={line} className='w-70' alt="" />
                 </div>

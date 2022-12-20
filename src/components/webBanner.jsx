@@ -25,7 +25,7 @@ const WebBanner = ({ title, title2, body, title3, img, data, btn, vid }) => {
               {data?.map((item) => (
                 <div
                   key={item.id}
-                  className="  rounded-full items-center bg-[#EBF4F6] px-4 sm:px-7 py-1 flex w-[411px]  h-[44px]  max-w-full
+                  className="  rounded-full items-center bg-[#EBF4F6] px-4 sm:px-7 py-1 flex w-[411px]  min-h-[44px]  max-w-full
               text-fs18 font-inter font-normal"
                 >
                   <img src={icon} className="mr-3" alt="" />
@@ -36,15 +36,15 @@ const WebBanner = ({ title, title2, body, title3, img, data, btn, vid }) => {
 
             {btn ? (
               <>
-                <div className="flex items-start mt-15 space-x-4 ">
-                  <button className="btn btn-blue font-normal mt-5 w-253">
+                <div className="flex flex-wrap items-start mt-15 mmd:mt-10  ">
+                  <button className="btn btn-blue font-normal mt-5 mr-5 w-253">
                     GET STARTED
                   </button>
                   <button className="btn btn-outline font-normal mt-5">
                     SPEAK WITH AN EXPERT
                   </button>
                 </div>
-                <div className="bg-[#DA452C] flex items-center space-x-1 text-white w-max px-10 mx-auto  text-xl sm:ml-auto rounded my-10">
+                <div className="bg-[#DA452C] flex flex-wrap items-center space-x-1 text-white w-max px-10 py-5 mmd:px-4 mx-auto  text-xl sm:ml-auto rounded my-10 mmd:mb-0 max-w-full">
                   <h2 className='font-inter font-semiBold text-fs20'>Excellent</h2>
 
                   <aside className="items-center hidden sm:flex mt-3">
@@ -89,7 +89,7 @@ const WebBanner = ({ title, title2, body, title3, img, data, btn, vid }) => {
                   x: 0,
                   opacity: 1,
                 }}
-                transition={{ ease: 'easeOut', duration: 1.2 }} src={img} className='w-[90%]' alt="" />
+                transition={{ ease: 'easeOut', duration: 1.2 }} src={img} className='w-[90%] mmd:w-full' alt="" />
             }
           </div>
           <PopupModal

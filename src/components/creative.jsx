@@ -31,8 +31,8 @@ const Creative = ({ data, img, title, body, subtext, img2, call }) => {
                 <div className='container mx-auto flex flex-wrap'>
                     <div className='flex flex-col w-full  space-y-7 lg:w-1/2 mmd:w-full'>
                         {data.map((res) =>
-                            <div className='flex items-center space-x-11' key={res.id}>
-                                <div className='w-[92px] h-[92px] min-w-[92px] rounded-full flex items-center justify-center bg-[#5AA6B1] '>
+                            <div className='flex items-center space-x-11 mxs:space-x-5' key={res.id}>
+                                <div className='w-[92px] h-[92px] min-w-[92px] mxs:w-[70px] mxs:min-w-[70px] mxs:h-[70px] rounded-full flex items-center justify-center bg-[#5AA6B1] '>
                                     <img src={res.img} className='' alt="" />
                                 </div>
                                 <div className='flex flex-col'>
@@ -47,7 +47,7 @@ const Creative = ({ data, img, title, body, subtext, img2, call }) => {
                             </button>}
                     </div>
 
-                    <div className='w-full  lg:w-1/2 mmd:w-full mx-auto'>
+                    <div className='w-full  lg:w-1/2 mmd:w-full mx-auto mlg:pl-6 msm:pl-0'>
                         <img src={img2 ?? ''} className='w-[556px] ml-auto -mt-48 mlg:-mt-24 mmd:mt-20 cs-outer-border mmd:mx-auto' alt="" />
                     </div>
                 </div>

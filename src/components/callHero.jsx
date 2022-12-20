@@ -12,7 +12,7 @@ const CallHero = () => {
                 }} >
                     <aside className='w-full msm:w-full w-1/2  '>
                         <div className='w-[200px] h-1 bg-[#DA452C]' />
-                        <h3 className='text-white text-fs32 font-inter font-bold mt-5 sm:text-xl msm:text-fs20 msm:mb-10'>
+                        <h3 className='text-white text-fs32 font-inter font-bold mt-5 sm:text-xl msm:text-fs20 msm:mb-10 mmd:mt-0'>
                             Convinced yet? Let's make something
                             great together.
                         </h3>

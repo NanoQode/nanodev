@@ -14,14 +14,14 @@ const Softaware = () => {
                 title3={'Build Feature-rich solutions from just $1499'}
                 img={Gif3}
                 data={softBannerData} />
-            <div className='my-10 flex items-center justify-center lg:my-0 lg:absolute  lg:left-[50%] lg:-mt-14 z-40   -translate-x-[50%]'>
+            <div className='my-10 flex items-center justify-center lg:my-0 lg:absolute  lg:left-[50%] lg:-mt-14 z-40   -translate-x-[50%] mmd:translate-x-[0%] mmd:mt-0'>
                 <CallCard />
             </div>
             <div className='relative z-20'>
                 <Built data={softBuiltData}
                     img={SOFTWARE} title={'Software Creation Process'} />
             </div>
-            <video src={vid2} className='w-full object-cover h-[800px]' autoPlay loop muted />
+            <video src={vid2} className='w-full object-cover h-[800px] mlg:h-[600px] mmd:h-[400px]' autoPlay loop muted />
             <Creative
                 img={DIGITAL}
                 img2={stand}

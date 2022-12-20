@@ -16,7 +16,7 @@ const Design = ({ data, title, subtitle, btn, img, img2, reverse }) => {
             <img src={title ? line : ''} className='w-1/3 2xl:w-60' alt="" />
           </div>
 : <div className='-mt-14'></div>}
-          <div className={reverse ? 'flex ml-0 mt-14 items-start w-full relative flex-row-reverse' : 'flex ml-0 mt-14 items-start flex-wrap lg:flex-row w-full relative'}>
+          <div className={reverse ? 'inline-flex ml-0 mt-14 items-start w-full relative flex-row-reverse flex-wrap' : 'inline-flex ml-0 mt-14 items-start flex-wrap lg:flex-row w-full relative'}>
             <div className={reverse ? 'hidden sm:flex sm:ml-0 w-[625px] mxl:w-[570px] mt-16 mlg:w-1/2 mmd:w-full msm:hidden' : 'mmd:w-full hidden msm:hidden sm:flex sm:ml-0 w-[625px] mxl:w-[570px] mt-16 mlg:w-1/2'}>
               <motion.img
 
