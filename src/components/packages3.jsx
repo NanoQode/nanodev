@@ -27,7 +27,7 @@ const Packages3 = ({ img, img2, img3, img4, big, color }) => {
                             <img src={arrow2} alt="" />
                         </div>
                     </div>
-                    <div className='sm:mt-20 w-[1000px] mmd:w-[610px] msm:w-[400px] justify-center  flex items-center space-x-3 flex-col md:flex-row lg:mt-0'>
+                    <div className='sm:mt-20 w-[1000px] mmd:w-[300px]  mmd:mx-auto justify-center  flex items-center space-x-3 flex-col md:flex-row lg:mt-0'>
                         <Swiper
                             className='social-packages-wrap'
                             spaceBetween={40} 

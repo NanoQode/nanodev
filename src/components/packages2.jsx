@@ -10,11 +10,11 @@ const Packages2 = ({ img, img2, img3, img4, big, color }) => {
                 background: color || 'white'
             }}
             className='pricing-sec relative h-max  py-16'>
-            <div className='flex flex-col items-center justify-center p-5 mb-10'>
+            <div className='flex flex-col items-center justify-center   mb-10'>
                 <h3 className='font-bold font-inter text-hd mlg:text-fs36'>Pricing</h3>
                 <img src={line} className='w-60' alt="" />
             </div>
-            <div className='mt-10 lg:mt-16 mb-20 flex items-center justify-center sm:justify-start relative'>
+            <div className='mt-10 lg:mt-16 mb-0 flex items-center justify-center sm:justify-start relative'>
                 <div className={big ? 'hidden sm:flex top-10 z-20 relative' : 'hidden sm:flex -top-20 z-20 absolute'}>
                     <img src={img} alt="" className='w-[90%]' />
                 </div>
@@ -36,9 +36,9 @@ const Packages2 = ({ img, img2, img3, img4, big, color }) => {
                                     slidesPerView: 1,
                                 },
                                 768: { 
-                                    slidesPerView: 2,
+                                    slidesPerView: 1,
                                 },
-                                1199: { 
+                                992: { 
                                     slidesPerView: 3,
                                 }, 
                                 }} 

@@ -20,7 +20,7 @@ const Footer = () => {
               <img src={youtube} alt="" />
             </div>
           </div>
-          <div className='grid grid-cols-1 lg:mb-4 md:mb-12 sm:grid-cols-2 lg:pb-3  gap-x-8 flex-col w-2/4  mmd:w-full'>
+          <div className='grid grid-cols-1 lg:mb-4 md:mb-12 sm:grid-cols-2 msm:grid-cols-2  mxs:grid-cols-1 lg:pb-3  gap-x-8 flex-col w-2/4  mmd:w-full'>
             <div className='flex flex-col mt-10 md:mt-0 msm:mt-0'>
               <h2 className='text-fs20 font-bold font-inter mb-10 mmd:mb-6'>Get in Touch</h2>
               <ul className='space-y-5'>
@@ -35,7 +35,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className='flex flex-col  mt-10 md:mt-0 '>
+            <div className='flex flex-col  mt-10 md:mt-0 msm:mt-0 mxs:mt-10'>
               <h2 className='text-fs20 font-bold font-inter mb-10 mmd:mb-6'>Learn More</h2>
               <ul className='space-y-5 mt-0'>
                 <li>

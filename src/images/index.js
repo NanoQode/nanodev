@@ -210,6 +210,9 @@ import backgroundLayer3 from './Pricing-table-3-of-3.png';
 import socialBg1 from './social-bg-1.png';
 import socialBg2 from './social-bg-2.png';
 
+// Paid Marketing
+import marketingBanner from './paid-marketing/marketing-banner.png';
+
 export {
   arrow,seo,
   FEATURES,hand2,Gif1,Gif2,Gif3,Gif4,
@@ -406,5 +409,7 @@ export {
   backgroundLayer3,
 
   socialBg1,
-  socialBg2
+  socialBg2,
+// paid marketing
+  marketingBanner
 };

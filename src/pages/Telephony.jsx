@@ -11,7 +11,7 @@ const Telephony = () => {
     <div>
       <WebBanner2
         title={'Phone Plan'}
-        title3={'Get A Business/Residential'}
+        title3={'Get A Business / Residential'}
         title2={''}
         show
         gif

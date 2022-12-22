@@ -69,32 +69,29 @@ const WebBanner2 = ({ title, title3, title2, body, img, show, gif, vid }) => {
                             </div>
                             </div>}
                             {step >= 3 ? <button className='btn2 green-btn py-2 px-16 text-white  hover:bg-nc-orange mb-24'>DONE</button> : <button onClick={(e) => nextForm(e)} className='btn2 green-btn py-2 px-16 text-white  hover:bg-nc-orange mb-24'>NEXT</button>}</> :
-                            <div className='bg-[#EBF4F6] w-full md:-ml-6 mt-10 lg:ml-0 sm:w-[400px] h-max  p-8 rounded-lg flex flex-col space-y-8 telephony-form'>
-                                <div className='bg-transparent w-full border-[#DA452C] border-[1px]  px-6 py-2 rounded-full flex flex-col '>
-
+                            <div className='bg-[#EBF4F6] w-full md:-ml-6 mt-10 lg:ml-0 sm:w-[400px] h-max mxss:space-y-4  p-8 rounded-lg flex flex-col space-y-8 telephony-form'>
+                                <div className='bg-transparent w-full border-[#DA452C] border-[1px]  px-6 py-2 rounded-full flex flex-col '> 
                                     <input type="text" placeholder='Email' className='bg-transparent outline-none border-b-2 ' />
                                 </div>
-                                <aside className='flex items-center space-x-4 w-full'>
-                                    <div className='bg-transparent w-[160px] border-[#DA452C] border-[1px]  px-4 py-1 rounded-full flex flex-col'>
-
+                                <aside className='flex items-center space-x-4 mxss:space-x-0 w-full msm:justify-between mxss:flex-wrap'>
+                                    <div className='bg-transparent w-[160px] msm:w-[48%] mxss:w-full border-[#DA452C] border-[1px]  px-6 py-2 rounded-full flex flex-col'> 
                                         <input placeholder='Firstname' type="text" className='bg-transparent outline-none border-b-2 ' />
-                                    </div>      <div className='bg-transparent w-[160px]  border-[#DA452C] border-[1px]  px-4 py-1  rounded-full flex flex-col'>
-
+                                    </div>      
+                                    <div className='bg-transparent w-[160px] msm:w-[48%] mxss:w-full  mxss:mt-5 border-[#DA452C] border-[1px]  px-6 py-2  rounded-full flex flex-col'> 
                                         <input placeholder='Lastname' type="text" className='bg-transparent outline-none border-b-2 ' />
                                     </div>
                                 </aside>
-                                <aside className='flex items-center space-x-4 w-full'>
-                                    <div className='bg-transparent w-[160px]  border-[#DA452C] border-[1px]  px-4 py-1 rounded-full flex flex-col'>
-
+                                <aside className='flex items-center space-x-4 w-full mxss:space-x-0 msm:justify-between  mxss:flex-wrap'>
+                                    <div className='bg-transparent w-[160px] msm:w-[48%] mxss:w-full border-[#DA452C] border-[1px]  px-6 py-2 rounded-full flex flex-col'> 
                                         <input placeholder='City' type="text" className='bg-transparent outline-none border-b-2 ' />
-                                    </div>      <div className='bg-transparent w-[160px] border-[#DA452C] border-[1px]  px-4 py-1 rounded-full flex flex-col'>
+                                    </div>      
+                                    <div className='bg-transparent w-[160px] msm:w-[48%] mxss:w-full  mxss:mt-5 border-[#DA452C] border-[1px]  px-6 py-2 rounded-full flex flex-col'>
                                         <input type="number" placeholder='Phone number' className='bg-transparent outline-none border-b-2 ' />
                                     </div>
                                 </aside>
                                 <button className=' border-2 text-white bg-[#5AA6B1] my-10 w-3/4 rounded-lg p-2 lg:p-4 text-sm mt-10 mb-8'>Start your 7-Days Free trial</button>
                             </div>}
-                    </div>
-
+                    </div> 
 
                 </div>
                 <div className='w-1/2  mmd:w-full mmd:mb-20 '>
