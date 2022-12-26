@@ -1,27 +1,51 @@
 import React, { useRef } from 'react'
 import { priceData } from '../constant'
-import { arrow, arrow2, check11, DEVELOPMENT, line } from '../images'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/autoplay';
-import 'swiper/css/navigation';
-import SwiperCore, { Navigation } from 'swiper';
+import { check11, DEVELOPMENT, line } from '../images'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+const options = {
+  margin: 0,
+  responsiveClass: true,
+  nav: true,
+  loop: true,
+  dots: false,
+  autoplay: false,
+  smartSpeed: 1000,
+  touchDrag: false,
+  mouseDrag: false,
+  freeDrag: false,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+      touchDrag: true,
+    },
+    575: {
+      items: 2,
+      nav: false,
+      touchDrag: true,
+    },
+    768: {
+      items: 3,
+      nav: false,
+      touchDrag: true,
+    },
+    992: {
+      items: 3,
+    },
+    1200: {
+      items: 4,
+
+    }
+  },
+};
 
 const Affordable = () => {
   const newRef = useRef()
-
-  const handleMoveNext = () => {
-    const slider = document.getElementById('slider')
-    slider.scrollLeft = slider.scrollLeft + 300
-  }
-  const handleMovePrev = () => {
-    const slider = document.getElementById('slider')
-    slider.scrollLeft = slider.scrollLeft - 300
-  }
-
   return (
     <section className='relative affordable-services py-16'>
-      <div className='hidden sm:flex top-1 lg:top-1 z-20 absolute'>
+      <div className='hidden sm:flex top-1 lg:top-1 z-20 absolute mlg:hidden'>
         <img src={DEVELOPMENT} alt="" />
       </div>
       <div className='container mx-auto'>
@@ -30,36 +54,10 @@ const Affordable = () => {
           <img src={line} className='w-1/3 -ml-12 2xl:w-60' alt="" />
         </div>
         <div className='mt-10 lg:mt-25 mb-0 flex items-center justify-center sm:justify-start relative'>
-          <div className='hidden md:flex items-center space-x-4 relative ml-32 z-30' >
-            <div onClick={handleMovePrev} className='w-[50px] h-[50px] rounded-full border-[#DA452C] bg-transparent flex items-center justify-center border-2'>
-              <img className='cursor-pointer' src={arrow} alt="" />
-            </div>
-            <div onClick={handleMoveNext} className='w-[50px] h-[50px] rounded-full border-[#DA452C] bg-transparent flex items-center justify-center border-2'>
-              <img className='cursor-pointer' src={arrow2} alt="" />
-            </div>
-          </div>
-          <div className='mt-0  w-[795px] mlg:w-[600px] mx-auto '>
-            <Swiper
-              className='w-full cs-slide-width'
-              spaceBetween={13}
-              breakpoints={{
-                0: { 
-                  slidesPerView: 1,
-                },
-                768: { 
-                  slidesPerView: 2,
-                },
-                992: { 
-                  slidesPerView: 3,
-                },
-                1200: { 
-                  slidesPerView:4
-                },
-              }} 
-              navigation={false}
-              speed={2000}> 
+          <div className='mt-0  w-[1136px] mlg:w-[900px] mmd:w-[700px] msm:w-full pl-[220px] mmd:pl-0 mxs:max-w-[300px]  mx-auto cs-slide-width custom-nav-btn'>
+            <OwlCarousel  {...options} >
               {priceData.map((item) =>
-                <SwiperSlide className='mb-5'>
+                <div className='mb-5 carousel-inner'>
                   <div key={item.id} className=' z-20 relative'>
                     <img src={item.img} className='w-60' alt="" />
                     <div className='absolute  cs-slide-outer-layer'>
@@ -84,12 +82,12 @@ const Affordable = () => {
                       }} className={`-bottom-[5rem] font-semibold left-14 rounded-full shadow-sm capitalize py-2 px-6 bg-white w-max border-2 absolute cs-learn-more-btn`}>learn more</button>
                     </div>
                   </div>
-                </SwiperSlide>
-              )} 
-            </Swiper>
-          </div> 
+                </div>
+              )}
+            </OwlCarousel>
+          </div>
         </div>
-      </div> 
+      </div>
     </section>
   )
 }

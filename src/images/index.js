@@ -212,6 +212,8 @@ import socialBg2 from './social-bg-2.png';
 
 // Paid Marketing
 import marketingBanner from './paid-marketing/marketing-banner.png';
+// hosting
+import hostingBanner from './hosting/hosting-banner.png';
 
 export {
   arrow,seo,
@@ -410,6 +412,8 @@ export {
 
   socialBg1,
   socialBg2,
-// paid marketing
-  marketingBanner
+// Paid marketing
+  marketingBanner,
+// Hosting
+  hostingBanner
 };

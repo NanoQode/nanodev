@@ -2,6 +2,41 @@ import React from 'react'
 import { arrow, arrow2, line } from '../images'
 import { seoPackage } from '../constant'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+const options = {
+    margin: 0,
+    responsiveClass: true,
+    nav: true,
+    loop: true,
+    dots: false,
+    autoplay: false,
+    smartSpeed: 1000,
+    touchDrag: false,
+    mouseDrag: false,
+    freeDrag: false,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        touchDrag: true,
+      },
+      575: {
+        items: 2,
+        nav: false,
+        touchDrag: true,
+      },
+      768: {
+        items: 3,
+        nav: false,
+        touchDrag: true,
+      },
+      992: {
+        items: 3,
+      } 
+    },
+  };
 const Packages2 = ({ img, img2, img3, img4, big, color }) => {
     return (
 
@@ -18,7 +53,38 @@ const Packages2 = ({ img, img2, img3, img4, big, color }) => {
                 <div className={big ? 'hidden sm:flex top-10 z-20 relative' : 'hidden sm:flex -top-20 z-20 absolute'}>
                     <img src={img} alt="" className='w-[90%]' />
                 </div>
-                <div className='container mx-auto flex items-center'>
+                <div className='mt-10 lg:mt-25 mb-0 w-full flex items-center justify-center  relative'>
+          <div className='mt-0  w-[1136px] mlg:w-[900px] mmd:w-[700px] msm:w-[520px] pl-[220px] mlg:pl-[120px] mmd:pl-0 mxs:max-w-[300px]  mx-auto cs-slide-width packages-slider seo-packages custom-nav-btn'> 
+            <OwlCarousel  {...options} >
+            {seoPackage.map((item) =>
+                                <div className=''>
+                                    <div key={item.id} className=' z-20 relative cs-packages '>
+                                        <img src={item.img} className="bg-img" />
+                                        <div className='upperlayer'  >
+                                            <h3 className='package-name text-fs32 font-medium font-inter' >
+                                                {item.title}
+                                            </h3>
+                                            <p className='font-inter font-light'>$<span style={{
+                                                color: item.color
+                                            }} >{item.price}</span>/mo</p>
+                                        </div>
+                                        <div className='package-list'>
+                                            <ul>
+                                                {item.content.map((res) =>
+                                                    <li className='font-inter font-regular'>{res}</li>
+                                                )}
+                                            </ul>
+                                        </div>
+                                        <button className='font-inter font-bold' style={{
+                                            backgroundColor: item.color
+                                        }} >Subscribe</button>
+                                    </div>
+                                </div>
+                            )}
+                            </OwlCarousel>
+          </div>
+        </div>
+                {/* <div className='container mx-auto flex items-center'>
                     <div className='hidden md:flex items-center space-x-2 relative ml-16'>
                         <div className='w-[50px] h-[50px] rounded-full border-[#DA452C] bg-transparent flex items-center justify-center border-2'>
                             <img src={arrow} alt="" />
@@ -71,7 +137,7 @@ const Packages2 = ({ img, img2, img3, img4, big, color }) => {
                             )}
                         </Swiper>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
 

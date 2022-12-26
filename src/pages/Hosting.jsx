@@ -6,7 +6,7 @@ import ServicesFeatures from '../components/services.Features';
 import Packages2 from '../components/packages2';
 import { langData2, hostDataCard } from '../constant';
 import { } from '../constant';
-import { PACKAGES, pricepack3, pricepack4, pricepack5, webBanner4 } from '../images';
+import { PACKAGES, pricepack3, pricepack4, pricepack5, hostingBanner } from '../images';
 
 const Hosting = () => {
   return (
@@ -15,7 +15,7 @@ const Hosting = () => {
         title={'Super Fats Servers'}
         title3={'Power Your Website On Our'}
         body={'For as low as $3'}
-        img={webBanner4} />
+        img={hostingBanner} />
       <Packages2 img={PACKAGES}
         img2={pricepack3}
         color={'#FBE9E5'}

@@ -832,6 +832,38 @@ export const priceData = [
     color: '#e69b00',
     img:yellow
   },
+  {
+    id: 5,
+    title: "399",
+    subTitle: "web design",
+    content: ['1 project', '100k api access', '100mb storage access', 'custom cloud services', 'weekly reports', '7/24 support'],
+    color: '#ff6242',
+    img:red
+  },
+  {
+    id: 6,
+    title: "3",
+    subTitle: "shared hosting",
+    content: ['1 project', '100k api access', '100mb storage access', 'custom cloud services', 'weekly reports', '7/24 support'],
+    color: 'purple',
+    img:purple
+  },
+  {
+    id: 7,
+    title: "15",
+    subTitle: "business line",
+    content: ['1 project', '100k api access', '100mb storage access', 'custom cloud services', 'weekly reports', '7/24 support'],
+    color: 'green',
+    img:green
+  },
+  {
+    id: 8,
+    title: "499",
+    subTitle: "Seo/Analytics",
+    content: ['1 project', '100k api access', '100mb storage access', 'custom cloud services', 'weekly reports', '7/24 support'],
+    color: '#e69b00',
+    img:yellow
+  },
 ];
 
 
@@ -939,6 +971,48 @@ export const seoPackage = [
   },
   {
     id: 3,
+    title: "Pro",
+    price: "499",
+    content: ['150 keywords optimized', 
+    '30 pages optimized',
+    '6 Content, Outreach, UX or CRO Assets per quatrer',
+    '8 Custom Dashoards',
+    'Phone Call and revenue tracking dashboards',
+    '1/24 Support'
+    ],
+    color: '#bd83dc', 
+    img : backgroundLayer3,
+  },
+  {
+    id: 4,
+    title: "Basic",
+    price: "499",
+    content: ['150 keywords optimized', 
+    '30 pages optimized',
+    '6 Content, Outreach, UX or CRO Assets per quatrer',
+    '8 Custom Dashoards',
+    'Phone Call and revenue tracking dashboards',
+    '1/24 Support'
+    ],
+    color: '#cc8281', 
+    img : backgroundLayer1,
+  },
+  {
+    id: 5,
+    title: "Premium",
+    price: "499",
+    content: ['150 keywords optimized', 
+    '30 pages optimized',
+    '6 Content, Outreach, UX or CRO Assets per quatrer',
+    '8 Custom Dashoards',
+    'Phone Call and revenue tracking dashboards',
+    '1/24 Support'
+    ],
+    color: '#709bd1', 
+    img : backgroundLayer2,
+  },
+  {
+    id: 6,
     title: "Pro",
     price: "499",
     content: ['150 keywords optimized', 

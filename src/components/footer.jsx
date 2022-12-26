@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className='bg-[#5AA6B1] w-full text-white
     '>
       <div className='container mx-auto'>
-        <div className='flex  flex-wrap  lg:justify-between pt-12 pb-12'>
+        <div className='flex  flex-wrap  lg:justify-between pt-16 pb-12'>
           <div className='flex flex-col w-1/4 mmd:w-full mmd:mb-12'>
             <img src={logo2} className='w-[181px]' alt="" />
             <p className='mt-8 mb-12 text-fs18 font-inter font-normal lg:max-w-[329px] mmd:my-4 msm:text-fs15'>
@@ -68,7 +68,7 @@ const Footer = () => {
           </section>
         </div>
       </div>
-      <div className='w-full h-0.5 bg-white' />
+      <div className='w-full h-0.5 bg-white call-line' />
       <div className='container mx-auto py-6'>
         <p className='text-center sm:text-right font-inter font-normal text-fs15 sm:text-fs18 text-white'>&copy; 2022 Nanoqode.
           All rights reserved.</p>

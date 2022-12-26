@@ -24,7 +24,7 @@ const WebBanner2 = ({ title, title3, title2, body, img, show, gif, vid }) => {
                 <div className='w-full  w-1/2 mmd:w-full'>
 
                     <div className='text-[#333333]'>
-                        <div className='mt-10 w-[200px] h-1 bg-[#DA452C] mb-4' />
+                        <div className='mt-10 w-[200px] h-1 bg-[#DA452C] mb-4 call-line' />
                         <h2 className='text-fs60 font-bold font-inter mlg:text-fs5265 msm:text-fs36 mb-10'>
                             {title3}
                             <span className='text-[#DA452C]'> {title}</span>
